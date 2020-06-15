@@ -21,7 +21,8 @@ a {
   margin: 2.5em 0;
 }
 
-.menu {
+.menu,
+.contactList {
   list-style-type: none;
   padding: 0;
 }
@@ -43,14 +44,33 @@ a {
   color: /*#EC1260*/#FBAD17;
 }
 
-.smcolors a {
-  transition: text-shadow .5s ease-in-out;
+
+@keyframes multicolor {
+    0% {
+        color: #FBAD17;
+    }
+    33% {
+        color: #ec1260;
+    }
+    66% {
+        color: #33beb7;
+    }
+    100% {
+        color: #b2c224;
+    }
 }
+
 
 .smcolors a:hover {
   color: #FBAD17;
-  text-shadow: -1px 0 #333,0 1px #333,1px 0 #333,0 -1px #333;
-  transition: text-shadow .8s ease-in-out;
+  transition-delay: 1s;
+  animation: 3s multicolor;
+  animation-iteration-count: 2;
+
+}
+
+.smMessage {
+  font-size:1.2em;
 }
 
 
@@ -88,23 +108,15 @@ h2, h3 {
   width: calc(33.33% - 2em);
 }
 
-.smInput,
-.smText {
-  width: 70%;
-  display: inline-block;
-  margin: 1% 0;
-}
-
-.smText {
-  min-height: 150px;
-}
-
-
 .main-footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .main-footer p {
   margin-right: 2em;
+}
+
+.main-footer p:hover {
+/**/
 }
