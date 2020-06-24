@@ -2,23 +2,21 @@ import React from 'react';
 
 
 const Card = props => {
-	// const name = ['parallax 2016'];
-	// const text = ['My first portfolio in 2016'];
-	// const techno =['HTML', 'CSS', 'bootstrap', 'Javascript', 'jQuery', 'MySQL', 'React',
-	// 				'Redux', 'Wordpress', 'PHP', 'Bash', 'LESS'];
-	// const url = ['https://github.com/S0f1eM/portfolio-parallax-2016']
-
 
 	return (
-     <aside className="smCard">
+     <div className="smCard">
      	<h3 className="workName">
      		<a className="workLink" href={props.url} target="_blank" rel="noopener noreferrer">
-     			{props.name}
+     			{props.title}
      		</a>
         </h3>
-        	<p className="workText">{props.content}</p>
-        	<p className="mainTechno"></p>
-     </aside>
+        <hr/>
+            <p className="workcompany">{props.company}</p>
+            <i className="workdate">{props.date}</i>
+            <p className="workintro">{props.intro}</p>
+        	<p className="workcontent">{props.content}</p>
+
+     </div>
 	)
 }
 
