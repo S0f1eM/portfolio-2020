@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+https://sophie-marchand.netlify.app
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b946c088-af9a-4823-95c0-3c0a9041ea6a/deploy-status)](https://app.netlify.com/sites/sophie-marchand/deploys)
 
 ## Available Scripts
