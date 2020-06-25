@@ -20,12 +20,12 @@ const Works = () => {
           url="http://moodcolors.surge.sh/"
         />
         <Card  
-          title="PORTFOLIO 2019" 
+          title="FULL CSS PORTFOLIO" 
           content="Minimalist & full CSS portoflio with Flexbox."
           url="http://sophie-marchand-2019.surge.sh/"
         />
         <Card 
-          title="PORTFOLIO 2016" 
+          title="BOOTSTRAP TEMPLATE" 
           content="First portfolio from scratch with parallax and Bootstrap."
           url="https://github.com/S0f1eM/portfolio-parallax-2016"
         />
@@ -35,7 +35,7 @@ const Works = () => {
           url="https://sophie-react-on.netlify.app/"
         />
         <Card 
-          title="IUEM WEBSITES" 
+          title="WORDPRESS WEBSITES" 
           content="Setting up WordPress sites : integration with Less, PHP, MySQL."
           url="https://www-iuem.univ-brest.fr"
         />

@@ -21,8 +21,7 @@ const Header = props => {
         </ul>
       </nav>
       <div className="about-me">
-        <p>I am a french developer who love front-end development. I had worked with various CMS and love coding with Javascript. I search for a professionnal project to evolve and to keep growing with great people.<br/>
-           Remote job are more than welcomed. I would be thrilled to work with a international team and sharing our cultural diversities with my teamates.</p>
+        <p>I am a french developer who love front-end development. I had worked with various CMS and love coding with Javascript. I search for a professionnal project to evolve with great people. Remote job are more than welcomed.  Collaborate with a international team would be a thrilling experience for me.</p>
       </div>
     </header>
 	)
