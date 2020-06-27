@@ -11,9 +11,13 @@ const Works = () => {
         <Card  
           title="PORTFOLIO 2020" 
           content="This portfolio buid  with react."
-          url="https://github.com/S0f1eM/portfolio-react-2020/"
+          url="https://github.com/S0f1eM/portfolio-2020"
         />
-       	
+        <Card 
+          title="REACT PLAYGROUND" 
+          content="Playing with React, redux, axios, API..."
+          url="https://sophie-react-on.netlify.app/"
+        />
         <Card  
           title="MOODCOLORS" 
           content="A Template build with react-semantic-ui."
@@ -29,13 +33,8 @@ const Works = () => {
           content="First portfolio from scratch with parallax and Bootstrap."
           url="https://github.com/S0f1eM/portfolio-parallax-2016"
         />
-         <Card 
-          title="REACT PLAYGROUND" 
-          content="Playing with React, redux, axios, API..."
-          url="https://sophie-react-on.netlify.app/"
-        />
         <Card 
-          title="WORDPRESS WEBSITES" 
+          title="IUEM WEBSITES" 
           content="Setting up WordPress sites : integration with Less, PHP, MySQL."
           url="https://www-iuem.univ-brest.fr"
         />
