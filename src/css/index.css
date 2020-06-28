@@ -130,6 +130,9 @@ h3 {
   .main-works .smCard {
   width: calc(100% - 2em);
   }
+  body {
+    font-size: 0.7em;
+  }
 }
 
 .main-xp .smCard:not(:first-child) {
