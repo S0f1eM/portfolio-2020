@@ -16,7 +16,7 @@ const Works = () => {
         <Card 
           title="REACT PLAYGROUND" 
           content="Playing with React, redux, axios, API..."
-          url="https://sophie-react-on.netlify.app/"
+          url=" sophie-react-playground.surge.sh"
         />
         <Card  
           title="MOODCOLORS" 
@@ -26,7 +26,7 @@ const Works = () => {
         <Card  
           title="FULL CSS PORTFOLIO" 
           content="Minimalist & full CSS portoflio with Flexbox."
-          url="http://sophie-marchand-2019.surge.sh/"
+          url="flexbox-portfolio.surge.sh"
         />
         <Card 
           title="BOOTSTRAP TEMPLATE" 

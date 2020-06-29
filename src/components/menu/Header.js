@@ -14,7 +14,7 @@ const Header = props => {
     <header className="main-header" id="smHeader">
      	<nav className="navigation">
         <ul className="menu">
-        	<li className="myName"><a href="#smHeader" rel="noopener noreferrer">Sophie M.</a></li>
+        	<li className="myName"><a href="#smHeader" rel="noopener noreferrer">SM</a></li>
         	<li className="smcolors"><a href="#smWorks" rel="noopener noreferrer">Works</a></li>
         	<li className="smcolors"><a href="#smAbout" rel="noopener noreferrer">About</a></li>
         	<li className="smcolors"><a href="#smContact" rel="noopener noreferrer">Contact</a></li>
