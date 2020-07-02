@@ -6,7 +6,12 @@ const Card = props => {
 	return (
      <div className="smCard">
      	<h3 className="workName">
-     		<a className="workLink" href={props.url} target="_blank" rel="noopener noreferrer">
+     		<a className="workLink" 
+               href={props.url} 
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label={props.content}
+            >
      			{props.title}
      		</a>
         </h3>

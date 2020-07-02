@@ -79,6 +79,7 @@ h2 {
 
 h3 {
   font-weight: 800;
+  font-size: 1.3em;
 }
 
 
@@ -138,10 +139,6 @@ h3 {
 .main-xp .smCard:not(:first-child) {
   width: calc(100% - 2em);
   margin: 4% 0;
-}
-
-.contact-me h3 {
-  text-transform: uppercase;
 }
 
 footer {
