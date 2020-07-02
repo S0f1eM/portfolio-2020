@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../Card';
+import Card from './Card';
 
 const Works = () => {
 
@@ -9,42 +9,52 @@ const Works = () => {
       <section className="main-works">
         
         <Card  
-          title="PORTFOLIO 2020" 
+          title="Portfolio 2020" 
           content="This portfolio buid  with react."
           url="https://github.com/S0f1eM/portfolio-2020"
         />
         <Card 
-          title="REACT PLAYGROUND" 
+          title="My React Playground" 
           content="Playing with React, redux, axios, API..."
           url="https://sophie-react-playground.surge.sh"
         />
         <Card  
-          title="MOODCOLORS" 
+          title="MoodColors template" 
           content="A Template build with react-semantic-ui."
           url="http://moodcolors.surge.sh/"
         />
         <Card  
-          title="FULL CSS PORTFOLIO" 
+          title="Full CSS Portfolio" 
           content="Minimalist & full CSS portoflio with Flexbox."
           url="https://flexbox-portfolio.surge.sh"
         />
         <Card 
-          title="IUEM WEBSITES" 
+          title="Bootstrap Portfolio" 
+          content="First portfolio from scratch with parallax and Bootstrap."
+          url="https://github.com/S0f1eM/portfolio-parallax-2016"
+        />
+        <Card 
+          title="IUEM WordPress Websites" 
           content="Setting up WordPress sites : integration with Less, PHP, MySQL."
           url="https://www-iuem.univ-brest.fr"
         />
         <Card 
-          title="WP DIRECTORY PLUGIN" 
+          title="ISBlue WordPress Website" 
+          content="Quick setting up of a WordPress website."
+          url="https://www.isblue.fr"
+        />
+        <Card 
+          title="WordPress Plugin" 
           content="Building a WordPress directory plugin to manage the directory from WP dashboard (php & MySQL)."
           url="https://www.umr-amure.fr/annuaire/"
         />
         <Card 
-          title="UPDATE ASSISTANT MANAGER" 
+          title="Update Assistant Manager" 
           content="Script bash with wp-cli to update WordPress multisites."
           url="https://github.com/S0f1eM/wordpress-update-manager"
         />
         <Card 
-          title="ALL MY REPOSITORIES..." 
+          title="All my repositories..." 
           content="...on Github."
           url="https://github.com/S0f1eM/"
         />
