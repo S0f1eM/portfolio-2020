@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './menu/Header';
-import Works from './home/Works';
-import About from './home/About';
-import Contact from './home/Contact';
-import Footer from './menu/Footer';
+import Header from './elements/Header';
+import Works from './elements/Works';
+import About from './elements/About';
+import Contact from './elements/Contact';
+import Footer from './elements/Footer';
 
 
 const App = () => {
