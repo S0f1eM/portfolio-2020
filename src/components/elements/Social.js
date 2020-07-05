@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import { Link } from 'react-router-dom';
 
 
 const Social = () => {
@@ -10,9 +10,9 @@ const Social = () => {
 
 	return (
     	<section className="profil">
-	        <Card title="Github" url={github} />
-	        <Card title="Linkedin" url={linkedin} />
-	        <Card title="Twitter" url={twitter}  />
+	        <Link className="social" to={linkedin} title="link to linkedin">Linkedin</Link>
+	        <Link className="social" to={twitter} title="link to Twitter">Twitter</Link>
+	        <Link className="social" to={github} title="link to github">Github</Link>
     	</section>
 	)
 }

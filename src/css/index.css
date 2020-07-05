@@ -55,8 +55,16 @@ a {
   font-family: var(--main-font-family); 
 }
 
+.profil {
+  display: flex;
+}
+
 .profil a {
-  font-size: 1.5em;
+  font-size: 2em;
+}
+
+.profil .social {
+  width: calc(25% - 2em);
 }
 
 h2 {
@@ -76,15 +84,13 @@ h3 {
   font-weight: bold;
 }
 
-.main-works, 
-.profil {
+.main-works {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.main-works .card,
-.profil .card {
+.main-works .card {
   width: calc(33.33% - 2em);
 }
 
@@ -106,7 +112,7 @@ footer small {
 
 @media screen and (max-width: 768px ) {
   .main-works .card,
-  .profil .card {
+  .profil .social {
   width: calc(100% - 2em);
   }
   body {
