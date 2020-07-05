@@ -5,7 +5,7 @@ const Works = () => {
 
 	return (
 	<>
-    <h2 id="smWorks">Some Works</h2> 
+    <h2 id="#projects">Projects</h2> 
       <section className="main-works">
         
         <Card  
@@ -27,11 +27,6 @@ const Works = () => {
           title="Full CSS Portfolio" 
           content="Minimalist & full CSS portoflio with Flexbox."
           url="https://flexbox-portfolio.surge.sh"
-        />
-        <Card 
-          title="Bootstrap Portfolio" 
-          content="First portfolio from scratch with parallax and Bootstrap."
-          url="https://github.com/S0f1eM/portfolio-parallax-2016"
         />
         <Card 
           title="IUEM WordPress Websites" 

@@ -11,6 +11,12 @@ const Footer = () => {
 	return (
      <footer>
         <small>
+            <a  href="/" 
+                aria-labelledby="go to top of the page"
+                aria-current="page" 
+                rel="noopener noreferrer">2020 - Sophie Marchand</a>
+        </small>
+        <small>
         	<a  href={github} 
                 alt="github" 
                 target="_blank" 
