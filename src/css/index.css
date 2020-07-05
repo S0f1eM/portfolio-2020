@@ -50,17 +50,17 @@ a {
   font-size: 2.2em;
 }
 
-.myName, h2,
-.profil a {
+.myName, h2 {
   font-family: var(--main-font-family); 
 }
 
 .profil {
   display: flex;
+  justify-content: left;
 }
 
 .profil a {
-  font-size: 2em;
+  font-size: 1.3em;
 }
 
 .profil .social {

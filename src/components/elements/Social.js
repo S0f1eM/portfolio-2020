@@ -14,6 +14,7 @@ const Social = () => {
 	        <Link className="social" to={twitter} title="link to Twitter">Twitter</Link>
 	        <Link className="social" to={github} title="link to github">Github</Link>
     	</section>
+    	
 	)
 }
 
