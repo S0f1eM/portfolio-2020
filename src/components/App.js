@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './elements/Header';
-import Works from './elements/Works';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import Home from './elements/Home';
 import About from './elements/About';
-import Contact from './elements/Contact';
 import Footer from './elements/Footer';
 
 
@@ -10,11 +10,12 @@ const App = () => {
 
   return (
     <>
-      <Header />
-      <Works />
-      <About />
-      <Contact />
-      <Footer />
+    	<BrowserRouter>
+	    		<Route path="/" exact component={Home} />
+				<Route path="/Home" exact component={Home} />
+				<Route path="/About" exact component={About} />
+     		<Footer />
+        </BrowserRouter>
     </>
   );
 }
