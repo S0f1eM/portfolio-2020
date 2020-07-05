@@ -2,7 +2,6 @@ import React from 'react';
 
 import Header from './Header';
 import Card from './Card';
-import Social from './Social';
 import Contact from './Contact';
 
 const About = props => {
@@ -11,8 +10,7 @@ const About = props => {
     <>
        	<Header home="/" projects="/" about="/About" contact="#contact" />
 
-	    <h2 className="xp-and-skills" id="resume">Developer Resume</h2>
-	        <Social />
+	    <h2 className="xp-and-skills">Developer Resume</h2>
 		        <section className="main-xp">
 			        <Card  
 			          	title="Analyst Developer" 
