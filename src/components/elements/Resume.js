@@ -4,11 +4,11 @@ import Header from './Header';
 import Card from './Card';
 import Contact from './Contact';
 
-const About = props => {
+const Resume = props => {
 
 	return (		
     <>
-       	<Header home="/" projects="/" about="/About" contact="#contact" />
+       	<Header home="/" projects="/" Resume="/Resume" contact="#contact" />
 
 	    <h2 className="xp-and-skills">Developer Resume</h2>
 		        <section className="main-xp">
@@ -39,4 +39,4 @@ const About = props => {
 }
 
 
-export default About;
+export default Resume;

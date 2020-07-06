@@ -10,9 +10,15 @@ const Social = () => {
 
 	return (
     	<section className="profil">
-	        <Link className="social" to={linkedin} title="link to linkedin">Linkedin</Link>
-	        <Link className="social" to={twitter} title="link to Twitter">Twitter</Link>
-	        <Link className="social" to={github} title="link to github">Github</Link>
+	        <Link className="social" to={linkedin} 
+	        	  aria-label="go to the linkedin account"
+	        	  title="link to linkedin">Linkedin</Link>
+	        <Link className="social" to={twitter} 
+	        	  aria-label="go to the twitter account" 
+	              title="link to Twitter">Twitter</Link>
+	        <Link className="social" to={github} 
+	        	  title="link to github"
+	        	  aria-label="go to the github account" >Github</Link>
     	</section>
     	
 	)
