@@ -9,12 +9,23 @@ const Footer = () => {
 
 	return (
      <footer>
-        <small>
+        <small className="mobile">
             <a  href="#header" 
                 aria-label="go to top of the page"
                 aria-current="page" 
-                rel="noopener noreferrer">2020 - Sophie 
-                <span className="mobile"> Marchand</span></a>
+                rel="noopener noreferrer"
+                >2020 - Sophie Marchand</a>
+        </small>
+         <small>
+            <a  href="#projects" 
+                aria-label="go to the projects"
+                aria-current="page" 
+                rel="noopener noreferrer">Projects</a>
+        </small>
+         <small>
+            <a  href="/Resume" 
+                aria-label="go to Resume"
+                rel="noopener noreferrer">Resume</a>
         </small>
         <small>
         	<a  href={github} 

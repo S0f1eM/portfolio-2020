@@ -37,9 +37,8 @@ const Header = props => {
       <div className="About-me">
         <p>I am a french developer who love front-end development. 
         I had worked with various CMS and love coding with Javascript.
-        I search for a professionnal project to evolve with great people. 
-        <span className="mobile">Remote job are more than welcomed. 
-        Collaborate with a international team would be a thrilling experience for me.</span></p>
+        I search for a professionnal project to evolve with great people. <span className="mobile"> Remote job are more than welcomed.</span> 
+        Collaborate with a international team would be a thrilling experience for me.</p>
       </div>
     </header>
 	)
