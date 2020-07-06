@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Header from './Header';
 import Card from './Card';
 import Contact from './Contact';
 
@@ -8,8 +7,6 @@ const Resume = props => {
 
 	return (		
     <>
-       	<Header home="/" projects="/" Resume="/Resume" contact="#contact" />
-
 	    <h2 className="xp-and-skills">Developer Resume</h2>
 		        <section className="main-xp">
 			        <Card  
