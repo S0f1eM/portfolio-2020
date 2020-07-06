@@ -41,7 +41,7 @@ const Works = () => {
         <Card 
           title="WordPress Plugin" 
           content="Building a WordPress directory plugin to manage the directory from WP dashboard (php & MySQL)."
-          url="https://www.umr-amure.fr/annuaire/"
+          url="https://github.com/S0f1eM/my-first-wp-plugin"
         />
         <Card 
           title="Update Assistant Manager" 

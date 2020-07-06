@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Contact = () => {
   const email = 'mailto:s.marchand56@gmail.com';
   const linkedin = "https://www.linkedin.com/in/sophie-marchand-web-developer/";

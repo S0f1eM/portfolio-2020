@@ -9,25 +9,25 @@ const Header = props => {
      	<nav className="navigation">
         <ul className="menu">
         	<li>
-            <Link to={props.home} title="go to top of the page" 
+            <Link to="/" title="go to top of the page" 
                   aria-labelledby="top of the page"
                   rel="noopener noreferrer">
                   <h1 className="myName">Sophie <span className="mobile">M.</span></h1>
             </Link>
           </li>
         	<li>
-            <Link to={props.projects} 
+            <Link to="/#projects"
                 aria-labelledby="go to projects section" 
                 rel="noopener noreferrer">Projects</Link>
           </li>
         	<li>
-            <Link to={props.Resume} title="link to Resume" 
+            <Link to="/Resume" title="link to Resume" 
                   aria-labelledby="go to Resume section"
                   rel="noopener noreferrer">Resume
            </Link>
           </li>
         	<li>
-             <Link to={props.contact} 
+             <Link to="/#contact"
                 aria-labelledby="go to the contact section" 
                 aria-current="page"
                 rel="noopener noreferrer">Contact</Link>
