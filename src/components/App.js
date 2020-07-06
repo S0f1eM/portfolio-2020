@@ -17,7 +17,7 @@ const App = () => {
 				  <Route path="/Home" exact component={Home} />
 				  <Route path="/Resume" exact component={Resume} />
      		<Footer />
-        </BrowserRouter>
+      </BrowserRouter>
     </>
   );
 }
