@@ -9,15 +9,15 @@ const Contact = () => {
 	return (
     <section className="contact-me" id="contact">
      	<h2 className="contact-me">Get in touch</h2>
-        <h3>Wanna talk about your project ? 
+        <h3>Wanna talk Resume your project ? 
             Contact me and let's see how we can work together.</h3>
         <hr/>
         <p>
           <a  href={email} 
               alt='send an email' 
               target="_blank" 
-              rel="noopener noreferrer" 
-              aria-label="send an email">
+              aria-label="send an email"
+              rel="noopener noreferrer">
                 Send an email
           </a>
         </p>
@@ -25,8 +25,8 @@ const Contact = () => {
           <a  href={twitter} 
               alt="twitter" 
               target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="Contact me on twitter">
+              aria-label="Contact me on twitter"
+              rel="noopener noreferrer">
                 DM @S0ph1eM
           </a>
         </p>
@@ -34,8 +34,8 @@ const Contact = () => {
           <a  href={linkedin} 
               alt="linkedin" 
               target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="Contact me on linkedin">
+              aria-label="Contact me on linkedin"
+              rel="noopener noreferrer">
                 Message on Linkedin
           </a>
         </p>

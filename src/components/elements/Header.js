@@ -5,39 +5,41 @@ import { Link } from 'react-router-dom';
 const Header = props => {
 
 	return (
-    <header className="main-header">
+    <header className="main-header" id="header">
      	<nav className="navigation">
         <ul className="menu">
-        	<li className="myName">
-            <a  href={props.home} 
-                aria-labelledby="go to top of the page"
-                rel="noopener noreferrer">SM</a>
+        	<li>
+            <Link to={props.home} title="go to top of the page" 
+                  aria-labelledby="top of the page"
+                  rel="noopener noreferrer">
+                  <h1 className="myName">Sophie <span className="mobile">M.</span></h1>
+            </Link>
           </li>
-        	<li className="smcolors">
-            <a  href={props.projects} 
+        	<li>
+            <Link to={props.projects} 
                 aria-labelledby="go to projects section" 
-                rel="noopener noreferrer">Projects</a>
+                rel="noopener noreferrer">Projects</Link>
           </li>
-        	<li className="smcolors">
-            <Link to={props.about} title="link to resume" 
-                  aria-labelledby="go to resume section"
-                  rel="noopener noreferrer">About
+        	<li>
+            <Link to={props.Resume} title="link to Resume" 
+                  aria-labelledby="go to Resume section"
+                  rel="noopener noreferrer">Resume
            </Link>
           </li>
-        	<li className="smcolors">
-            <a  href={props.contact} 
+        	<li>
+             <Link to={props.contact} 
                 aria-labelledby="go to the contact section" 
                 aria-current="page"
-                rel="noopener noreferrer">Contact</a>
+                rel="noopener noreferrer">Contact</Link>
           </li>
         </ul>
       </nav>
-      <div className="about-me">
+      <div className="About-me">
         <p>I am a french developer who love front-end development. 
         I had worked with various CMS and love coding with Javascript.
         I search for a professionnal project to evolve with great people. 
-        Remote job are more than welcomed. 
-        Collaborate with a international team would be a thrilling experience for me.</p>
+        <span className="mobile">Remote job are more than welcomed. 
+        Collaborate with a international team would be a thrilling experience for me.</span></p>
       </div>
     </header>
 	)

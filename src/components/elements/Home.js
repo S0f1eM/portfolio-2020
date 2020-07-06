@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
   	<>
-  		<Header home="/" projects="/#projects" about="/About" contact="#contact" />
+  		<Header home="/" projects="/#projects" Resume="/Resume" contact="#contact" />
       	<Works />
       	<Contact />
     </>

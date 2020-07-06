@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 
 const Footer = () => {
@@ -11,37 +13,38 @@ const Footer = () => {
 	return (
      <footer>
         <small>
-            <a  href="/" 
-                aria-labelledby="go to top of the page"
+            <Link to="#header" 
+                aria-label="go to top of the page"
                 aria-current="page" 
-                rel="noopener noreferrer">2020 - Sophie Marchand</a>
+                rel="noopener noreferrer">2020 - Sophie <span className="mobile">Marchand</span></Link>
         </small>
         <small>
-        	<a  href={github} 
+        	<Link to={github} 
                 alt="github" 
                 target="_blank" 
-                rel="noopener noreferrer" 
-                aria-label="go to the github account" >Github</a>
+                aria-label="go to the github account"
+                rel="noopener noreferrer" >Github</Link>
         </small>
         <small>
-        	<a  href={linkedin} 
+        	<Link to={linkedin} 
                 alt="linkedin" 
                 target="_blank" 
-                rel="noopener noreferrer" 
-                aria-label="go to the linkedin account" >Linkedin</a>
+                aria-label="go to the linkedin account"
+                rel="noopener noreferrer" >Linkedin</Link>
         </small>   
         <small>
-        	<a  href={twitter}
+        	<Link to={twitter}
                 alt="twitter" 
                 target="_blank" 
-                rel="noopener noreferrer">Twitter</a>
+                aria-label="go to the twitter account"
+                rel="noopener noreferrer" >Twitter</Link>
         </small>
          <small>
-            <a  href={codepen} 
+            <Link to={codepen} 
                 alt="codepen" 
                 target="_blank" 
-                rel="noopener noreferrer" 
-                aria-label="go to the codepen account" >Codepen</a>
+                aria-label="go to the codepen account"
+                rel="noopener noreferrer" >Codepen</Link>
         </small>   
       </footer>
 	)
