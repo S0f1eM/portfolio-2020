@@ -5,7 +5,7 @@ const Works = () => {
 
 	return (
 	<>
-    <h2 id="#projects">Projects</h2> 
+    <h2 id="projects">Projects</h2> 
       <section className="main-works">
         
         <Card  
