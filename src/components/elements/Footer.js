@@ -1,7 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-
 
 const Footer = () => {
   
@@ -16,35 +13,36 @@ const Footer = () => {
             <a  href="#header" 
                 aria-label="go to top of the page"
                 aria-current="page" 
-                rel="noopener noreferrer">2020 - Sophie <span className="mobile">Marchand</span></a>
+                rel="noopener noreferrer">2020 - Sophie 
+                <span className="mobile"> Marchand</span></a>
         </small>
         <small>
-        	<Link to={github} 
+        	<a  href={github} 
                 alt="github" 
                 target="_blank" 
                 aria-label="go to the github account"
-                rel="noopener noreferrer" >Github</Link>
+                rel="noopener noreferrer" >Github</a>
         </small>
         <small>
-        	<Link to={linkedin} 
+        	<a  href={linkedin} 
                 alt="linkedin" 
                 target="_blank" 
                 aria-label="go to the linkedin account"
-                rel="noopener noreferrer" >Linkedin</Link>
+                rel="noopener noreferrer" >Linkedin</a>
         </small>   
         <small>
-        	<Link to={twitter}
+        	<a  href={twitter}
                 alt="twitter" 
                 target="_blank" 
                 aria-label="go to the twitter account"
-                rel="noopener noreferrer" >Twitter</Link>
+                rel="noopener noreferrer" >Twitter</a>
         </small>
          <small>
-            <Link to={codepen} 
+            <a  href={codepen} 
                 alt="codepen" 
                 target="_blank" 
                 aria-label="go to the codepen account"
-                rel="noopener noreferrer" >Codepen</Link>
+                rel="noopener noreferrer" >Codepen</a>
         </small>   
       </footer>
 	)

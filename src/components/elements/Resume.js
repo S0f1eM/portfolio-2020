@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Card from './Card';
-import Contact from './Contact';
 
 const Resume = props => {
 
@@ -30,7 +28,6 @@ const Resume = props => {
 			          	content=" In 2017: Web development and users support on Plone CMS (CSS, JS, Python). In 2018: project management on a rebuild websites. 4 websites Migration from Plone to Wordpress CMS, integration of the new design (CSS, Less, jQuery), build custom contents (CPT) and a custom plugin for dealing with the university directory database (postgre to MySQL, PHP, JavaScript)."
 			        />
 			    </section>
-	    <Contact />
     </>
 	)
 }
