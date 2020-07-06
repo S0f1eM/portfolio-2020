@@ -16,9 +16,9 @@ const Header = props => {
             </Link>
           </li>
         	<li>
-            <Link to="/#projects"
+            <a href="/#projects"
                 aria-labelledby="go to projects section" 
-                rel="noopener noreferrer">Projects</Link>
+                rel="noopener noreferrer">Projects</a>
           </li>
         	<li>
             <Link to="/Resume" title="link to Resume" 
@@ -27,10 +27,10 @@ const Header = props => {
            </Link>
           </li>
         	<li>
-             <Link to="/#contact"
+             <a href="/#contact"
                 aria-labelledby="go to the contact section" 
                 aria-current="page"
-                rel="noopener noreferrer">Contact</Link>
+                rel="noopener noreferrer">Contact</a>
           </li>
         </ul>
       </nav>
