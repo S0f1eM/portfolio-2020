@@ -21,7 +21,7 @@ const Header = props => {
                 rel="noopener noreferrer">Projects</a>
           </li>
         	<li>
-            <Link to="/Resume" title="link to Resume" 
+            <Link to="/Resume"  
                   aria-label="go to Resume section"
                   rel="noopener noreferrer">Resume
            </Link>

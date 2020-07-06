@@ -17,13 +17,13 @@ const Footer = () => {
                 >2020 - Sophie Marchand</a>
         </small>
          <small>
-            <a  href="#projects" 
+            <a  href="/#projects" 
                 aria-label="go to the projects"
                 aria-current="page" 
                 rel="noopener noreferrer">Projects</a>
         </small>
          <small>
-            <a  href="/Resume" 
+            <a  href="/Resume/#developer" 
                 aria-label="go to Resume"
                 rel="noopener noreferrer">Resume</a>
         </small>
