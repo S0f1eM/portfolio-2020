@@ -17,7 +17,7 @@ const Header = props => {
           </li>
         	<li>
             <a href="/#projects"
-                aria-labelledby="go to projects section" 
+                aria-label="go to projects section" 
                 rel="noopener noreferrer">Projects</a>
           </li>
         	<li>
@@ -28,7 +28,7 @@ const Header = props => {
           </li>
         	<li>
              <a href="/#contact"
-                aria-labelledby="go to the contact section" 
+                aria-label="go to the contact section" 
                 aria-current="page"
                 rel="noopener noreferrer">Contact</a>
           </li>
