@@ -13,10 +13,10 @@ const Footer = () => {
 	return (
      <footer>
         <small>
-            <Link to="#header" 
+            <a  href="#header" 
                 aria-label="go to top of the page"
                 aria-current="page" 
-                rel="noopener noreferrer">2020 - Sophie <span className="mobile">Marchand</span></Link>
+                rel="noopener noreferrer">2020 - Sophie <span className="mobile">Marchand</span></a>
         </small>
         <small>
         	<Link to={github} 

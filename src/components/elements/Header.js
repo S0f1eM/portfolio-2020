@@ -9,9 +9,9 @@ const Header = props => {
      	<nav className="navigation">
         <ul className="menu">
         	<li>
-            <Link to="/" title="go to top of the page" 
-                  aria-labelledby="top of the page"
-                  rel="noopener noreferrer">
+            <Link to="/" 
+                aria-labelledby="top of the page"
+                rel="noopener noreferrer">
                   <h1 className="myName">Sophie <span className="mobile">M.</span></h1>
             </Link>
           </li>
@@ -27,10 +27,10 @@ const Header = props => {
            </Link>
           </li>
         	<li>
-             <Link to="/#contact" 
+             <a href="#contact" 
                 aria-labelledby="go to the contact section" 
                 aria-current="page"
-                rel="noopener noreferrer">Contact</Link>
+                rel="noopener noreferrer">Contact</a>
           </li>
         </ul>
       </nav>
