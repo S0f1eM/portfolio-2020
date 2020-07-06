@@ -10,25 +10,25 @@ const Header = props => {
         <ul className="menu">
         	<li>
             <Link to="/" title="go to top of the page" 
-                  aria-labelledby="top of the page"
+                  aria-label="top of the page"
                   rel="noopener noreferrer">
                   <h1 className="myName">Sophie <span className="mobile">M.</span></h1>
             </Link>
           </li>
         	<li>
             <a href="/#projects"
-                aria-labelledby="go to projects section" 
+                aria-label="go to projects section" 
                 rel="noopener noreferrer">Projects</a>
           </li>
         	<li>
             <Link to="/Resume" title="link to Resume" 
-                  aria-labelledby="go to Resume section"
+                  aria-label="go to Resume section"
                   rel="noopener noreferrer">Resume
            </Link>
           </li>
         	<li>
              <a href="/#contact"
-                aria-labelledby="go to the contact section" 
+                aria-label="go to the contact section" 
                 aria-current="page"
                 rel="noopener noreferrer">Contact</a>
           </li>
