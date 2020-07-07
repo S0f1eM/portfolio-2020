@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import ScrollTo from './ScrollTo';
 
 const Footer = () => {
   
@@ -22,11 +24,13 @@ const Footer = () => {
                 aria-current="page" 
                 rel="noopener noreferrer">Projects</a>
         </small>
-         <small>
-            <a  href="/Resume/#developer" 
-                aria-label="go to Resume"
-                rel="noopener noreferrer">Resume</a>
-        </small>
+        <ScrollTo>
+             <small>
+                <Link to="/Resume" 
+                    aria-label="go to Resume"
+                    rel="noopener noreferrer">Resume</Link>
+            </small>
+        </ScrollTo>
         <small>
         	<a  href={github} 
                 alt="github" 

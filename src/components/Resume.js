@@ -5,7 +5,7 @@ const Resume = props => {
 
 	return (		
     <>
-	    <h2 className="xp-and-skills" id="developer">Developer Resume</h2>
+	    <h2 className="xp-and-skills" id="resume">Developer Resume</h2>
 		    <section className="main-xp">
 			    <Card 	title="Analyst Developer" 
 			          	date="oct. 2019 - today"
