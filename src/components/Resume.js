@@ -18,12 +18,6 @@ const Resume = props => {
 			         	content="Collaborated with designers to create clean interfaces and intuitive interactions."
 			         	skills="Java, jsp, Less, jQuery, JIRA, Jenkins, Eclipse, Gitlab..."
 			    />
-	{/*		    <Card   title="Mission Officer" 
-			          	date=" feb. 2019"
-			          	company="IUEM - National education (public official contract)"
-			          	content="Setting up of the ISBlue website with WordPress CMS and plugins with a short deadline."
-			          	more="Collection of informations and contents, integration & CSS."
-			    />*/}
 			    <Card   title="Web Developer" 
 			          	date=" feb. 2017 - dec. 2018 (2 years)"
 			          	company="IUEM - National education (public official contract)"

@@ -9,11 +9,10 @@ const Header = () => {
      	<nav className="navigation">
         <ul className="menu">
         	<li>
-            <Link to="/" 
-                aria-label="top of the page"
-                rel="noopener noreferrer">
-                  <h1 className="myName">Sophie <span className="mobile">M.</span></h1>
-            </Link>
+            <a href="/" 
+                aria-label="top of the page">
+                <h1 className="myName">Sophie <span className="mobile">M.</span></h1>
+            </a>
           </li>
         	<li>
             <a href="/#projects"
