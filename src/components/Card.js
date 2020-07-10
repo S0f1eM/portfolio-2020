@@ -11,6 +11,9 @@ const Card = props => {
         <i>{props.date}</i>
         <p>{props.intro}</p>
         <p>{props.content}</p>
+        <p>{props.works}</p>
+        <p>{props.tasks}</p>
+        <p>{props.skills}</p>
         <p>{props.more}</p>
     </div>
 	)

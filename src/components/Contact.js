@@ -6,10 +6,11 @@ const Contact = () => {
   const twitter = "https://twitter.com/S0f1eM?lang=fr";
 
 	return (
+  <>
     <section className="contact-me" id="contact">
      	<h2 className="contact-me">Get in touch</h2>
-        <h3>Wanna talk Resume your project ? 
-            Contact me and let's see how we can work together.</h3>
+        <h3>Wanna talk about a project or a developer role in your company ? <br/>
+            Contact me ! let's see how we can work together.</h3>
         <hr/>
         <p>
           <a  href={email} 
@@ -39,6 +40,7 @@ const Contact = () => {
           </a>
         </p>
     </section>
+  </>
 	)
 }
 

@@ -10,32 +10,36 @@ const Works = () => {
         
         <Card  
           title="Portfolio 2020" 
-          content="This portfolio buid  with react."
+          content="This portfolio build with Reactjs."
+          more="A static website made with react."
           url="https://github.com/S0f1eM/portfolio-2020"
         />
         <Card 
           title="My React Playground" 
-          content="Playing with React, redux, axios, API..."
+          content="A website I use to test and play with React features and with redux, hooks and API..."
           url="https://sophie-react-playground.surge.sh"
         />
         <Card  
           title="MoodColors template" 
-          content="A Template build with react-semantic-ui."
+          content="A Template I build with react-semantic-ui to test its work process."
           url="http://moodcolors.surge.sh/"
         />
         <Card  
           title="Full CSS Portfolio" 
-          content="Minimalist & full CSS portoflio with Flexbox."
+          content="My 2019 portfolio : A full CSS portoflio made with Flexbox."
+          more="Minimalist site with no JS."
           url="https://flexbox-portfolio.surge.sh"
         />
         <Card 
           title="IUEM WordPress Websites" 
-          content="Setting up WordPress sites : integration with Less, PHP, MySQL."
+          content="The main website of my first profesionnal project with WordPress."
+          more="Integration with Less, PHP, MySQL."
           url="https://www-iuem.univ-brest.fr"
         />
         <Card 
           title="ISBlue WordPress Website" 
-          content="Quick setting up of a WordPress website."
+          content="Profesionnal project : A WordPress website to set up in short term contract."
+          more="Collection of informations and contents, integration & CSS."
           url="https://www.isblue.fr"
         />
         <Card 
