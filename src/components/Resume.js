@@ -21,7 +21,7 @@ const Resume = props => {
 			    <Card   title="Web Developer" 
 			          	date=" feb. 2017 - dec. 2018 (2 years)"
 			          	company="IUEM - National education (public official contract)"
-			          	intro="Full stack development, project management and users support."
+			          	intro="My first job as a developer : it was a great challenge and a success."
 			          	content="2017: Users support on Plone CMS (CSS, JS, Python). Fixing bug, CSS and content on new intranet."
 			          	works=" 2018: Project management and developement on the 4 main sites rebuild."
 			          	tasks="Migration from Plone to Wordpress, integration of the design, built and implemented custom contents (CPT)."
@@ -41,14 +41,18 @@ const Resume = props => {
 
 		<h2 className="xp-and-skills" id="resume">Skills & Interests</h2>
 		    <section className="main-xp">
-		    	<h4>Languages :</h4>
-		    		<p>English (proficient), french (native).</p>
-		    	<h4>Self study :</h4>
-                	<p> Javascript : ES6/ES7, API, OOP, functionnal programming, clean code...</p>
+		    	<h3>Self study </h3>
+		    	<hr/>
+                	<p> Javascript ES6/ES7, API, OOP, functionnal programming, CSS Grid, Flexbox, clean code (DRY)...</p>
                 	<p>Frameworks and tools : React, Redux, Node, GraphQL (still learning)...</p>
                 	<p>Online Certifications : <a rel="noopener noreferrer" href={responsive}>FreeCodeCamp Responsive web design certification</a> & 
                 	<a rel="noopener noreferrer" href={javascript}> JavaScript Algorithms certification</a></p>
-		    	<h4>Interests :</h4>
+		    	<h3>Languages </h3>
+		    	<hr/>
+		    		<p>English (proficient).</p>
+		    		<p> French (native).</p>
+		    	<h3>Interests </h3>
+		    	<hr/>
 		    		<p>Fitness, Pixar and sciences-fiction movies, reading books (all genre depending on my current interest), onboard games and video games (with friends and family), walk on the beach and in the hood...</p>
 		   	</section>
 	</>
