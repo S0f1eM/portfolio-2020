@@ -57,7 +57,7 @@ const Footer = () => {
                 target="_blank" 
                 aria-label="go to the codepen account"
                 rel="noopener noreferrer" >Codepen</a>
-        </small>   
+        </small>      
       </footer>
 	)
 }
