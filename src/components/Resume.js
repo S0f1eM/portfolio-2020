@@ -6,6 +6,8 @@ const Resume = props => {
 	const responsive="https://www.freecodecamp.org/certification/s0f1e/responsive-web-design";
 	const javascript="https://www.freecodecamp.org/certification/s0f1e/javascript-algorithms-and-data-structures";
 
+
+
 	return (		
     <>
 	    <h2 className="xp-and-skills" id="resume">Developer Resume</h2>
@@ -16,7 +18,7 @@ const Resume = props => {
 			          	company="ASI (IT and consulting company)"
 			         	intro="Missions on various bank companies intranets implemented templates & portlets with Jalios CMS."
 			         	content="Collaborated with designers to create clean interfaces and intuitive interactions."
-			         	skills="Java, jsp, Less, jQuery, JIRA, Jenkins, Eclipse, Gitlab..."
+			         	skills="Java, jsp, Less, jQuery, JIRA, Jenkins (CI/CD), Eclipse, Gitlab..."
 			    />
 			    <Card   title="Web Developer" 
 			          	date=" feb. 2017 - dec. 2018 (2 years)"
