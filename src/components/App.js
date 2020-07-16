@@ -7,7 +7,6 @@ import Resume from './Resume';
 import Contact from './Contact';
 import Footer from './Footer';
 
-
 const App = () => {
 
   return (

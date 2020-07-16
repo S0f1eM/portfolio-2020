@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import DarkModeToggle from './elements/DarkModeToggle';
+import './../css/DarkModeToggle.css';
 
 const Header = () => {
 
@@ -11,17 +12,19 @@ const Header = () => {
         	<li>
             <a href="/" 
                 aria-label="top of the page">
-                <h1 className="myName">Sophie <span className="mobile">M.</span></h1>
+                <h1 className="myName fade neon-blue">Sophie <span className="mobile neon-purple">M.</span></h1>
             </a>
           </li>
         	<li>
             <a href="/#projects"
                 aria-label="go to projects section" 
+                className="neon-blue"
                 rel="noopener noreferrer">Projects</a>
           </li>
         	<li>
             <Link to="/Resume"  
                   aria-label="go to Resume section"
+                  className="trav neon-purple"
                   rel="noopener noreferrer">Resume
            </Link>
           </li>
@@ -29,15 +32,18 @@ const Header = () => {
              <a href="/#contact"
                 aria-label="go to the contact section" 
                 aria-current="page"
+                className="neon-blue"
                 rel="noopener noreferrer">Contact</a>
+                <span className="only-dark-mode neon-purple">Me</span>
+          </li>
+          <li>
+          <DarkModeToggle />
           </li>
         </ul>
       </nav>
       <div className="About-me">
-        <p>I am a french developer who love front-end development. 
-        I had worked with various CMS and love coding with Javascript.
-        I search for a professionnal project to evolve with great people. Remote job are more than welcomed. 
-        Collaborate with a international team would be a thrilling experience for me.</p>
+        <p>I'm a french developer who love Front-End developement and Javascript. I had experiences with HTML/CSS/JS and CMS (WordPress, Plone, Prestashop, Jalios).
+        I search for a remote job to collaborate with an international team to grow with passionates people.</p>
       </div>
     </header>
 	)

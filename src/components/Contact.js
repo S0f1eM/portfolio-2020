@@ -8,8 +8,8 @@ const Contact = () => {
 	return (
   <>
     <section className="contact-me" id="contact">
-     	<h2>Get in touch</h2>
-        <h3>You search for a front-end developer or wanna talk about a project ? <br/>
+     	<h2 className="neon-purple">Get in touch</h2>
+        <h3 className="get-in-touch">You search for a front-end developer or wanna talk about a project ? <br/>
             Contact me ! let's see how we can work together.</h3>
         <hr/>
         <p>
@@ -17,7 +17,8 @@ const Contact = () => {
               alt='send an email' 
               target="_blank" 
               aria-label="send an email"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+              className="neon-blue">
                 Send an email
           </a>
         </p>
@@ -26,7 +27,8 @@ const Contact = () => {
               alt="twitter" 
               target="_blank" 
               aria-label="Contact me on twitter"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+              className="neon-blue">
                 DM @S0ph1eM
           </a>
         </p>
@@ -35,7 +37,8 @@ const Contact = () => {
               alt="linkedin" 
               target="_blank" 
               aria-label="Contact me on linkedin"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+              className="neon-blue">
                 Message on Linkedin
           </a>
         </p>
