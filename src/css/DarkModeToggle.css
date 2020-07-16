@@ -97,12 +97,8 @@ body.light-mode {
 	 transition: background-color 0.3s ease;
 }
 
-body.light-mode .dark-mode-toggle {
-	margin-left:360%;
-	margin-top: 25%;  
-}
-
-body.light-mode > div > header > nav > ul > li span.only-dark-mode.neon-purple {
+body.light-mode > div > header > nav > ul > li span.only-dark-mode.neon-purple,
+body.light-mode > div > footer > small a.little.neon-purple.only-dark-mode {
 	display: none;
 }
 
