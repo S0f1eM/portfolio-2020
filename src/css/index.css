@@ -26,10 +26,18 @@ body.light-mode .menu {
   font-size: 2em;
 }
 
+body.light-mode .dark-mode-toggle {
+  margin-left:360%;
+  margin-top: 25%;  
+}
+
+
 .menu {
   display: flex;
   list-style-type: none;
   padding: 0;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
  
 .menu li {
@@ -111,6 +119,12 @@ footer small {
   margin-right: 2em;
 }
 
+@media screen and (max-width: 1150px ) {
+  body.light-mode .dark-mode-toggle {
+  margin-left:0;
+  margin-top: 0;  
+  }
+}
 
 @media screen and (max-width: 768px ) {
   body {
@@ -120,6 +134,7 @@ footer small {
     display: none;
   }
   .menu {
+    font-size: 1.3em;
   }
   .myName {
     font-size: 1.8em;
