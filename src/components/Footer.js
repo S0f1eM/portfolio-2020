@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ScrollTo from './ScrollTo';
+import ScrollTo from './elements/ScrollTo';
 
 const Footer = () => {
   
@@ -15,18 +15,21 @@ const Footer = () => {
             <a  href="/" 
                 aria-label="go to top of the page"
                 rel="noopener noreferrer"
+                className="neon-purple"
                 >2020 - Sophie Marchand</a>
         </small>
          <small>
             <a  href="/#projects" 
                 aria-label="go to the projects"
                 aria-current="page" 
+                className="neon-blue"
                 rel="noopener noreferrer">Projects</a>
         </small>
         <ScrollTo>
              <small>
                 <Link to="/Resume" 
                     aria-label="go to Resume"
+                    className="neon-blue"
                     rel="noopener noreferrer">Resume</Link>
             </small>
         </ScrollTo>
@@ -35,6 +38,7 @@ const Footer = () => {
                 alt="github" 
                 target="_blank" 
                 aria-label="go to the github account"
+                className="neon-blue"
                 rel="noopener noreferrer" >Github</a>
         </small>
         <small>
@@ -42,6 +46,7 @@ const Footer = () => {
                 alt="linkedin" 
                 target="_blank" 
                 aria-label="go to the linkedin account"
+                className="neon-blue"
                 rel="noopener noreferrer" >Linkedin</a>
         </small>   
         <small>
@@ -49,6 +54,7 @@ const Footer = () => {
                 alt="twitter" 
                 target="_blank" 
                 aria-label="go to the twitter account"
+                className="neon-blue"
                 rel="noopener noreferrer" >Twitter</a>
         </small>
          <small>
@@ -56,8 +62,19 @@ const Footer = () => {
                 alt="codepen" 
                 target="_blank" 
                 aria-label="go to the codepen account"
+                className="neon-blue"
                 rel="noopener noreferrer" >Codepen</a>
-        </small>      
+        </small> 
+        <small>
+            <a href='https://codepen.io/lvrbrtsn'
+            alt="codepen-user"
+            target="_blank" 
+            aria-label="go to the codepend author account"
+            className="little neon-purple"
+            rel="noopener noreferrer" >
+                Thanks & Credits to Levi Robertson for the neon effects
+            </a>
+        </small>     
       </footer>
 	)
 }
