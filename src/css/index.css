@@ -27,15 +27,16 @@ body.light-mode .menu {
 }
 
 body.light-mode .dark-mode-toggle {
-  margin-left:360%;
-  margin-top: 25%;  
+  margin-top: 5%;
 }
-
 
 .menu {
   display: flex;
   list-style-type: none;
   padding: 0;
+}
+
+body.light-mode .menu {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
@@ -120,9 +121,14 @@ footer small {
 }
 
 @media screen and (max-width: 1150px ) {
-  body.light-mode .dark-mode-toggle {
-  margin-left:0;
-  margin-top: 0;  
+
+  body.light-mode .menu,
+  body.dark-mode .menu {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  }
+  .myName {
+    font-size: 1.5em;
   }
 }
 
@@ -130,14 +136,20 @@ footer small {
   body {
     font-size: 0.7em;
   }
+  .menu h1 {
+    display: none;
+  }
+  body.dark-mode .neon-blue {
+    font-size: 1.5em;
+  }
+  body.dark-mode .neon-purple {
+    font-size:2em;
+  }
   .mobile {
     display: none;
   }
   .menu {
     font-size: 1.3em;
-  }
-  .myName {
-    font-size: 1.8em;
   }
   .About-me {
     margin-bottom: 15%;
