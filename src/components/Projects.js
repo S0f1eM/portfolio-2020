@@ -5,9 +5,8 @@ const Works = () => {
 
 	return (
 	<>
-    <h2 id="projects" className="neon-purple">Projects</h2> 
-      <section className="main-works">
-        
+    <section className="main-works">
+      <h2 id="projects" className="neon-purple">Projects</h2> 
         <Card  
           title="Portfolio 2020" 
           content="A static portfolio build with Reactjs."

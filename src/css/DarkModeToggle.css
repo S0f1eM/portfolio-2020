@@ -92,9 +92,9 @@
 }
 
 body.light-mode {
-	 background-color: #fff;
+	 background-color: #f2ecc9;
 	 color: #333;
-	 transition: background-color 0.3s ease;
+	 transition: background-color 1s ease-out;
 }
 
 body.light-mode > div > header > nav > ul > li span.only-dark-mode.neon-purple,
@@ -107,6 +107,8 @@ body.dark-mode {
 	 color: #fff;
 	 font-family: 'Nixie One', 'Raleway', Helvetica, Arial, sans-serif;
 	 font-weight: 800;
+  transition: background-color 1s ease-out;
+
 }
 
  body.dark-mode a {
@@ -244,6 +246,10 @@ body.dark-mode hr {
 	display: none;
 }
 
+body.dark-mode section {
+  text-align: center;
+}
+
 
 body.dark-mode .main-works p {
 	text-align: center;
@@ -253,14 +259,17 @@ body.dark-mode .main-works p.dark-purple {
 	font-size: 0.9em;
 }
  
-body.dark-mode .contact-me .neon-purple,
-body.dark-mode h2#projects.neon-purple,
-body.dark-mode h2.xp-and-skills.neon-purple {
+body.dark-mode h2.neon-purple {
+  text-align: center;
 	font-size: 3.5em;
-	margin: 5% 0 4%;
+	margin-bottom: 4%;
 	-ms-transform: rotate(-3deg);
-    -webkit-transform: rotate(-3deg);
-    transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+#contact h2 .neon-purple{
+  margin-top: 5%;
 }
 
 body.dark-mode h3.neon-blue,
@@ -286,13 +295,15 @@ body.dark-mode .About-me,
 body.dark-mode .contact-me  {
 	font-size: 0.9em;
 	font-weight: 800;
-    text-align: center;
+  text-align: center;
+}
+
+body.dark-mode .contact-me,
+body.dark-mode .skills-interests,
+body.dark-mode .education  {
+  margin-top: 10%;
 }
 
 body.dark-mode .contact-me p {
 	font-size: 0.8em;
-}
-
-body.dark-mode .main-xp  {
-	text-align: center;
 }

@@ -42,7 +42,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="About-me">
-        <p>I'm a french developer who love Front-End developement and Javascript. I had experiences with HTML/CSS/JS and CMS (WordPress, Plone, Prestashop, Jalios).
+        <p>I'm a french developer who love <b>Front-End developement</b> and <b>Javascript</b>. I had experiences with <b>HTML/CSS/JS</b> and <b>CMS</b> (WordPress, Plone, Prestashop, Jalios).
         I search for a remote job to collaborate with an international team to grow with passionates people.</p>
       </div>
     </header>
