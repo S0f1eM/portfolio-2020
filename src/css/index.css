@@ -14,11 +14,12 @@ a {
   color:#333;
 }
 
-body .ligth-mode h2, 
-body .ligth-mode h1,
-body .ligth-mode a:hover,
-body .ligth-mode h1 span,
-body .ligth-mode .main-works h3:hover {
+body.light-mode h2, 
+body.light-mode h1,
+body.light-mode h1 span,
+body.light-mode a:hover,
+body.light-mode .main-works h3:hover,
+body.light-mode b {
   color: #ec1260;
 }
 
@@ -27,6 +28,12 @@ body.light-mode .menu {
 }
 
 body.light-mode .dark-mode-toggle {
+  margin-top: 5%;
+}
+
+body.dark-mode .contact-me,
+body.dark-mode .skills-interests,
+body.dark-mode .education  {
   margin-top: 5%;
 }
 
@@ -55,9 +62,14 @@ h1 {
   font-weight: 200;
 }
 
+#projects {
+  width: 100%;
+}
+
 .myName {
   font-size: 2.2em;
   margin: 0;
+  color: #ec1260;
 }
 
 .myName, h2 {
@@ -77,6 +89,7 @@ h1 {
   width: calc(25% - 2em);
 }
 
+
 h2 {
   font-size: 3.5em;
   font-weight: 500;
@@ -90,7 +103,7 @@ h3 {
 .About-me p {
   font-size: 1.5em;
   font-weight: 800;
-  margin:5% 0;
+  margin:5% 0 0;
   font-weight: bold;
 }
 
@@ -107,7 +120,6 @@ h3 {
 
 .main-xp .card:not(:first-child) {
   width: calc(100% - 2em);
-  margin: 4% 0;
 }
 
 footer {
@@ -130,6 +142,12 @@ footer small {
   .myName {
     font-size: 1.5em;
   }
+  body.dark-mode h2.neon-purple{
+    margin-top: 10%;
+  }
+  footer {
+    margin-top: 10%;
+  }
 }
 
 @media screen and (max-width: 768px ) {
@@ -150,9 +168,6 @@ footer small {
   }
   .menu {
     font-size: 1.3em;
-  }
-  .About-me {
-    margin-bottom: 15%;
   }
   .main-works .card,
   .profil .social {

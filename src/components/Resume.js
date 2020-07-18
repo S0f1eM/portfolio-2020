@@ -10,9 +10,8 @@ const Resume = props => {
 
 	return (		
     <>
-	    <h2 className="xp-and-skills neon-purple" id="resume">Developer Resume</h2>
-
-		    <section className="main-xp">
+		<section className="main-xp">
+			<h2 className="xp-and-skills neon-purple" id="resume">Developer Resume</h2>
 			    <Card 	title="Analyst Developer" 
 			          	date="oct. 2019 - today"
 			          	company="ASI (IT and consulting company)"
@@ -29,10 +28,10 @@ const Resume = props => {
 			          	tasks="Migration from Plone to Wordpress, integration of the design, built and implemented custom contents (CPT)."
                         more="Development of a custom plugin for the university directory database (postgre to MySQL, PHP, JavaScript)."
 			    />
-			</section>
+		</section>
 
-		<h2 className="xp-and-skills neon-purple" id="resume">Education</h2>
-		    <section className="main-xp">
+		<section className="education">
+			<h2 className="xp-and-skills neon-purple" id="resume">Education</h2>
 			    <Card 	title="2016 - Web Developer Certification"	
 					    date="Bootcamp with Simplon.co (apr. 2016 - nov. 2016)"
                 		content="Learning basics : HTML5, CSS (Bootstrap), JavaScript (ES5), versioning."
@@ -40,8 +39,8 @@ const Resume = props => {
                 />
 			</section> 
 
-		<h2 className="xp-and-skills neon-purple" id="resume">Skills & Interests</h2>
-		    <section className="main-xp">
+		<section className="skills-interests">
+			<h2 className="xp-and-skills neon-purple" id="resume">Skills & Interests</h2>
 		    	<h3 className="neon-blue">Self study </h3>
 		    	<hr/>
                 	<p> Javascript ES6/ES7, API, OOP, functionnal programming, CSS Grid, Flexbox, clean code (DRY)...</p>
