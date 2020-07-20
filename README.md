@@ -24,6 +24,7 @@ This is the website I use for my 2020 portfolio.
 
 ## To do<a name="todo"></a>
 
+- [ ]  Lighttheme
 - [ ]  hightlights hover links
 - [ ]  Checking A11y 
 
