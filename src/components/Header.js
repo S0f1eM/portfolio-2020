@@ -33,7 +33,7 @@ const Header = () => {
                 aria-current="page"
                 className="neon-blue"
                 rel="noopener noreferrer">Contact</a>
-                <span className="only-dark-mode neon-purple">Me</span>
+                <span className="only-dark-mode neon-purple fade">Me</span>
           </li>
           <li>
           <DarkModeToggle />

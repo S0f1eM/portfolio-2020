@@ -114,12 +114,14 @@ body.light-mode > div > footer > small a.little.neon-purple.only-dark-mode {
   display: none;
 }
 
-body.light-mode h2, 
-body.light-mode h1,
-body.light-mode h1 span,
-body.light-mode a:hover,
-body.light-mode .main-works h3:hover,
-body.light-mode b {
+
+
+body.light-mode a:hover {
+  color: #33beb7;
+}
+
+
+body.light-mode .main-works h3:hover {
   color: #ec1260;
 }
 
@@ -231,7 +233,6 @@ h1 {
 .myName {
   font-size: 2.2em;
   margin: 0;
-  color: #ec1260;
 }
 
 .myName, h2 {
@@ -313,20 +314,24 @@ body.dark-mode {
   font-size: 1.5em;
 }
 
-body.dark-mode a:hover {
-    color:#fff;
+body.dark-mode a:hover,
+body.dark-mode h3.neon-blue:hover,
+body.dark-mode h1.myName:hover,
+body.dark-mode h1.myName > span.mobile.neon-purple:hover {
+  color:#fff;
+  text-shadow: 20px 20px 10px rgba(0,0,0,0.5), 0 0 20px #ec1260, 0 0 10px #ec1260, 20px 20px 50px #ec1260;
 }
- body.dark-mode .dark-mode-toggle > button {
-   color: #999;
+
+body.dark-mode .dark-mode-toggle > button {
+  color: #999;
 }
 
 body.dark-mode nav {
   -ms-transform: rotate(-3deg);
-    -webkit-transform: rotate(-3deg);
-    transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
 }
 
- 
  body.dark-mode .neon-purple {
   font-family: 'League Script', 'Sacramento', Helvetica, Arial, sans-serif;
   font-size: 2.5em;
@@ -353,9 +358,9 @@ body.dark-mode .neon-blue {
 }
 
  body.dark-mode .fade {
-  opacity: 0.8;
-  color: #ebffff;
-  text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
+/*  opacity: 0.8;
+*//*  color: #ebffff;
+*/  text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
   -webkit-animation: fade 3s infinite alternate;
   -moz-animation: fade 3s infinite alternate;
   -o-animation: fade 3s infinite alternate;
@@ -398,6 +403,7 @@ body.dark-mode .main-works p.dark-purple {
 body.dark-mode h2.neon-purple {
   text-align: center;
   font-size: 3.5em;
+  font-weight: bold;
   margin-bottom: 4%;
   -ms-transform: rotate(-3deg);
   -webkit-transform: rotate(-3deg);
