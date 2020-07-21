@@ -105,8 +105,9 @@ a {
 }
 
 body.light-mode {
-   color: #333;
-   transition: background-color 1s ease-out;
+  color: #6C6C6C;
+  transition: background-color 1s ease-out;
+  background: #F1F2F2;
 }
 
 body.light-mode > div > header > nav > ul > li span.only-dark-mode.neon-purple,
@@ -114,23 +115,37 @@ body.light-mode > div > footer > small a.little.neon-purple.only-dark-mode {
   display: none;
 }
 
-
-
 body.light-mode a:hover {
-  color: #33beb7;
+  color: #F09678;
 }
 
-
 body.light-mode .main-works h3:hover {
-  color: #ec1260;
+  color: #F09678;
 }
 
 body.light-mode .menu {
-  font-size: 2em;
+  font-size: 2.8em;
+}
+
+body.light-mode .menu li a:hover,
+body.light-mode .menu li h1:hover
+ {
+  color: #7C95CC;
+}
+
+body.light-mode .menu {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-family: 'Sacramento'; 
 }
 
 body.light-mode .dark-mode-toggle {
   margin-top: 5%;
+}
+
+body.light-mode .menu li a,
+body.light-mode .light-grey {
+  color: #F09678;
 }
 
 .dark-mode-toggle {
@@ -142,7 +157,7 @@ body.light-mode .dark-mode-toggle {
    font-size: 1em;
    background: none;
    border: none;
-   color: #ffe600;
+   color: #E9B32D;
    cursor: pointer;
    transition: color 0.3s ease;
    padding: 0;
@@ -179,14 +194,17 @@ body.light-mode .dark-mode-toggle {
    vertical-align: 2px;
    outline: none;
 }
+
  input[type='checkbox'].smcheck:checked + label {
    left: 30px;
    background-color: lightgrey;
 
 }
+
  input[type='checkbox'].smcheck:focus-visible {
    outline: solid 2px white;
 }
+
  input[type='checkbox'].smcheck + label {
    display: inline-block;
    width: 18px;
@@ -207,11 +225,6 @@ body.light-mode .dark-mode-toggle {
   padding: 0;
 }
 
-body.light-mode .menu {
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
- 
 .menu li {
   padding-right: 3%;
 }
@@ -222,21 +235,24 @@ body.light-mode .menu {
   justify-content: center;
 }
 
-h1 {
+
+body.light-mode h1 {
   font-weight: 200;
+  margin: 0;
+  color: #F09678;
 }
 
 #projects {
   width: 100%;
 }
 
-.myName {
-  font-size: 2.2em;
-  margin: 0;
+body.light-mode h2 {
+  font-family: 'Sacramento'; 
+  color: #F09678;
 }
 
-.myName, h2 {
-  font-family: 'Sacramento'; 
+body.light-mode .main-works h3 {
+  color: #7C95CC;
 }
 
 .profil {
@@ -263,8 +279,9 @@ h3 {
   font-weight: 800;
   font-size: 1.3em;
 }
+
 .About-me p {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 800;
   margin:5% 0 0;
   font-weight: bold;
@@ -311,7 +328,7 @@ body.dark-mode {
 }
 
  body.dark-mode .menu {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 body.dark-mode a:hover,
@@ -440,10 +457,13 @@ body.dark-mode .contact-me  {
   text-align: center;
 }
 
-body.dark-mode .contact-me,
 body.dark-mode .skills-interests,
 body.dark-mode .education  {
   margin-top: 10%;
+}
+
+body.dark-mode .contact-me {
+  margin-top: 5%;
 }
 
 body.dark-mode .contact-me p {
