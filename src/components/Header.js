@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import DarkModeToggle from './elements/DarkModeToggle';
-import './../css/DarkModeToggle.css';
 
 const Header = () => {
 
