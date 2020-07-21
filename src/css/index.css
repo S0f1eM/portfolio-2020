@@ -1,5 +1,95 @@
-
+@import url("https://fonts.googleapis.com/css?family=Nixie+One");
+@import url("https://fonts.googleapis.com/css?family=League+Script");
 @import url('https://fonts.googleapis.com/css?family=Sacramento|Raleway&display=swap');
+
+@-moz-keyframes blink {
+  70% {
+    opacity: 0.7;
+  }
+}
+@-webkit-keyframes blink {
+  45% {
+    opacity: 0.5;
+  }
+}
+@-o-keyframes blink {
+  70% {
+    opacity: 0.7;
+  }
+}
+@keyframes blink {
+  70% {
+    opacity: 0.7;
+  }
+}
+@-moz-keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@-o-keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
 
 body {
   font-family: 'Raleway';
@@ -14,12 +104,24 @@ a {
   color:#333;
 }
 
-body.light-mode h2, 
-body.light-mode h1,
-body.light-mode h1 span,
-body.light-mode a:hover,
-body.light-mode .main-works h3:hover,
-body.light-mode b {
+body.light-mode {
+   color: #333;
+   transition: background-color 1s ease-out;
+}
+
+body.light-mode > div > header > nav > ul > li span.only-dark-mode.neon-purple,
+body.light-mode > div > footer > small a.little.neon-purple.only-dark-mode {
+  display: none;
+}
+
+
+
+body.light-mode a:hover {
+  color: #33beb7;
+}
+
+
+body.light-mode .main-works h3:hover {
   color: #ec1260;
 }
 
@@ -31,10 +133,72 @@ body.light-mode .dark-mode-toggle {
   margin-top: 5%;
 }
 
-body.dark-mode .contact-me,
-body.dark-mode .skills-interests,
-body.dark-mode .education  {
-  margin-top: 5%;
+.dark-mode-toggle {
+   display: flex;
+   margin: 0 auto;
+}
+ 
+.dark-mode-toggle > button {
+   font-size: 1em;
+   background: none;
+   border: none;
+   color: #ffe600;
+   cursor: pointer;
+   transition: color 0.3s ease;
+   padding: 0;
+   margin: 0;
+}
+ 
+.dark-mode-toggle > button:last-child {
+   color: #666;
+   margin-top: -4%;
+   margin-left: 5px;
+}
+ 
+.dark-mode-toggle > button:focus {
+   outline: none;
+}
+ 
+.toggle-control {
+   position: relative;
+   padding: 0 2px;
+   display: flex;
+   align-items: center;
+}
+
+ input[type='checkbox'].smcheck {
+   width: 40px;
+   height: 20px;
+   background: #555;
+   position: relative;
+   border-radius: 25px;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   cursor: pointer;
+   vertical-align: 2px;
+   outline: none;
+}
+ input[type='checkbox'].smcheck:checked + label {
+   left: 30px;
+   background-color: lightgrey;
+
+}
+ input[type='checkbox'].smcheck:focus-visible {
+   outline: solid 2px white;
+}
+ input[type='checkbox'].smcheck + label {
+   display: inline-block;
+   width: 18px;
+   height: 18px;
+   border-radius: 50%;
+   transition: all 0.3s ease;
+   cursor: pointer;
+   position: absolute;
+   left: 6px;
+   background: #fff;
+   opacity: 0.9;
+   background-color: #f6f6f6;
 }
 
 .menu {
@@ -69,7 +233,6 @@ h1 {
 .myName {
   font-size: 2.2em;
   margin: 0;
-  color: #ec1260;
 }
 
 .myName, h2 {
@@ -131,6 +294,164 @@ footer {
 footer small {
   margin-right: 2em;
 }
+
+/*---------------------------------------
+Darktheme - Darkmode CSS----------------*/
+
+body.dark-mode {
+   background-color: #10171d;
+   color: #fff;
+   font-family: 'Nixie One', 'Raleway', Helvetica, Arial, sans-serif;
+   font-weight: 800;
+  transition: background-color 1s ease-out;
+}
+
+ body.dark-mode a {
+   color: #fff;
+}
+
+ body.dark-mode .menu {
+  font-size: 1.5em;
+}
+
+body.dark-mode a:hover,
+body.dark-mode h3.neon-blue:hover,
+body.dark-mode h1.myName:hover,
+body.dark-mode h1.myName > span.mobile.neon-purple:hover {
+  color:#fff;
+  text-shadow: 20px 20px 10px rgba(0,0,0,0.5), 0 0 20px #ec1260, 0 0 10px #ec1260, 20px 20px 50px #ec1260;
+}
+
+body.dark-mode .dark-mode-toggle > button {
+  color: #999;
+}
+
+body.dark-mode nav {
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+ body.dark-mode .neon-purple {
+  font-family: 'League Script', 'Sacramento', Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  margin: 0 auto;
+  color: #ccf;
+  text-align: center;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.5), 0 0 20px #fff, 0 0 10px #7d26cd, 0 0 50px #7d26cd;
+}
+
+ 
+ body.dark-mode .dark-purple {
+  color: #ccf;
+  text-align: center;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.5), 0 0 20px #fff, 0 0 10px #7d26cd, 0 0 50px #7d26cd;
+}
+
+body.dark-mode .neon-blue {
+  font-family: 'Nixie One', 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  margin: 0 auto;
+  color: #ebffff;
+  text-align: center;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
+}
+
+ body.dark-mode .fade {
+/*  opacity: 0.8;
+*//*  color: #ebffff;
+*/  text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
+  -webkit-animation: fade 3s infinite alternate;
+  -moz-animation: fade 3s infinite alternate;
+  -o-animation: fade 3s infinite alternate;
+  animation: fade 3s infinite alternate;
+}
+
+ body.dark-mode .trav {
+  -webkit-animation: blink 0.01s infinite alternate;
+  -moz-animation: blink 0.01s infinite alternate;
+  -o-animation: blink 0.01s infinite alternate;
+  animation: blink 0.01s infinite alternate;
+}
+
+ body.dark-mode .dark-mode-toggle > button:last-child {
+   color: wheat;
+}
+
+body.dark-mode .contact-me,
+body.dark-mode .skills-interests,
+body.dark-mode .education  {
+  margin-top: 5%;
+}
+
+body.dark-mode hr {
+  display: none;
+}
+
+body.dark-mode section {
+  text-align: center;
+}
+
+body.dark-mode .main-works p {
+  text-align: center;
+}
+
+body.dark-mode .main-works p.dark-purple {
+  font-size: 0.9em;
+}
+ 
+body.dark-mode h2.neon-purple {
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 4%;
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+#contact h2 .neon-purple{
+  margin-top: 5%;
+}
+
+body.dark-mode h3.neon-blue,
+body.dark-mode h3.get-in-touch {
+  font-size: 1.5em;
+  margin: 2%;
+}
+
+body.dark-mode footer {
+  text-align: center;
+  display: block;
+}
+
+body.dark-mode footer small {
+  font-size: 0.4em;
+}
+
+body.dark-mode .About-me p {
+  margin: 4% 0 10% 0;
+}
+
+body.dark-mode .About-me,
+body.dark-mode .contact-me  {
+  font-size: 0.9em;
+  font-weight: 800;
+  text-align: center;
+}
+
+body.dark-mode .contact-me,
+body.dark-mode .skills-interests,
+body.dark-mode .education  {
+  margin-top: 10%;
+}
+
+body.dark-mode .contact-me p {
+  font-size: 0.8em;
+}
+
+/*----------------------------------
+Media queries ----------------------*/
 
 @media screen and (max-width: 1150px ) {
 

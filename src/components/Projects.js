@@ -35,7 +35,7 @@ const Works = () => {
           title="Bootstrap parallax" 
           content="A responsive portfolio made with bootstrap in 2016."
           skills="Stack : HTML5 - CSS3 - jQuery - Bootstrap"
-          url=" bootstrap-portfolio.surge.sh "
+          url="https://bootstrap-portfolio.surge.sh "
         />
         <Card 
           title="WordPress Plugin" 
