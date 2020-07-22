@@ -15,21 +15,21 @@ const Footer = () => {
             <a  href="/" 
                 aria-label="go to top of the page"
                 rel="noopener noreferrer"
-                className="neon-purple"
+                className="nav neon-purple"
                 >2020 - Sophie Marchand</a>
         </small>
          <small>
             <a  href="/#projects" 
                 aria-label="go to the projects"
                 aria-current="page" 
-                className="neon-blue"
+                className="nav neon-blue"
                 rel="noopener noreferrer">Projects</a>
         </small>
         <ScrollTo>
              <small>
                 <Link to="/Resume" 
                     aria-label="go to Resume"
-                    className="neon-blue"
+                    className="nav neon-blue"
                     rel="noopener noreferrer">Resume</Link>
             </small>
         </ScrollTo>

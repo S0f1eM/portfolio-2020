@@ -95,13 +95,18 @@ body {
   font-family: 'Raleway';
   margin: 5% 8%;
 }
-p {
+
+body.light-mode p {
   font-size:1.1em;
 }
 
-a {
+a, hr {
   text-decoration: none;
-  color:#333;
+  color: #6C6C6C;
+}
+
+body.light-mode a:hover:not(.nav) {
+  color: #7c95cc;
 }
 
 body.light-mode {
@@ -115,12 +120,12 @@ body.light-mode > div > footer > small a.little.neon-purple.only-dark-mode {
   display: none;
 }
 
-body.light-mode a:hover {
-  color: #F09678;
+body.light-mode .main-works a:hover {
+  color: #e55c96;
 }
 
 body.light-mode .main-works h3:hover {
-  color: #F09678;
+  color: #7c95cc;
 }
 
 body.light-mode .menu {
@@ -128,9 +133,9 @@ body.light-mode .menu {
 }
 
 body.light-mode .menu li a:hover,
-body.light-mode .menu li h1:hover
- {
-  color: #7C95CC;
+body.light-mode .menu li h1:hover,
+html body.light-mode a.nav:hover {
+  color: #f44544;
 }
 
 body.light-mode .menu {
@@ -146,6 +151,10 @@ body.light-mode .dark-mode-toggle {
 body.light-mode .menu li a,
 body.light-mode .light-grey {
   color: #F09678;
+}
+
+body.dark-mode p {
+  font-size:1.2em;
 }
 
 .dark-mode-toggle {
@@ -251,8 +260,8 @@ body.light-mode h2 {
   color: #F09678;
 }
 
-body.light-mode .main-works h3 {
-  color: #7C95CC;
+body.light-mode h3:not(.get-in-touch)  {
+  color: #6C6C6C;
 }
 
 .profil {
@@ -281,11 +290,19 @@ h3 {
 }
 
 .About-me p {
-  font-size: 1.3em;
   font-weight: 800;
   margin:5% 0 0;
   font-weight: bold;
 }
+
+body.light-mode .About-me p {
+  font-size: 1.3em;
+}
+
+body.dark-mode .About-me p {
+  font-size: 1.5em;
+}
+
 
 .main-works {
   display: flex;
