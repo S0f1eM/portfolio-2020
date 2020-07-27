@@ -11,7 +11,7 @@ const Footer = () => {
 
 	return (
      <footer>
-        <small className="mobile">
+           <small className="mobile">
             <a  href="/" 
                 aria-label="go to top of the page"
                 rel="noopener noreferrer"

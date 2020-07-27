@@ -16,19 +16,20 @@ const ProjectCard = props => {
           className="smcard-img"
         />
           <p>{props.content}</p>
-          <p className="dark-purple">{props.skills}</p>
+          <p className="dark-purple nixie"><b className="beBold">Technologies</b> : {props.skills}
+          </p>
           <p>
           <a href={props.url} 
              target="_blank" 
              rel="noopener noreferrer" 
              aria-label={props.content}
-             className="card_website"
+             className="card_website beBold"
           >{`${website}`}</a>
           <a href={props.github} 
               target="_blank" 
               rel="noopener noreferrer" 
               aria-label={props.content}
-              className="card_github"
+              className="card_github beBold"
           > {`${repo}`}</a>
           </p>
     </div>
