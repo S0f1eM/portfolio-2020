@@ -1,0 +1,39 @@
+import React from 'react';
+
+
+
+const ProjectCard = props => {
+
+  const repo = props.github ? 'Github' : '';
+  const website = props.url ? 'Website' : '';
+
+	return (
+    <div className="card">
+        <h3 className="neon-blue">{props.title}</h3>
+        <img  
+          src={props.img} 
+          alt={props.title} 
+          className="smcard-img"
+        />
+          <p>{props.content}</p>
+          <p className="dark-purple">{props.skills}</p>
+          <p>
+          <a href={props.url} 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             aria-label={props.content}
+             className="card_website"
+          >{`${website}`}</a>
+          <a href={props.github} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label={props.content}
+              className="card_github"
+          > {`${repo}`}</a>
+          </p>
+    </div>
+	)
+}
+
+
+export default ProjectCard;

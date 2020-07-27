@@ -97,7 +97,7 @@ body {
 }
 
 body.light-mode p {
-  font-size:1.1em;
+  font-size:1.3em;
 }
 
 a, hr {
@@ -124,12 +124,32 @@ body.light-mode .main-works a:hover {
   color: #e55c96;
 }
 
-body.light-mode .main-works h3:hover {
-  color: #7c95cc;
+.menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  padding-right: 3%;
+}
+
+.menu li:not(.myName) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body.light-mode .menu {
-  font-size: 2.8em;
+  font-size: 3em;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-family: 'Sacramento'; 
+}
+
+body.light-mode .menu li a,
+body.light-mode .light-grey {
+  color: #F09678;
 }
 
 body.light-mode .menu li a:hover,
@@ -138,21 +158,9 @@ html body.light-mode a.nav:hover {
   color: #f44544;
 }
 
-body.light-mode .menu {
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  font-family: 'Sacramento'; 
-}
-
 body.light-mode .dark-mode-toggle {
   margin-top: 5%;
 }
-
-body.light-mode .menu li a,
-body.light-mode .light-grey {
-  color: #F09678;
-}
-
 body.dark-mode p {
   font-size:1.2em;
 }
@@ -228,23 +236,6 @@ body.dark-mode p {
    background-color: #f6f6f6;
 }
 
-.menu {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-}
-
-.menu li {
-  padding-right: 3%;
-}
-
-.menu li:not(.myName) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
 body.light-mode h1 {
   font-weight: 200;
   margin: 0;
@@ -254,6 +245,11 @@ body.light-mode h1 {
 #projects {
   width: 100%;
 }
+
+.card_github {
+  margin-left: 2em;
+}
+
 
 body.light-mode h2 {
   font-family: 'Sacramento'; 
@@ -286,7 +282,8 @@ h2 {
 
 h3 {
   font-weight: 800;
-  font-size: 1.3em;
+  font-size: 1.5em;
+  margin-top: 2em;
 }
 
 .About-me p {
@@ -295,11 +292,7 @@ h3 {
   font-weight: bold;
 }
 
-body.light-mode .About-me p {
-  font-size: 1.3em;
-}
-
-body.dark-mode .About-me p {
+body .About-me p {
   font-size: 1.5em;
 }
 
@@ -312,11 +305,16 @@ body.dark-mode .About-me p {
 }
 
 .main-works .card {
-  width: calc(33.33% - 2em);
+  width: calc(50% - 2em);
 }
 
 .main-xp .card:not(:first-child) {
   width: calc(100% - 2em);
+}
+
+.smcard-img {
+  width: 100%;
+  height: auto;
 }
 
 footer {

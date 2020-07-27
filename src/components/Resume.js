@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import ResumeCard from './ResumeCard';
 
 const Resume = props => {
 
@@ -7,35 +7,37 @@ const Resume = props => {
 	const javascript="https://www.freecodecamp.org/certification/s0f1e/javascript-algorithms-and-data-structures";
 
 
-
 	return (		
     <>
 		<section className="main-xp">
 			<h2 className="xp-and-skills neon-purple" id="resume">Developer Resume</h2>
-			    <Card 	title="Analyst Developer" 
-			          	date="oct. 2019 - today"
-			          	company="ASI (IT and consulting company)"
-			         	intro="Missions on various bank companies intranets implemented templates & portlets with Jalios CMS."
-			         	content="Collaborated with designers to create clean interfaces and intuitive interactions."
-			         	skills="Java, jsp, Less, jQuery, JIRA, Jenkins (CI/CD), Eclipse, Gitlab..."
+			    <ResumeCard 
+			        title="Analyst Developer" 
+			        date="oct. 2019 - today"
+			        company="ASI (IT and consulting company)"
+			        intro="Missions on various bank companies intranets implemented templates & portlets with Jalios CMS."
+			        content="Collaborated with designers to create clean interfaces and intuitive interactions."
+			        skills="Java, jsp, Less, jQuery, JIRA, Jenkins (CI/CD), Eclipse, Gitlab..."
 			    />
-			    <Card   title="Web Developer" 
-			          	date=" feb. 2017 - dec. 2018 (2 years)"
-			          	company="IUEM - National education (public official contract)"
-			          	intro="My first job as a developer : it was a great challenge and a success."
-			          	content="2017: Users support on Plone CMS (CSS, JS, Python). Fixing bug, CSS and content on new intranet."
-			          	works=" 2018: Project management and developement on the 4 main sites rebuild."
-			          	tasks="Migration from Plone to Wordpress, integration of the design, built and implemented custom contents (CPT)."
-                        more="Development of a custom plugin for the university directory database (postgre to MySQL, PHP, JavaScript)."
+			    <ResumeCard 
+			        title="Web Developer" 
+			        date=" feb. 2017 - dec. 2018 (2 years)"
+			        company="IUEM - National education (public official contract)"
+			        intro="My first job as a developer : it was a great challenge and a success."
+			       	content="2017: Users support on Plone CMS (CSS, JS, Python). Fixing bug, CSS and content on new intranet."
+			      	works=" 2018: Project management and developement on the 4 main sites rebuild."
+			       	tasks="Migration from Plone to Wordpress, integration of the design, built and implemented custom contents (CPT)."
+                    more="Development of a custom plugin for the university directory database (postgre to MySQL, PHP, JavaScript)."
 			    />
 		</section>
 
 		<section className="education">
 			<h2 className="xp-and-skills neon-purple" id="resume">Education</h2>
-			    <Card 	title="2016 - Web Developer Certification"	
-					    date="Bootcamp with Simplon.co (apr. 2016 - nov. 2016)"
-                		content="Learning basics : HTML5, CSS (Bootstrap), JavaScript (ES5), versioning."
-                		more="Introduction to mySQL, PHP, React, Vim..."
+			    <ResumeCard 	
+			    	title="2016 - Web Developer Certification"	
+				    date="Bootcamp with Simplon.co (apr. 2016 - nov. 2016)"
+               		content="Learning basics : HTML5, CSS (Bootstrap), JavaScript (ES5), versioning."
+               		more="Introduction to mySQL, PHP, React, Vim..."
                 />
 			</section> 
 
