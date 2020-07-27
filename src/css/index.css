@@ -112,7 +112,7 @@ body.light-mode a:hover:not(.nav) {
 body.light-mode {
   color: #6C6C6C;
   transition: background-color 1s ease-out;
-  background: #F1F2F2;
+  background: #f7f7f7;
 }
 
 body.light-mode > div > header > nav > ul > li span.only-dark-mode.neon-purple,
@@ -161,8 +161,17 @@ html body.light-mode a.nav:hover {
 body.light-mode .dark-mode-toggle {
   margin-top: 5%;
 }
+
+body.light-mode .dark-mode-toggle > button {
+   font-size: 0.6em;
+}
+
 body.dark-mode p {
   font-size:1.2em;
+}
+
+body.dark-mode .dark-mode-toggle > button {
+   font-size: 1em;
 }
 
 .dark-mode-toggle {
@@ -171,7 +180,6 @@ body.dark-mode p {
 }
  
 .dark-mode-toggle > button {
-   font-size: 1em;
    background: none;
    border: none;
    color: #E9B32D;
@@ -308,6 +316,10 @@ body .About-me p {
   width: calc(50% - 2em);
 }
 
+.beBold {
+  font-weight: 800;
+}
+
 .main-xp .card:not(:first-child) {
   width: calc(100% - 2em);
 }
@@ -317,7 +329,7 @@ body .About-me p {
   height: auto;
 }
 
-footer {
+body footer {
   display: flex;
   justify-content: flex-start;
   margin-top: 6%;
@@ -330,24 +342,30 @@ footer small {
 /*---------------------------------------
 Darktheme - Darkmode CSS----------------*/
 
+body.dark-mode .nixie {
+  font-family: 'Nixie One', 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+body.dark-mode .league {
+  font-family: 'League Script', 'Sacramento', Helvetica, Arial, sans-serif;
+}
+
 body.dark-mode {
-   background-color: #10171d;
-   color: #fff;
-   font-family: 'Nixie One', 'Raleway', Helvetica, Arial, sans-serif;
-   font-weight: 800;
+  background-color: #10171d;
+  color: #fff;
+  font-weight: 800;
   transition: background-color 1s ease-out;
 }
 
- body.dark-mode a {
+body.dark-mode a {
    color: #fff;
 }
 
- body.dark-mode .menu {
+body.dark-mode .menu {
   font-size: 1.3em;
 }
 
 body.dark-mode a:hover,
-body.dark-mode h3.neon-blue:hover,
 body.dark-mode h1.myName:hover,
 body.dark-mode h1.myName > span.mobile.neon-purple:hover {
   color:#fff;
@@ -372,7 +390,6 @@ body.dark-mode nav {
   text-align: center;
   text-shadow: 2px 2px 1px rgba(0,0,0,0.5), 0 0 20px #fff, 0 0 10px #7d26cd, 0 0 50px #7d26cd;
 }
-
  
  body.dark-mode .dark-purple {
   color: #ccf;
@@ -390,9 +407,7 @@ body.dark-mode .neon-blue {
 }
 
  body.dark-mode .fade {
-/*  opacity: 0.8;
-*//*  color: #ebffff;
-*/  text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
   -webkit-animation: fade 3s infinite alternate;
   -moz-animation: fade 3s infinite alternate;
   -o-animation: fade 3s infinite alternate;
@@ -426,10 +441,7 @@ body.dark-mode section {
 
 body.dark-mode .main-works p {
   text-align: center;
-}
-
-body.dark-mode .main-works p.dark-purple {
-  font-size: 0.9em;
+  margin: 2em 0;
 }
  
 body.dark-mode h2.neon-purple {
@@ -449,7 +461,7 @@ body.dark-mode h2.neon-purple {
 body.dark-mode h3.neon-blue,
 body.dark-mode h3.get-in-touch {
   font-size: 1.5em;
-  margin: 2%;
+  margin: 2em;
 }
 
 body.dark-mode footer {
@@ -458,7 +470,7 @@ body.dark-mode footer {
 }
 
 body.dark-mode footer small {
-  font-size: 0.4em;
+  font-size: 0.6em;
 }
 
 body.dark-mode .About-me p {
@@ -500,6 +512,9 @@ Media queries ----------------------*/
   }
   body.dark-mode h2.neon-purple{
     margin-top: 10%;
+  }
+  .main-works {
+    justify-content: center;
   }
   footer {
     margin-top: 10%;

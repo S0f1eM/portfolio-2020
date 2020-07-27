@@ -18,7 +18,7 @@ const Header = () => {
             <a href="/#projects"
                 aria-label="go to projects section" 
                 className="neon-blue"
-                rel="noopener noreferrer">Projects</a>
+                rel="noopener noreferrer">Works</a>
           </li>
         	<li>
             <Link to="/Resume"  
@@ -41,8 +41,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="About-me">
-        <p>I'm a french developer who love <b>Front-End development</b> and <b>Javascript</b>. I had experiences with <b>HTML/CSS/JS</b> and <b>CMS</b> (WordPress, Plone, Prestashop, Jalios).
-        I search for a remote job to collaborate with an international team to grow with passionates people.</p>
+        <p>Hi, I'm Sophie! I'm a french developer who love <b>Frontend oriented development</b>, working with <b>Javascript</b> and doing stuff with Reactjs. I have also full-stack developer experiences with various <b>CMS</b> (WordPress, Plone, PrestaShop) and <b>project management. I'm searching for a full remote job to collaborate with an international team to grow with passionates people.</b></p>
       </div>
     </header>
 	)
