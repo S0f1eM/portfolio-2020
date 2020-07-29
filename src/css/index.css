@@ -105,9 +105,6 @@ a, hr {
   color: #6C6C6C;
 }
 
-body.light-mode a:hover:not(.nav) {
-  color: #7c95cc;
-}
 
 body.light-mode {
   color: #6C6C6C;
@@ -118,10 +115,6 @@ body.light-mode {
 body.light-mode > div > header > nav > ul > li span.only-dark-mode.neon-purple,
 body.light-mode > div > footer > small a.little.neon-purple.only-dark-mode {
   display: none;
-}
-
-body.light-mode .main-works a:hover {
-  color: #e55c96;
 }
 
 .menu {
@@ -140,6 +133,10 @@ body.light-mode .main-works a:hover {
   justify-content: center;
 }
 
+.myName {
+  font-size: 1.2em;
+}
+
 body.light-mode .menu {
   font-size: 3em;
   justify-content: flex-start;
@@ -148,15 +145,48 @@ body.light-mode .menu {
 }
 
 body.light-mode .menu li a,
-body.light-mode .light-grey {
+body.light-mode .light-grey,
+body.light-mode a {
   color: #F09678;
+  background-size: 0 5%;
+  background-image: linear-gradient(to bottom, #bac4d8 20%, #bac4d8 70%);
+  background-repeat: no-repeat;
+  transition: background .9s;
+  background-position: bottom;
 }
 
 body.light-mode .menu li a:hover,
 body.light-mode .menu li h1:hover,
-html body.light-mode a.nav:hover {
-  color: #f44544;
+html body.light-mode a:hover {
+  color: #6C6C6C;
+  transition: 1.5s;
+  background-size: 150% 25%;
+  background-position: -.8em .5em;
 }
+
+
+body.light-mode a:hover:not(.nav) {
+  color: #7c95cc;
+}
+
+body.light-mode .main-works a,
+body.light-mode footer small a {
+  background-size: 0 5%;
+  background-image: linear-gradient(to bottom, #bac4d8 20%, #bac4d8 100%);
+  background-repeat: no-repeat;
+  transition: background .9s;
+}
+
+body.light-mode .main-works a:hover,
+body.light-mode footer small a:hover,
+body.light-mode a:hover:not(.nav)
+ {
+  color: #6C6C6C;
+  transition: .9s;
+  background-size: 150% 60%;
+  background-position: -.5em 0;
+}
+
 
 body.light-mode .dark-mode-toggle {
   margin-top: 5%;
@@ -258,6 +288,9 @@ body.light-mode h1 {
   margin-left: 2em;
 }
 
+.card:nth-child(4) > p:nth-child(5) > a:nth-child(2) {
+  margin-left: 0;
+}
 
 body.light-mode h2 {
   font-family: 'Sacramento'; 
@@ -291,7 +324,7 @@ h2 {
 h3 {
   font-weight: 800;
   font-size: 1.5em;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .About-me p {
@@ -301,7 +334,7 @@ h3 {
 }
 
 body .About-me p {
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 
@@ -314,6 +347,7 @@ body .About-me p {
 
 .main-works .card {
   width: calc(50% - 2em);
+  margin-bottom: 1em;
 }
 
 .beBold {
@@ -337,6 +371,7 @@ body footer {
 
 footer small {
   margin-right: 2em;
+  font-size: 1em;
 }
 
 /*---------------------------------------
