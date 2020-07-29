@@ -109,7 +109,7 @@ a, hr {
 body.light-mode {
   color: #6C6C6C;
   transition: background-color 1s ease-out;
-  background: #f7f7f7;
+  background: #f5f5f5;
 }
 
 body.light-mode > div > header > nav > ul > li span.only-dark-mode.neon-purple,
@@ -147,7 +147,7 @@ body.light-mode .menu {
 body.light-mode .menu li a,
 body.light-mode .light-grey,
 body.light-mode a {
-  color: #F09678;
+  color: #f6075c;
   background-size: 0 5%;
   background-image: linear-gradient(to bottom, #bac4d8 20%, #bac4d8 70%);
   background-repeat: no-repeat;
@@ -277,7 +277,7 @@ body.dark-mode .dark-mode-toggle > button {
 body.light-mode h1 {
   font-weight: 200;
   margin: 0;
-  color: #F09678;
+  color: #f6075c;
 }
 
 #projects {
@@ -294,7 +294,7 @@ body.light-mode h1 {
 
 body.light-mode h2 {
   font-family: 'Sacramento'; 
-  color: #F09678;
+  color: #f6075c;
 }
 
 body.light-mode h3:not(.get-in-touch)  {
