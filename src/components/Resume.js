@@ -14,19 +14,19 @@ const Resume = props => {
 			    <ResumeCard 
 			        title="Analyst Developer" 
 			        date="oct. 2019 - today"
-			        company="ASI (IT and consulting company)"
+			        company="Company : ASI (IT and consulting company)"
 			        intro="Missions on various bank companies intranets implemented templates & portlets with Jalios CMS."
 			        content="Collaborated with designers to create clean interfaces and intuitive interactions."
-			        skills="Java, jsp, Less, jQuery, JIRA, Jenkins (CI/CD), Eclipse, Gitlab..."
+			        skills="Stack : Java, jsp, Less, jQuery, JIRA, Jenkins (CI/CD), Eclipse, Gitlab..."
 			    />
 			    <ResumeCard 
 			        title="Web Developer" 
 			        date=" feb. 2017 - dec. 2018 (2 years)"
-			        company="IUEM - National education (public official contract)"
-			        intro="My first job as a developer : it was a great challenge and a success."
-			       	content="2017: Users support on Plone CMS (CSS, JS, Python). Fixing bug, CSS and content on new intranet."
-			      	works=" 2018: Project management and developement on the 4 main sites rebuild."
-			       	tasks="Migration from Plone to Wordpress, integration of the design, built and implemented custom contents (CPT)."
+			        company="Organisation : IUEM - National education (public official contract)"
+			        intro="My first job, it was a great challenge as a junior developer."
+			       	content="2017: Users support on Plone CMS (CSS, JS, Python). Fixing CMS bugs on several websites (about 40 websites for the institutes and the partners), CSS and content adjustments on new Plone intranet."
+			      	works=" 2018: Project management and developement on the main website and the 3 main laboratories websites rebuild."
+			       	tasks="Migration from Plone websites to Wordpress environment. Integration of the design with a page builder selected by the graphist. Build and implementations of custom contents (CPT) for the specifics needs of each partner."
                     more="Development of a custom plugin for the university directory database (postgre to MySQL, PHP, JavaScript)."
 			    />
 		</section>
@@ -45,17 +45,17 @@ const Resume = props => {
 			<h2 className="xp-and-skills neon-purple" id="resume">Skills & Interests</h2>
 		    	<h3 className="neon-blue">Self study </h3>
 		    	<hr/>
-                	<p> Javascript ES6/ES7, API, OOP, functionnal programming, CSS Grid, Flexbox, clean code (DRY)...</p>
+                	<p> Javascript ES6/ES7, API, OOP, functionnal programming, CSS Grid, Flexbox, A11y...</p>
                 	<p>Frameworks and tools : React, Redux, Node, GraphQL (still learning)...</p>
                 	<p>Online Certifications : <a rel="noopener noreferrer" href={responsive}>FreeCodeCamp Responsive web design certification</a> & 
                 	<a rel="noopener noreferrer" href={javascript}> JavaScript Algorithms certification</a></p>
 		    	<h3 className="neon-blue">Languages </h3>
 		    	<hr/>
-		    		<p>English (proficient).</p>
-		    		<p> French (native).</p>
+		    		<p>English (Proficient)</p>
+		    		<p> French (Native)</p>
 		    	<h3 className="neon-blue">Interests </h3>
 		    	<hr/>
-		    		<p>Fitness, Pixar and sciences-fiction movies, reading books (all genre depending on my current interest), onboard games and video games (with friends and family), walk on the beach and in the hood...</p>
+		    		<p>Fitness, Pixar and sciences-fiction movies, reading books (all genre depending on my current interest), onboard games and video games, walks on the beach, the sea, sunsets...</p>
 		   	</section>
 	</>
 	)

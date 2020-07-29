@@ -10,7 +10,7 @@ const Works = () => {
         <ProjectCard  
           title="Portfolio 2020" 
           img="darkmode-portfolio.png"
-          content="A static portfolio build with Reactjs with a darkmode. Deployed with Netlify."
+          content="A static portfolio with a darkmode build with React. Deployed with Netlify (CI with github)."
           skills=" React - CSS - Netlify"
           url="/"
           github="https://github.com/S0f1eM/portfolio-2020"
@@ -18,18 +18,17 @@ const Works = () => {
         <ProjectCard  
           title="MoodColors template" 
           img="screenshot-MoodColors.png"
-          content="A Template for a blog like or a showcase website made with react-semantic-ui for experimentation."
+          content="A Template for a blog or a showcase website made with react-semantic-ui made to test it."
           skills=" React - react-semantic-ui"
           url="http://moodcolors.surge.sh/"
           github="https://github.com/S0f1eM/neon-template"
         />
-        <ProjectCard  
-          title="Flexbox Portfolio"
-          img="flexbox-portfolio.png" 
-          content="A developer portfolio made with Flexbox and no JS."
-          skills=" CSS3 - Flexbox - HTLM5 "
-          url="https://flexbox-portfolio.surge.sh"
-          github="https://github.com/S0f1eM/portfolio-full-css"
+        <ProjectCard 
+          title="Directory WP Plugin" 
+          img="plugin-directory.png"
+          content="A WordPress directory plugin to manage a researchers directory (php & MySQL) and show employee's data on the new wordpress websites. I made it during my first developer job."
+          skills=" PHP - MySQL - JavaScript"
+          github="https://github.com/S0f1eM/my-first-wp-plugin"
         />
         <ProjectCard 
           title="IUEM Websites" 
@@ -42,17 +41,18 @@ const Works = () => {
         <ProjectCard 
           title="Bootstrap Portfolio" 
           img="bootstrap-portfolio.png"
-          content="A responsive portfolio made with bootstrap in 2016 after my developer bootcamp. my first one. I refactored a bit."
+          content="A responsive portfolio made from scratch with bootstrap after my developer bootcamp in 2016."
           skills=" HTML5 - CSS3 - jQuery - Bootstrap"
           url="https://bootstrap-portfolio.surge.sh "
           github="https://github.com/S0f1eM/Bootstrap-portfolio"
         />
-        <ProjectCard 
-          title="Directory WP Plugin" 
-          img="plugin-directory.png"
-          content="A WordPress directory plugin to manage a directory (php & MySQL) and show employee's data on the new wordpress websites. I made it during my first developer job."
-          skills=" PHP - MySQL - JavaScript"
-          github="https://github.com/S0f1eM/my-first-wp-plugin"
+        <ProjectCard  
+          title="Flexbox Portfolio"
+          img="flexbox-portfolio.png" 
+          content="A developer portfolio made from scratch with Flexbox & only CSS. It was a personal no JS challenge for my 2019 portfolio."
+          skills=" CSS3 - Flexbox - HTLM5 "
+          url="https://flexbox-portfolio.surge.sh"
+          github="https://github.com/S0f1eM/portfolio-full-css"
         />
       </section>
     </>

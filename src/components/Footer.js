@@ -28,7 +28,7 @@ const Footer = () => {
         <ScrollTo>
              <small>
                 <Link to="/Resume" 
-                    aria-label="go to Resume"
+                    aria-label="go to the resume"
                     className="nav neon-blue"
                     rel="noopener noreferrer">Resume</Link>
             </small>
@@ -69,7 +69,7 @@ const Footer = () => {
             <a href='https://codepen.io/lvrbrtsn'
             alt="codepen-user"
             target="_blank" 
-            aria-label="go to the codepend author account"
+            aria-label="go to the codepen neon effect author account"
             className="little neon-purple only-dark-mode"
             rel="noopener noreferrer" >
                 Thanks & Credits to Levi Robertson for the neon effects
