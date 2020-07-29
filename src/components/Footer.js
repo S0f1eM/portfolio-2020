@@ -62,7 +62,7 @@ const Footer = () => {
                 alt="codepen" 
                 target="_blank" 
                 aria-label="go to the codepen account"
-                className="neon-blue"
+                className="neon-blue mobile"
                 rel="noopener noreferrer" >Codepen</a>
         </small> 
         <small>
