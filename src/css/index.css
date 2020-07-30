@@ -93,11 +93,7 @@
 
 body {
   font-family: 'Raleway';
-  margin: 5% 8%;
-}
-
-body.light-mode p {
-  font-size:1.3em;
+  margin: 4em 6em;
 }
 
 a, hr {
@@ -105,11 +101,14 @@ a, hr {
   color: #6C6C6C;
 }
 
-
 body.light-mode {
   color: #6C6C6C;
   transition: background-color 1s ease-out;
   background: #f5f5f5;
+}
+
+body.light-mode p {
+  font-size: 1.1em;
 }
 
 body.light-mode > div > header > nav > ul > li span.only-dark-mode.neon-purple,
@@ -131,10 +130,6 @@ body.light-mode > div > footer > small a.little.neon-purple.only-dark-mode {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.myName {
-  font-size: 1.2em;
 }
 
 body.light-mode .menu {
@@ -187,7 +182,6 @@ body.light-mode a:hover:not(.nav)
   background-position: -.5em 0;
 }
 
-
 body.light-mode .dark-mode-toggle {
   margin-top: 5%;
 }
@@ -202,6 +196,10 @@ body.dark-mode p {
 
 body.dark-mode .dark-mode-toggle > button {
    font-size: 1em;
+}
+
+.myName {
+  font-size: 1.2em;
 }
 
 .dark-mode-toggle {
@@ -314,29 +312,33 @@ body.light-mode h3:not(.get-in-touch)  {
   width: calc(25% - 2em);
 }
 
-
 h2 {
   font-size: 3.5em;
   font-weight: 500;
-  margin: 5% 0 0;
+  margin: 1em 0 0.3em;
 }
 
 h3 {
   font-weight: 800;
   font-size: 1.5em;
-  margin-top: 1em;
 }
 
-.About-me p {
-  font-weight: 800;
-  margin:5% 0 0;
-  font-weight: bold;
+.main-xp h3,
+.skills-interests h3,
+.education h3,
+.get-in-touch {
+  margin: 0.2em auto 1em;
+}
+
+.About-me {
+  padding: 0.5em 0 2em;
 }
 
 body .About-me p {
-  font-size: 1.4em;
+  font-weight: 800;
+  font-weight: bold;
+  font-size: 1.5em;
 }
-
 
 .main-works {
   display: flex;
@@ -345,13 +347,21 @@ body .About-me p {
   grid-gap: 4%;
 }
 
+.main-works h3 {
+  margin-top: 1em;
+}
+
 .main-works .card {
   width: calc(50% - 2em);
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .beBold {
   font-weight: 800;
+}
+
+.main-xp .card{
+  margin-bottom: 3em;
 }
 
 .main-xp .card:not(:first-child) {
@@ -460,12 +470,6 @@ body.dark-mode .neon-blue {
    color: wheat;
 }
 
-body.dark-mode .contact-me,
-body.dark-mode .skills-interests,
-body.dark-mode .education  {
-  margin-top: 5%;
-}
-
 body.dark-mode hr {
   display: none;
 }
@@ -490,7 +494,7 @@ body.dark-mode h2.neon-purple {
 }
 
 #contact h2 .neon-purple{
-  margin-top: 5%;
+  margin-top: 1em;
 }
 
 body.dark-mode h3.neon-blue,
@@ -508,8 +512,12 @@ body.dark-mode footer small {
   font-size: 0.6em;
 }
 
-body.dark-mode .About-me p {
-  margin: 4% 0 10% 0;
+body.dark-mode .About-me {
+  margin: 3.5em 0;
+}
+
+body.dark-mode {
+  font-family: 'Nixie One', 'Raleway', Helvetica, Arial, sans-serif;
 }
 
 body.dark-mode .About-me,
@@ -519,13 +527,17 @@ body.dark-mode .contact-me  {
   text-align: center;
 }
 
-body.dark-mode .skills-interests,
-body.dark-mode .education  {
-  margin-top: 10%;
+body .main-xp,
+body .main-works,
+body .skills-interests,
+body .education  {
+  margin-bottom: 3em;
 }
 
-body.dark-mode .contact-me {
-  margin-top: 5%;
+body.dark-mode .skills-interests,
+body.dark-mode .education,
+body.dark-mode .main-xp  {
+  margin-bottom: 6em;
 }
 
 body.dark-mode .contact-me p {
@@ -537,6 +549,9 @@ Media queries ----------------------*/
 
 @media screen and (max-width: 1150px ) {
 
+  body {
+    margin: 3em 3em;
+  }
   body.light-mode .menu,
   body.dark-mode .menu {
   justify-content: flex-start;
@@ -545,20 +560,24 @@ Media queries ----------------------*/
   .myName {
     font-size: 1.5em;
   }
-  body.dark-mode h2.neon-purple{
-    margin-top: 10%;
+  body.light-mode .About-me {
+  padding: 0;
+  }
+  .mobile {
+    display: none;
   }
   .main-works {
     justify-content: center;
   }
-  footer {
-    margin-top: 10%;
+  .contact-me {
+    margin-bottom: 5em;
   }
 }
 
 @media screen and (max-width: 768px ) {
   body {
     font-size: 0.7em;
+    margin: 2em 3em;
   }
   .menu h1 {
     display: none;
@@ -568,9 +587,6 @@ Media queries ----------------------*/
   }
   body.dark-mode .neon-purple {
     font-size:2em;
-  }
-  .mobile {
-    display: none;
   }
   .menu {
     font-size: 1.3em;

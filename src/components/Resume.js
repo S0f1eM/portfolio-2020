@@ -28,6 +28,8 @@ const Resume = props => {
 			      	works=" 2018: Project management and developement on the main website and the 3 main laboratories websites rebuild."
 			       	tasks="Migration from Plone websites to Wordpress environment. Integration of the design with a page builder selected by the graphist. Build and implementations of custom contents (CPT) for the specifics needs of each partner."
                     more="Development of a custom plugin for the university directory database (postgre to MySQL, PHP, JavaScript)."
+			   		skills="Stack : WordPress, MySQL, PHP, JavaScript, jQuery, Less, Python..."
+
 			    />
 		</section>
 
@@ -46,9 +48,9 @@ const Resume = props => {
 		    	<h3 className="neon-blue">Self study </h3>
 		    	<hr/>
                 	<p> Javascript ES6/ES7, API, OOP, functionnal programming, CSS Grid, Flexbox, A11y...</p>
-                	<p>Frameworks and tools : React, Redux, Node, GraphQL (still learning)...</p>
+                	<p>Frameworks and tools : React, Redux, Node, React Native (currently learning)...</p>
                 	<p>Online Certifications : <a rel="noopener noreferrer" href={responsive}>FreeCodeCamp Responsive web design certification</a> & 
-                	<a rel="noopener noreferrer" href={javascript}> JavaScript Algorithms certification</a></p>
+                	<a rel="noopener noreferrer" href={javascript}> JavaScript Algorithms certification</a>, <a href="https://www.udemy.com/certificate/UC-7PDYNLAQ/">React with Redux</a></p>
 		    	<h3 className="neon-blue">Languages </h3>
 		    	<hr/>
 		    		<p>English (Proficient)</p>
