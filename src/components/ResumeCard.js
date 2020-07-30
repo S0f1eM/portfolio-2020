@@ -7,6 +7,7 @@ const ResumeCard = props => {
 	return (
     <div className="card">
         <h3 className="neon-blue">{props.title}</h3>
+        <hr />
           <p>{props.company}</p>
           <i>{props.date}</i>
           <p>{props.intro}</p>

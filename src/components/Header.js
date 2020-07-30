@@ -42,7 +42,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="About-me">
-        <p>Hi, I'm Sophie! I'm a french developer who love <b>Frontend oriented development</b>, working with <b>Javascript</b> and doing stuff with Reactjs. I have also full-stack developer experiences with various <b>CMS</b> and <b>project management. I'm searching for a full remote job to collaborate with an international team to grow with passionates people.</b></p>
+        <p>Hello, my name is Sophie. I'm a french developer who love <b>Frontend development</b> and working with <b>Javascript</b>. I have also full-stack experiences with <b>CMS</b> like <b>WordPress</b>. I'm searching for a remote job to collaborate with an international team to grow with passionates people.</p>
       </div>
     </header>
 	)

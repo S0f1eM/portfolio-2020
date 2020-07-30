@@ -70,7 +70,7 @@ const Footer = () => {
             alt="codepen-user"
             target="_blank" 
             aria-label="go to the codepen neon effect author account"
-            className="little neon-purple only-dark-mode"
+            className="little neon-purple only-dark-mode mobile"
             rel="noopener noreferrer" >
                 Thanks & Credits to Levi Robertson for the neon effects
             </a>

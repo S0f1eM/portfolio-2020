@@ -9,12 +9,12 @@ const ProjectCard = props => {
 
 	return (
     <div className="card">
-        <h3 className="neon-blue">{props.title}</h3>
         <img  
           src={props.img} 
           alt={props.title} 
           className="smcard-img"
         />
+        <h3 className="neon-blue">{props.title}</h3>
           <p>{props.content}</p>
           <p className="dark-purple nixie"><b className="beBold">Technologies</b> : {props.skills}
           </p>
