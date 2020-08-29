@@ -20,8 +20,6 @@ This is the website I use for my 2020 portfolio.
 
 *[My personal website](https://sophie-marchand.netlify.app)*  
 
-![portfolio](/public/Screenshot_2020_portfolio.png)
-
 ## To do<a name="todo"></a>
 
 - [ ]  Lighttheme
