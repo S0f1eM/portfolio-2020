@@ -9,7 +9,6 @@ This is the website I use for my 2020 portfolio.
 ### Table Of Contents
 * [Introduction](#intro)
 * [Links](#links)
-* [To Do](#todo)
 * [Prerequisites](#prerequisites)
 * [Installation](#setup)
 * [Dependencies](#dependencies)
@@ -19,12 +18,6 @@ This is the website I use for my 2020 portfolio.
 ## Links<a name="links"></a>
 
 *[My personal website](https://sophie-marchand.netlify.app)*  
-
-## To do<a name="todo"></a>
-
-- [ ]  Lighttheme
-- [ ]  hightlights hover links
-- [ ]  Checking A11y 
 
 ## Prerequisites<a name="prerequisites"></a> 
 * npm
