@@ -14,9 +14,9 @@ const ProjectCard = props => {
           alt={props.title} 
           className="smcard-img"
         />
-        <h3 className="neon-blue">{props.title}</h3>
+        <h3>{props.title}</h3>
           <p>{props.content}</p>
-          <p className="dark-purple nixie"><b className="beBold">Technologies</b> : {props.skills}
+          <p><b className="beBold">Technologies</b> : {props.skills}
           </p>
           <p>
           <a href={props.url} 

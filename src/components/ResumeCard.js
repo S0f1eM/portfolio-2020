@@ -6,7 +6,7 @@ const ResumeCard = props => {
 
 	return (
     <div className="card">
-        <h3 className="neon-blue">{props.title}</h3>
+        <h3>{props.title}</h3>
         <hr />
           <p>{props.company}</p>
           <i>{props.date}</i>
@@ -14,7 +14,7 @@ const ResumeCard = props => {
           <p>{props.content}</p>
           <p>{props.works}</p>
           <p>{props.tasks}</p>
-          <p className="dark-purple">{props.skills}</p>
+          <p>{props.skills}</p>
           <p>{props.more}</p>
     </div>
 	)
