@@ -5,11 +5,6 @@ import DarkModeToggle from './elements/DarkModeToggle';
 
 const Header = () => {
 
-    const linkedin = "https://www.linkedin.com/in/sophie-marchand-web-developer/";
-    const twitter = "https://twitter.com/S0f1eM?lang=fr";
-    const github = "https://github.com/S0f1eM";
-    const codepen = "https://codepen.io/s0ph1/#";
-
 	return (
     <header className="main-header" id="header">
      	<nav className="navigation">
