@@ -6,7 +6,7 @@ const Works = () => {
 	return (
 	<>
     <section className="main-works">
-      <h2 id="projects" className="neon-purple">Some works</h2> 
+      <h2 id="projects">Some works</h2> 
         <ProjectCard  
           title="Portfolio 2020" 
           img="darkmode-portfolio.png"
