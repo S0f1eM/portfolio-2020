@@ -42,7 +42,9 @@ const Header = () => {
         </ul>
       </nav>
       <div className="About-me">
-        <p>Hello, I'm Sophie. I'm a creative developer who love <b>Frontend development</b>. I have experiences with <b>full stack development</b> and <b>CMS</b> like <b>WordPress</b>. My experience in project management for a redesign has been the opportunity to participate in all the creative process: from the writing of the specifications to the delivery in production.</p>
+        <p>Hello, I'm Sophie. I'm a creative developer who love <b>Frontend development</b>. 
+        I have professional experiences in <b>full stack development</b>, with <b>CMS</b> like <b>WordPress</b> and also in <b>project management</b>. I can be part in every step of the creative process for a website redesign, 
+        from the writing of the specifications through a plugin development to the delivery in production.</p>
       </div>
     </header>
 	)

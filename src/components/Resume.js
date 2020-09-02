@@ -11,7 +11,8 @@ const Resume = props => {
     <>
 		<section className="main-xp">
 			<h2 className="xp-and-skills" id="resume">Developer Resume</h2>
-			    <p className="resume-intro"> As a coworker, I'm a available and enthusiastic teamates. I bring good humo(u)r and optimism to the workplace. I believe it's important to support people and give them the means to develop as individuals while growing within the group.</p>
+			    <p className="resume-intro">I'm one of those serious, available and enthusiastic coworker who brings a good mood and humour to the place. 
+	I believe that it's important to support people and give them the means to develop as individuals while growing among other people and I blossom in a company where flow same kind of human values, genuine and empathic.</p>
 			    <ResumeCard 
 			        title="Analyst Developer" 
 			        date="oct. 2019 - today"
