@@ -30,20 +30,7 @@ body p {
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin: 0;
-}
-
-.menu li {
-  padding-right: 3%;
-}
-
-.menu li:not(.myName) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-body .menu {
+  margin: 4em 0;
   font-size: 1.2em;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -51,98 +38,49 @@ body .menu {
   font-weight: 800;
 }
 
-body .menu li a,
-body .light-grey,
-body a {
+.menu li {
+  padding-right: 3%;
+}
+
+.menu li:not(.first-child) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
   background-size: 0 5%;
   background-repeat: no-repeat;
   transition: background .9s;
   background-position: bottom;
 }
 
-body.light-mode .menu li a,
-body.light-mode .light-grey,
-body.light-mode a {
-  background-image: linear-gradient(to bottom, #bac4d8 20%, #bac4d8 70%);
-}
-
-body.dark-mode .menu li a,
-body.dark-mode .light-grey,
-body.dark-mode a {
-  background-image: linear-gradient(to bottom, #087f8c 20%, #087f8c 70%);
-}
-
-body.light-mode .menu li a,
-body.light-mode .light-grey,
-body.light-mode a {
-  color: #6a3d9e;
-}
-
-body.dark-mode .menu li a,
-body.dark-mode .light-grey,
-body.dark-mode a {
-  color: #34e0a1;
-}
-
-body a:hover:not(.myName) {
-  transition: 1.5s;
-  background-size: 150% 25%;
-  background-position: -.8em .5em;
-}
-
-body .menu li h1:hover {
-  transition: 1.5s;
-  background-size: 150% 20%;
-  background-position: -.2em 1.5em;
-}
-
-body.light-mode .menu li a:hover,
-body.light-mode .menu li h1:hover,
-html body.light-mode a:hover {
-  color: #6C6C6C;
-}
-
-body.dark-mode .menu li a:hover,
-body.dark-mode .menu li h1:hover,
-html body.dark-mode a:hover {
-  color:#bad8cd;
-}
-
-body.light-mode .main-works a,
-body.light-mode footer small a {
-  background-size: 0 5%;
-  background-image: linear-gradient(to bottom, #bac4d8 20%, #bac4d8 100%);
-  background-repeat: no-repeat;
-  transition: background .9s;
-}
-
-body .main-works a:hover,
-body footer small a:hover,
-body a:hover:not(.nav)
- {
+a:hover:not(.logo) {
   transition: .9s;
   background-size: 150% 60%;
   background-position: -.5em 0;
 }
 
-body.light-mode .main-works a:hover,
-body.light-mode footer small a:hover,
-body.light-mode a:hover:not(.nav) {
+.light-mode a {
+  background-image: linear-gradient(to bottom, #bac4d8 20%, #bac4d8 70%);
+  color: #6a3d9e;
+}
+
+.light-mode a:hover {
   color: #6C6C6C;
 }
 
-body.dark-mode .main-works a:hover,
-body.dark-mode footer small a:hover,
-body.dark-mode a:hover:not(.nav) {
+.dark-mode a {
+  color:  #34e0a1;
+  background-image: linear-gradient(to bottom, #087f8c 20%, #087f8c 70%);
+}
+
+.dark-mode a:hover {
   color: #bad8cd;
 }
 
 body .dark-mode-toggle {
   margin-top: 5%;
-}
-
-body .dark-mode-toggle > button {
-   font-size: 0.6em;
 }
 
 .dark-mode-toggle {
@@ -161,7 +99,7 @@ body .dark-mode-toggle > button {
 }
  
 .dark-mode-toggle > button:last-child {
-   color: wheat;
+   color: #efdb6b;
    margin-top: -4%;
    margin-left: 5px;
 }
@@ -178,8 +116,8 @@ body .dark-mode-toggle > button {
 }
 
  input[type='checkbox'].smcheck {
-   width: 40px;
-   height: 20px;
+   width: 30px;
+   height: 15px;
    background: #555;
    position: relative;
    border-radius: 25px;
@@ -192,7 +130,7 @@ body .dark-mode-toggle > button {
 }
 
  input[type='checkbox'].smcheck:checked + label {
-   left: 30px;
+   left: 20px;
    background-color: lightgrey;
 
 }
@@ -203,13 +141,12 @@ body .dark-mode-toggle > button {
 
  input[type='checkbox'].smcheck + label {
    display: inline-block;
-   width: 18px;
-   height: 18px;
+   width: 15px;
+   height: 15px;
    border-radius: 50%;
    transition: all 0.3s ease;
    cursor: pointer;
    position: absolute;
-   left: 6px;
    background: #fff;
    opacity: 0.9;
    background-color: #f6f6f6;
@@ -227,7 +164,7 @@ h2 {
   font-family: 'Raleway'; 
   font-size: 1.8em;
   font-weight: 800;
-  margin: 0 0 3em;
+  margin: 0 0 2em;
 }
 
 body.light-mode h2 {
@@ -278,8 +215,8 @@ body.dark-mode h3  {
 }
 
 .About-me {
-  padding: 0 0 2em;
-  margin: -1em 0;
+  padding: 0;
+  margin: 0.5em 0 0.5em;
 }
 
 .pattern.large {
@@ -338,37 +275,32 @@ body .resume-intro {
   margin: 0;
 }
 
-section {
-  margin: 3em 0 3em;
-}
-
 .main-works {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   grid-gap: 4%;
+  margin: 6em 0 0;
 }
 
 .main-works h3 {
   margin-top: 1em;
 }
 
-
 .card {
   padding-right: 2em;
-  margin: 2em 0 3em;
+  margin: 3em 0;
   background-size: 80%;
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: top;
-
 }
 
 .main-works .card {
   width: calc(45% - 2em);
 }
 
-.beBold {
+.card .content span {
   font-weight: 800;
 }
 
@@ -382,10 +314,18 @@ section {
   margin-top: -2em;
 }
 
-body footer {
+.contact-me {
+  margin: 4em 0 0;
+}
+
+.contact-link {
+  margin: 2em 0 0;
+}
+
+footer {
   display: flex;
   justify-content: flex-start;
-  margin: 6em 0 0;
+  margin: 3em 0 6em;
 }
 
 footer small {
