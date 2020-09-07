@@ -9,8 +9,9 @@ const Contact = () => {
   <>
     <section className="contact-me" id="contact">
      	<h2>Get in touch</h2>
-        <h3 className="get-in-touch">Searching for a developer to work with or wanna talk about a project? <br/>
-            Contact me, let's talk about it and see how we can collaborate !</h3>
+        <div className="pattern medium"></div>
+        <p className="get-in-touch">Searching for a developer to work with or wanna talk about a project? <br/>
+            Contact me, let's see how we can collaborate !</p>
         <p>
           <a  href={email} 
               alt='send an email' 

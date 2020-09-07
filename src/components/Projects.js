@@ -28,6 +28,7 @@ const Works = () => {
           img="plugin-directory.png"
           content="A WordPress directory plugin to manage a researchers directory (php & MySQL) and show employee's data on the new wordpress websites. I made it during my first developer job."
           skills=" PHP - MySQL - JavaScript"
+          url="https://www-iuem.univ-brest.fr/annuaire/"
           github="https://github.com/S0f1eM/my-first-wp-plugin"
         />
         <ProjectCard 
