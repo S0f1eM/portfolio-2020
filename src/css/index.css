@@ -5,9 +5,13 @@ body {
   margin: 1em 5em;
 }
 
-a, hr {
+a {
   text-decoration: none;
   color: #6C6C6C;
+}
+
+.dark-mode hr {
+  color: #bad8cd;
 }
 
 body.light-mode {
@@ -30,7 +34,7 @@ body p {
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin: 4em 0;
+  margin: 2em 0;
   font-size: 1.2em;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -70,17 +74,13 @@ a:hover:not(.logo) {
   color: #6C6C6C;
 }
 
-.dark-mode a {
+.dark-mode a{
   color:  #34e0a1;
   background-image: linear-gradient(to bottom, #087f8c 20%, #087f8c 70%);
 }
 
 .dark-mode a:hover {
   color: #bad8cd;
-}
-
-body .dark-mode-toggle {
-  margin-top: 5%;
 }
 
 .dark-mode-toggle {
@@ -215,8 +215,11 @@ body.dark-mode h3  {
 }
 
 .About-me {
-  padding: 0;
-  margin: 0.5em 0 0.5em;
+  margin: 0.5em 1em 0 0;
+}
+
+.pattern {
+  max-width: 100%;
 }
 
 .pattern.large {
@@ -252,8 +255,10 @@ body.dark-mode .pattern-light {
 
 
 .About-me p,
-.get-in-touch {
+.get-in-touch, 
+p.resume-intro {
   font-size: 1.4em;
+  margin-bottom: 0.5em;
 }
 
 .get-in-touch {
@@ -269,18 +274,12 @@ body.dark-mode .About-me span {
   color: #34e0a1;
 }
 
-body .resume-intro {
-  font-size: 1.2em;
-  padding: 0;
-  margin: 0;
-}
-
 .main-works {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   grid-gap: 4%;
-  margin: 6em 0 0;
+  margin: 5em 0 0;
 }
 
 .main-works h3 {
@@ -289,7 +288,7 @@ body .resume-intro {
 
 .card {
   padding-right: 2em;
-  margin: 3em 0;
+  margin: 2em 0;
   background-size: 80%;
   background-repeat: no-repeat;
   background-position-x: right;
@@ -304,6 +303,10 @@ body .resume-intro {
   font-weight: 800;
 }
 
+.main-xp {
+  margin: 6em 0 0;
+}
+
 .main-xp .card:not(:first-child) {
   width: calc(100% - 2em);
 }
@@ -315,7 +318,7 @@ body .resume-intro {
 }
 
 .contact-me {
-  margin: 4em 0 0;
+  margin: 3em 0 0;
 }
 
 .contact-link {
@@ -325,7 +328,7 @@ body .resume-intro {
 footer {
   display: flex;
   justify-content: flex-start;
-  margin: 3em 0 6em;
+  margin: 5em 0;
 }
 
 footer small {
@@ -333,15 +336,28 @@ footer small {
   font-size: 1em;
 }
 
+footer .left {
+  display: flex;
+  flex-grow: 1;
+  font-size: 1.2em;
+  align-self: center;
+}
+
+footer .right {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 3;
+  align-self: center;
+}
+
+
 /*----------------------------------
 Media queries ----------------------*/
 
 @media screen and (max-width: 1150px ) {
-
   body .menu {
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 2em 0;
   }
   .pattern.large {
     height: 150px;
@@ -365,11 +381,10 @@ Media queries ----------------------*/
 
 @media screen and (max-width: 768px ) {
   body {
-    font-size: 0.7em;
-    margin: 2em 3em;
+    margin: 2em;
   }
-  .menu h1 {
-    display: none;
+  .pattern {
+    width:95%;
   }
   .main-works .card,
   .profil .social {

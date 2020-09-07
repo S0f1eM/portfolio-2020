@@ -7,7 +7,8 @@ const Header = () => {
 
 	return (
     <header className="main-header" id="header">
-     	<nav className="navigation">
+     	
+      <nav className="navigation">
         <ul className="menu">
         	<li>
             <a className="logo" href="/" aria-label="top of the home page">
@@ -36,12 +37,14 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+
       <div className="pattern large"></div>
       <div className="About-me">
         <p>Hello, I'm Sophie. I'm a creative developer who love <span>Frontend development</span>. 
         I have professional experiences in <span>full stack development</span>, with <span>CMS</span> like <span>WordPress</span> and also in <span>project management</span>. I can be part in every step of the creative process for a website redesign, 
         from the writing of the specifications through a plugin development to the delivery in production.</p>
       </div>
+      
     </header>
 	)
 }
