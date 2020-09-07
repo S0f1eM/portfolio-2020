@@ -8,7 +8,7 @@ const Works = () => {
     <section className="main-works">
       <h2 id="projects">Some works</h2> 
         <ProjectCard  
-          title="Portfolio 2020" 
+          title="Personal website 2020" 
           img="darkmode-portfolio.png"
           content="A static portfolio with a darkmode build with React. Deployed with Netlify (CI with github)."
           skills=" React - CSS - Netlify"
@@ -16,7 +16,7 @@ const Works = () => {
           github="https://github.com/S0f1eM/portfolio-2020"
         />
         <ProjectCard  
-          title="MoodColors template" 
+          title="Semantic UI Template" 
           img="screenshot-MoodColors.png"
           content="A Template for a blog or a showcase website made with react-semantic-ui made to test it."
           skills=" React - react-semantic-ui"
@@ -24,17 +24,17 @@ const Works = () => {
           github="https://github.com/S0f1eM/neon-template"
         />
         <ProjectCard 
-          title="Directory WP Plugin" 
+          title="Directory Manager WP Plugin" 
           img="plugin-directory.png"
-          content="A WordPress directory plugin to manage a researchers directory (php & MySQL) and show employee's data on the new wordpress websites. I made it during my first developer job."
+          content="A WordPress directory plugin to manage a researchers directory (php & MySQL) and show employee's data on the new wordpress websites. You can manage the directory from the dashboard (add, remove, update) and you can add it on page with a shortcode. I made it during my first developer job."
           skills=" PHP - MySQL - JavaScript"
           url="https://www-iuem.univ-brest.fr/annuaire/"
           github="https://github.com/S0f1eM/my-first-wp-plugin"
         />
         <ProjectCard 
-          title="IUEM Websites" 
+          title="IUEM & 3 laboratories Websites" 
           img="screenshot-iuem.png"
-          content="A university institute websites with WordPress. On the same template there were also 3 laboratories partners websites : Lemar, Geosciences Ocean and Amure."
+          content="A university institute website with WordPress for my first developer job. On the same template I build also 3 laboratories partners websites : Lemar, Geosciences Ocean and Amure."
           skills=" HTML - LESS - PHP - MySQL"
           url="https://www-iuem.univ-brest.fr"
 
@@ -48,7 +48,7 @@ const Works = () => {
           github="https://github.com/S0f1eM/Bootstrap-portfolio"
         />
         <ProjectCard  
-          title="Flexbox Portfolio"
+          title="A Minimalist full CSS Portfolio"
           img="flexbox-portfolio.png" 
           content="A developer portfolio made from scratch with Flexbox & only CSS. It was a personal no JS challenge for my 2019 portfolio."
           skills=" CSS3 - Flexbox - HTLM5 "
