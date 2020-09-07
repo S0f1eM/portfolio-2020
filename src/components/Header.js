@@ -11,16 +11,14 @@ const Header = () => {
         <ul className="menu">
         	<li>
             <a href="/" aria-label="top of the page">
-                <h1 className="wrap myName">
-                  Sophie <span className="mobile neon-purple">M.</span>
-                </h1>
+                <h1 className="myName">Sophie M.</h1>
             </a>
           </li>
         	<li>
             <a href="/#projects"
                 aria-label="go to projects section" 
                 className="wrap"
-                rel="noopen:nth-child(5)er noreferrer">Works</a>
+                rel="noopen:nth-child(5)er noreferrer">Portfolio</a>
           </li>
         	<li>
             <Link to="/Resume"  
@@ -41,9 +39,10 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <div className="pattern large"></div>
       <div className="About-me">
-        <p>Hello, I'm Sophie. I'm a creative developer who love <b>Frontend development</b>. 
-        I have professional experiences in <b>full stack development</b>, with <b>CMS</b> like <b>WordPress</b> and also in <b>project management</b>. I can be part in every step of the creative process for a website redesign, 
+        <p>Hello, I'm Sophie. I'm a creative developer who love <span>Frontend development</span>. 
+        I have professional experiences in <span>full stack development</span>, with <span>CMS</span> like <span>WordPress</span> and also in <span>project management</span>. I can be part in every step of the creative process for a website redesign, 
         from the writing of the specifications through a plugin development to the delivery in production.</p>
       </div>
     </header>

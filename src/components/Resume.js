@@ -11,8 +11,11 @@ const Resume = props => {
     <>
 		<section className="main-xp">
 			<h2 className="xp-and-skills" id="resume">Developer Resume</h2>
-			    <p className="resume-intro">I'm one of those serious, available and enthusiastic coworker who brings a good mood and humour to the place. 
-	I believe that it's important to support people and give them the means to develop as individuals while growing among other people and I blossom in a company where flow same kind of human values, genuine and empathic.</p>
+				<div className="pattern small"></div>
+			    <p className="resume-intro">I'm a serious, available and enthusiastic coworker who brings a good mood and humour to the place. 
+	I believe that it's important to support people and give them the means to develop as individuals while growing among other people. I blossom in a company where flow the same mindset of human values, surrounding by genuine and empathic people.</p>
+			   	<div className="pattern small"></div>
+
 			    <ResumeCard 
 			        title="Analyst Developer" 
 			        date="oct. 2019 - today"
@@ -59,7 +62,7 @@ const Resume = props => {
 		    		<p> French (Native)</p>
 		    	<h3>Interests </h3>
 		    	<hr/>
-		    		<p>Fitness, Pixar and sciences-fiction movies, reading books (all genre depending on my current interest), onboard games and video games, walks on the beach, the sea, sunsets...</p>
+		    		<p>Fitness, Pixar fan, love sciences-fiction movies, I read all genre of books (depending on my current interest), onboard games and video games, walks on the beach, sunsets...</p>
 		   	</section>
 	</>
 	)
