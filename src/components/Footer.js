@@ -11,7 +11,8 @@ const Footer = () => {
         <footer>
             <div className="left">
                 <small className="mobile">
-                    <a  href="/" 
+                    <a  className="lightgrey"
+                        href="/" 
                         aria-label="go to top of the page"
                         rel="noopener noreferrer"
                     >2020 - Sophie Marchand</a>

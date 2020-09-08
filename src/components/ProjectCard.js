@@ -8,15 +8,15 @@ const ProjectCard = props => {
   const website = props.url ? 'Website' : '';
 
 	return (
-    <div className="card pattern-light">
+    <div className="card portfolio">
         
         <img src={props.img} alt={props.title} className="smcard-img"/>
         
         <div className="content">
           <h3>{props.title}</h3>
             <p>{props.content}</p>
-            <p>Made with :<span> {props.skills}</span></p>
-            <p>
+            <p className="lightgrey">Technologies <br/><span className="techno"> {props.skills}</span></p>
+            <p className="links">
               <a href={props.url} target="_blank" rel="noopener noreferrer" 
                  aria-label={props.content} className="card_website beBold">
                  {`${website}`}
