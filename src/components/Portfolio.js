@@ -5,7 +5,7 @@ const Portfolio = () => {
 
 	return (
 		<>
-			<section className="portfolio">
+			<section className="portfolio" id="portfolio">
 				<h2>Portfolio</h2>
 				    <div className="pattern small"></div>
 				    <p className="section-intro">Here are some works I made. Some are profesional works and others personal project I made on my free time. I mostly use JavaScript for those project and React. I love playing and training with CSS possibilities also and work on upgrading my design knowledge.</p>
