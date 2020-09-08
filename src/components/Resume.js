@@ -10,12 +10,11 @@ const Resume = props => {
 	return (		
     <>
 		<section className="main-xp">
-			<h2 className="xp-and-skills" id="resume">Developer Resume</h2>
+				<h2 className="xp-and-skills" id="resume">Developer Resume</h2>
 				<div className="pattern small"></div>
-			    <p className="section-intro">I'm a serious, available and enthusiastic coworker who brings a good mood and humour to the place. 
-	I believe that it's important to support people and give them the means to develop as individuals while growing among other people. I blossom in a company where flow the same mindset of human values, surrounding by genuine and empathic people.</p>
-			   	<div className="pattern small"></div>
-
+			    <p className="section-intro">I'm one of those available and enthusiastic coworker. I can bring a good mood and humour to the place (most of the time, I stay a human being ) and also be serious and conscientious in my work.</p>
+			    <p className="section-intro">I believe that it's important to support people and give them the means to develop as individuals while growing among other people. I'm in search of a company where flow the same mindset of human values with respect, empathy & inclusion.</p>
+			   	<div className="pattern small"></div> 
 			    <ResumeCard 
 			        title="Analyst Developer" 
 			        date="oct. 2019 - today"

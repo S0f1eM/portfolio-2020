@@ -8,7 +8,7 @@ const ProjectCard = props => {
   const website = props.url ? 'Website' : '';
 
 	return (
-    <div className="card portfolio">
+    <div className="card portfolio pattern-light">
         
         <img src={props.img} alt={props.title} className="smcard-img"/>
         

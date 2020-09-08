@@ -8,13 +8,14 @@ const Portfolio = () => {
 			<section className="portfolio" id="portfolio">
 				<h2>Portfolio</h2>
 				    <div className="pattern small"></div>
-				    <p className="section-intro">Here are some works I made. Some are profesional works and others personal project I made on my free time. I mostly use JavaScript for those project and React. I love playing and training with CSS possibilities also and work on upgrading my design knowledge.</p>
+				    <p className="section-intro">On this page yo ucan see some projects I build or still working on. Some are profesional projects (like IUEM websites and the directory plugin). There are also personal projects I made on my free time like portfolio or FreeCodeCamp projects to keep on training.</p>
+				    <p className="section-intro">I mostly use JavaScript for those project and React. I love playing and training with CSS possibilities and I'm training to improve my design knowledge.</p>
 				   	<div className="pattern small"></div>
 				<div className="portfolio-list">
 					<ProjectCard  
 			          title="Personal website 2020" 
 			          img="darkmode-portfolio.png"
-			          content="A personal website with a darkmode effect to show show portfolio and resume. Build with React and deployed with Netlify."
+			          content="A personal website with a darkmode effect to show portfolio and resume. Build with React and deployed with Netlify."
 			          skills=" React - CSS - Netlify"
 			          url="/"
 			          github="https://github.com/S0f1eM/portfolio-2020"
@@ -51,7 +52,7 @@ const Portfolio = () => {
 			        <ProjectCard 
 			          title="IUEM Websites" 
 			          img="screenshot-iuem.png"
-			          content="A university institute  and 3 laboratories partners websites with WordPress : Lemar, Geosciences Ocean and Amure."
+			          content="A university institute and 3 laboratories ( Lemar, Geosciences and Amure ) partners websites with WordPress."
 			          skills=" HTML - LESS - PHP - MySQL"
 			          url="https://www-iuem.univ-brest.fr"
 			        />
