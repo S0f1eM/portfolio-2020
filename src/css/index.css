@@ -2,16 +2,16 @@
 
 body {
   font-family: 'Oswald';
-  margin: 1em 5em;
+  margin: 0 3em;
+  font-weight: 400;
 }
 
 a {
   text-decoration: none;
-  color: #6C6C6C;
 }
 
-.dark-mode hr {
-  color: #bad8cd;
+a.card_github {
+  margin-left: 2em;
 }
 
 body.light-mode {
@@ -21,7 +21,7 @@ body.light-mode {
 }
 
 body.dark-mode {
-  color: #bad8cd;
+  color: #c0eedd;
   transition: background-color 1s ease-out;
   background: #033b42;
 }
@@ -39,7 +39,7 @@ body p {
   justify-content: flex-start;
   flex-wrap: wrap;
   font-family: 'Raleway'; 
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .menu li {
@@ -163,38 +163,49 @@ body.dark-mode h1 {
 h2 {
   font-family: 'Raleway'; 
   font-size: 1.8em;
-  font-weight: 800;
+  font-weight: 700;
   margin: 0 0 2em;
 }
 
 body.light-mode h2 {
-  color: #6a3d9e;
+  color: #734ec4;
 }
 
 body.dark-mode h2 {
-  color: #34e0a1;
+  color: #f7b010;
 }
 
 h3 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.3em;
   font-family: "Raleway";
 }
 
 body.light-mode h3  {
-  color: #6C6C6C;
+  color: #8a77b5;
 }
 
 body.dark-mode h3  {
-  color: #f7b010;
+  color: #61d8a3;
+}
+
+
+.see-more-block {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: #eae9eb;
+  padding: 1em;
+  font-weight: 700;
+  margin: 1em 0 3em;
+}
+
+.see-more {
+  font-size: 1.3em; 
 }
 
 #projects {
   width: 100%;
-}
-
-.card_github {
-  margin-left: 2em;
 }
 
 .card:nth-child(4) > p:nth-child(5) > a:nth-child(2) {
@@ -256,9 +267,9 @@ body.dark-mode .pattern-light {
 
 .About-me p,
 .get-in-touch, 
-p.resume-intro {
-  font-size: 1.4em;
-  margin-bottom: 0.5em;
+p.section-intro {
+  font-size: 1.3em;
+  margin: 0.5em 0;
 }
 
 .get-in-touch {
@@ -278,43 +289,87 @@ body.dark-mode .About-me span {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  grid-gap: 4%;
+  grid-gap: 3%;
   margin: 5em 0 0;
+}
+
+.portfolio {
+  margin: 5em 0 0;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  grid-gap: 3%;
 }
 
 .main-works h3 {
   margin-top: 1em;
 }
 
-.card {
-  padding-right: 2em;
+.card.portfolio {
   margin: 2em 0;
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: top;
+}
+
+.card .links {
+  background-color: #eae9eb;
+  padding: 1em;
 }
 
 .main-works .card {
   width: calc(45% - 2em);
 }
 
-.card .content span {
-  font-weight: 800;
+.portfolio .card {
+  width: calc(30% - 2em);
 }
 
-.main-xp {
-  margin: 6em 0 0;
+.light-mode .card .content p,
+.light-mode p.company,
+.light-mode .card .content span {
+  color: #918e8e;
 }
+
+.dark-mode .card .content p,
+.dark-mode p.company,
+.dark-mode .card .content span {
+  color: #74b6bf;
+}
+
+.card .content span {
+  font-weight: 700;
+}
+
+.main-xp,
+.portfolio {
+  margin: 5em 0 0;
+} 
 
 .main-xp .card:not(:first-child) {
   width: calc(100% - 2em);
 }
 
+.main-xp h2.xp-and-skills {
+  margin: 3em 0 2em;
+}
+
+.main-xp .card.resume {
+  margin: 3em 0;
+}
+
+.education h2.xp-and-skills,
+.skills-interests h2.xp-and-skills {
+  margin: 3em 0 1em;
+}
+
+.skills-interests h3 {
+  margin: 2em 0 0;
+}
+
 .smcard-img {
   width: 100%;
   height: auto;
-  margin-top: -2em;
 }
 
 .contact-me {
@@ -328,7 +383,7 @@ body.dark-mode .About-me span {
 footer {
   display: flex;
   justify-content: flex-start;
-  margin: 5em 0;
+  margin: 5em 0 3em;
 }
 
 footer small {
@@ -350,7 +405,17 @@ footer .right {
   align-self: center;
 }
 
+.light-mode a.lightgrey,.light-mode p.lightgrey,
+.light-mode .card .content p.lightgrey,
+.light-mode i.date, .light-mode span.lightgrey {
+  color: #b6b6b6;
+}
 
+.dark-mode a.lightgrey,.dark-mode p.lightgrey,
+.dark-mode .card .content p.lightgrey,
+.dark-mode i.date, .dark-mode span.lightgrey {
+  color: #1890a0;
+}
 /*----------------------------------
 Media queries ----------------------*/
 

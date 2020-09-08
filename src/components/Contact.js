@@ -8,7 +8,7 @@ const Contact = () => {
 	return (
   <>
     <section className="contact-me" id="contact">
-     	<h2>Get in touch</h2>
+     	<h2>Contact</h2>
         
         <div className="pattern medium"></div>
           <p className="get-in-touch">Searching for a developer to work with or wanna talk about a project? 

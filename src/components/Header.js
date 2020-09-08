@@ -11,26 +11,26 @@ const Header = () => {
       <nav className="navigation">
         <ul className="menu">
         	<li>
-            <a className="logo" href="/" aria-label="top of the home page">
+            <a className="logo" href="/" aria-label="go to home page">
                 <h1>Sophie M.</h1>
             </a>
           </li>
         	<li>
-            <a href="/#projects"
-                aria-label="go to portfolio âge" 
-                rel="noopen:nth-child(5)er noreferrer">Portfolio</a>
+            <a href="/Portfolio"
+                aria-label="go to portfolio" 
+                rel="noopener noreferrer">PORTFOLIO</a>
           </li>
         	<li>
             <Link to="/Resume"  
-                  aria-label="go to about âge"
-                  rel="noopener noreferrer">Resume
+                  aria-label="go to about page"
+                  rel="noopener noreferrer">ABOUT
            </Link>
           </li>
         	<li>
              <a href="/#contact"
-                aria-label="go to the contact page" 
+                aria-label="go to the contact section" 
                 aria-current="page"
-                rel="noopener noreferrer">Contact</a>
+                rel="noopener noreferrer">CONTACT</a>
           </li>
           <li>
           <DarkModeToggle />
