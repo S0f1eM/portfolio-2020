@@ -14,10 +14,10 @@ const App = () => {
     <>
     	<BrowserRouter>
       <Header />
-      <Suspense fallback={<div>Loading...</div>} >
-	    	<Route path="/Portfolio" exact component={Portfolio} />
+      <Suspense fallback={<div>Loading...</div>}>
 				<Route path="/" exact component={Home} />
         <Route path="/Home" exact component={Home} />
+        <Route path="/Portfolio" exact component={Portfolio} />
 				<Route path="/Resume" exact component={Resume} />
       </Suspense>
       <Contact />

@@ -16,9 +16,10 @@ const Header = () => {
             </a>
           </li>
         	<li>
-            <a href="/Portfolio"
+            <Link to="/Portfolio"  
                 aria-label="go to portfolio" 
-                rel="noopener noreferrer">PORTFOLIO</a>
+                rel="noopener noreferrer">PORTFOLIO
+            </Link>
           </li>
         	<li>
             <Link to="/Resume"  

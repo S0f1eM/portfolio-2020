@@ -1,5 +1,7 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
 
@@ -39,7 +41,10 @@ const Home = () => {
         />
 
         <div className="see-more-block">
-          <a className="see-more" href="/Portfolio">SEE MORE WORKS ON MY PORTFOLIO</a>
+              <Link to="/Portfolio"  
+                   aria-label="go to portfolio" 
+                   className="see-more"
+                   rel="noopener noreferrer">SEE MORE WORKS ON MY PORTFOLIO</Link>
         </div>
       </section>
     </>
