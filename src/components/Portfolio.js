@@ -8,8 +8,9 @@ const Portfolio = () => {
 			<section className="portfolio" id="portfolio">
 				<h2>Portfolio</h2>
 				    <div className="pattern small"></div>
-				    <p className="section-intro">On this page yo ucan see some projects I build or still working on. Some are profesional projects (like IUEM websites and the directory plugin). There are also personal projects I made on my free time like portfolio or FreeCodeCamp projects to keep on training.</p>
-				    <p className="section-intro">I mostly use JavaScript for those project and React. I love playing and training with CSS possibilities and I'm training to improve my design knowledge.</p>
+				    <p className="section-intro">On this page you can see some projects I build or still working on. Some are professional projects (like IUEM websites and the directory plugin). There are also personal projects I made on my free time like portfolios or FreeCodeCamp projects to keep on training.</p>
+				    <p className="section-intro">I mostly use JavaScript for those project from vanilla JS to React. I also love playing with shapes and colors thanks to CSS possibilities and I'm training to improve my design knowledge.</p>
+				    
 				   	<div className="pattern small"></div>
 				<div className="portfolio-list">
 					<ProjectCard  
