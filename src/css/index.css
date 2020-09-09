@@ -14,6 +14,11 @@ a.card_github {
   margin-left: 2em;
 }
 
+a.card_github,
+a.card_website {
+   font-size: 1.1em; 
+}
+
 body.light-mode {
   color: #6C6C6C;
   transition: background-color 1s ease-out;
@@ -189,15 +194,25 @@ body.dark-mode h3  {
   color: #61d8a3;
 }
 
+.more-about {
+  width: calc(25% - 2em);
+}
 
-.see-more-block {
+.more-block {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  background-color: #eae9eb;
   padding: 1em;
   font-weight: 700;
   margin: 1em 0 3em;
+}
+
+.light-mode .more-block {
+  background-color: #eae9eb;
+}
+
+.dark-mode .more-block {
+  background-color: #055c66;
 }
 
 .see-more {
@@ -226,7 +241,7 @@ body.dark-mode h3  {
 }
 
 .About-me {
-  margin: 0.5em 1em 0 0;
+  margin: 0.5em 1em 3em 0;
 }
 
 .pattern {
@@ -277,7 +292,7 @@ p.section-intro {
   margin: 0;
 }
 
-body.light-mode .About-me span {
+body.light-mode .About-me span:not(.mobile) {
     color: #6a3d9e;
 }
 
@@ -370,6 +385,7 @@ body.dark-mode .About-me span {
 
 .contact-link {
   margin: 2em 0 0;
+  font-size: 1.2em;
 }
 
 footer {
@@ -440,6 +456,9 @@ Media queries ----------------------*/
   .contact-me {
     margin-bottom: 5em;
   }
+  .see-more {
+    font-size:1em;
+  }
 }
 
 @media screen and (max-width: 768px ) {
@@ -455,8 +474,14 @@ Media queries ----------------------*/
   }
   .main-works .card,
   .profil .social,
-  .portfolio .card  {
-  width: 100%;
+  .portfolio .card,
+  .more-works {
+    width: 100%;
+  }
+
+
+  .more-about {
+    width: calc(100% - 2em);
   }
 }
 
