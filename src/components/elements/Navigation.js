@@ -26,10 +26,9 @@ const Navigation = () => {
            </Link>
           </li>
         	<li>
-             <a href="/Getintouch"
+             <Link to="/Getintouch"
                 aria-label="go to the contact page" 
-                aria-current="page"
-                rel="noopener noreferrer">CONTACT</a>
+                rel="noopener noreferrer">CONTACT</Link>
           </li>
           <li>
           <DarkModeToggle />
