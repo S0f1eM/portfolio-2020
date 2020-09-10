@@ -250,6 +250,17 @@ body.dark-mode h3  {
 
 .pattern.large {
     height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.quote {
+  font-size: 3.5em;
+  width: calc(20%);
+  color: #D1CDD8;
+  margin: 0;
+  padding-left: 0.1em;
 }
 
 .pattern.medium {
@@ -374,18 +385,24 @@ body.dark-mode .About-me span {
   margin: 2em 0 0;
 }
 
+.skills-interests {
+  margin-bottom: 4em;
+}
+
 .smcard-img {
   width: 100%;
   height: auto;
 }
 
 .contact-me {
-  margin: 3em 0 0;
+  margin: 6em 0 0;
 }
 
 .contact-link {
   margin: 2em 0 0;
   font-size: 1.2em;
+  display: flex;
+  justify-content: space-around;
 }
 
 footer {

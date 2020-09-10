@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import DarkModeToggle from './elements/DarkModeToggle';
+import DarkModeToggle from './DarkModeToggle';
 
 
-const Header = () => {
+const Navigation = () => {
 
-	return (
-    <header className="main-header" id="header">
-     	
+	return (     	
       <nav className="navigation">
         <ul className="menu">
         	<li>
@@ -22,13 +20,13 @@ const Header = () => {
             </Link>
           </li>
         	<li>
-            <Link to="/Resume"  
+            <Link to="/About"  
                   aria-label="go to about page"
                   rel="noopener noreferrer">ABOUT
            </Link>
           </li>
         	<li>
-             <a href="/#contact"
+             <a href="/Getintouch"
                 aria-label="go to the contact section" 
                 aria-current="page"
                 rel="noopener noreferrer">CONTACT</a>
@@ -38,9 +36,8 @@ const Header = () => {
           </li>
         </ul>
       </nav>      
-    </header>
 	)
 }
 
 
-export default Header;
+export default Navigation;

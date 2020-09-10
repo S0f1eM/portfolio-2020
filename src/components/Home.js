@@ -1,28 +1,18 @@
 import React from 'react';
-import ProjectCard from './ProjectCard';
-import { Link } from 'react-router-dom';
-import ScrollTo from './elements/ScrollTo';
+
+import HomeHeader from './elements/HomeHeader';
+import ProjectCard from './elements/ProjectCard';
+import Button from './elements/Button';
+import Contact from './Contact';
 
 const Home = () => {
 
 	return (
 	<>
-    <div className="pattern large"></div>
-      <div className="About-me">
-        <p>Hello, I'm Sophie. I'm a creative developer who love <span>Frontend development</span>. 
-        I have professional experiences in <span>full stack development</span>, with <span>CMS</span> like <span>WordPress</span> and also in <span>project management</span>.<span className="mobile"> I can be part in every step of the creative process for a website redesign, 
-        from the writing of the specifications through a plugin development to the delivery in production.</span></p>
-    </div>
-    <div className="more-about more-block">
-      <ScrollTo> 
-        <Link to="/Resume"  
-              aria-label="go to portfolio" 
-              className="see-more"
-              rel="noopener noreferrer">MORE ABOUT ME AND MY PATH</Link>
-      </ScrollTo>
-    </div>
+    <HomeHeader />
     <section className="main-works">
       <h2 id="projects">Some works</h2> 
+
         <ProjectCard 
           title="IUEM Websites" 
           img="screenshot-iuem.png"
@@ -43,16 +33,35 @@ const Home = () => {
           url="https://flexbox-portfolio.surge.sh"
           github="https://github.com/S0f1eM/portfolio-full-css"
         />
-
-        <div className="more-works more-block">
-            <ScrollTo> 
-              <Link to="/Portfolio"  
-                   aria-label="go to portfolio" 
-                   className="see-more"
-                   rel="noopener noreferrer">SEE MORE WORKS ON MY PORTFOLIO</Link>
-            </ScrollTo>
-        </div>
+        <ProjectCard 
+                title="Directory Manager WP Plugin" 
+                img="plugin-directory.png"
+                content="A WordPress directory plugin to manage a researchers directory (php & MySQL) and show employee's data."
+                skills=" PHP - MySQL - JavaScript"
+                url="https://www-iuem.univ-brest.fr/annuaire/"
+                github="https://github.com/S0f1eM/my-first-wp-plugin"
+        />
+        <ProjectCard 
+                title="Drum Machine" 
+                img="screenshot-drum-machine.png"
+                content="A drum machine build with React & React-dom on Codepen for the FreeCodeCamp Front-end projects."
+                skills=" React - React-dom"
+                url="https://codepen.io/s0ph1/full/abNZapq"
+        />
+        <ProjectCard 
+                title="Pictures API Search" 
+                img="screenshot-pictures-search.png"
+                content="An Images search page made with React, axios to fetch data and Unsplash API. Semantic-ui is also used for design & CSS. "
+                skills=" React - Unsplash API - axios "
+                github="https://github.com/S0f1eM/pics-search-unsplash"
+        />
+        <Button  link="/Portfolio" 
+              label="go to portfolio" 
+              text="SEE MORE WORKS ON MY PORTFOLIO"
+              className="see-more" 
+        />
       </section>
+      <Contact />
     </>
 	)
 }
