@@ -7,13 +7,11 @@ const Contact = () => {
 
 	return (
   <>
-    <section className="contact-me" id="contact">
+    <section className="contact-me">
      	<h2>Contact</h2>
         
         <div className="pattern medium"></div>
-          <p className="get-in-touch">Searching for a developer to work with or wanna talk about a project? 
-              Contact me, let's see how we can collaborate !</p>
-
+   
         <div className="contact-link">
           <p><a  href={email} 
                  alt='send an email' 
