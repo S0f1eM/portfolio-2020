@@ -9,7 +9,7 @@ const Toggle = ({ checked, onChange }) => (
       onChange={onChange}
       id="smcheck"
     />
-    <label htmlFor="smcheck" />
+    <label htmlFor="smcheck" title="check" />
   </span>
 );
 
