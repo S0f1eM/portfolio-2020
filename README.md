@@ -42,12 +42,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## Dependencies<a name="dependencies"></a>
 
 ```
-    "react": "^16.13.1",
+  "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "semantic-ui-react": "^0.88.2"
+    "use-dark-mode": "^2.3.1"
 
 ```
 
