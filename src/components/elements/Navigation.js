@@ -27,7 +27,7 @@ const Navigation = () => {
           </li>
         	<li>
              <a href="/Getintouch"
-                aria-label="go to the contact section" 
+                aria-label="go to the contact page" 
                 aria-current="page"
                 rel="noopener noreferrer">CONTACT</a>
           </li>

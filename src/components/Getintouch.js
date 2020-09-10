@@ -9,7 +9,7 @@ const Getintouch = () => {
   const content = "Searching for a developer to work with or wanna talk about a project? I'm currently working but still searching for a full time remote job and/or a thrilling project that makes sense with a positive mindset. So feel free to contact me and let's see how we can collaborate.";
 	
   return (
-      <section className="contact-me">
+      <section className="contact-me" id="getintouch">
 
         <h2>Let's get in touch !</h2>
 
