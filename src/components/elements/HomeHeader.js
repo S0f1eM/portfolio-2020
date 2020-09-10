@@ -7,7 +7,7 @@ const HomeHeader = () => {
 	return (
     <header className="main-header">
       <div className="pattern large">
-      <p className="quote">LIFE IS ABOUT EVOLVING.</p>
+        <p className="quote">LIFE IS ABOUT EVOLVING.</p>
       </div>
          <div className="About-me">
           <p>Hello, I'm Sophie. I'm a creative developer who love <span>Frontend development</span>. 

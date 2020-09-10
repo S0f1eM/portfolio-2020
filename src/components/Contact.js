@@ -10,7 +10,7 @@ const Contact = () => {
     <section className="contact-me">
      	<h2>Contact</h2>
         
-        <div className="pattern medium"></div>
+        <div className="pattern medium" aria-hidden="true"></div>
    
         <div className="contact-link">
           <p><a  href={email} 
@@ -22,7 +22,7 @@ const Contact = () => {
                  alt="twitter" 
                  target="_blank" 
                  aria-label="Contact me on twitter"
-                 rel="noopener noreferrer">DM @S0ph1eM</a></p>
+                 rel="noopener noreferrer nofollow">DM @S0ph1eM</a></p>
           <p><a  href={linkedin} 
                  alt="linkedin" 
                  target="_blank" 
