@@ -15,10 +15,9 @@ const Footer = () => {
                         href="/" 
                         aria-label="go to top of the page"
                         rel="noopener noreferrer"
-                    >2020 - Sophie Marchand</a>
-                </small>
+                    >2020 - Sophie Marchand </a>
+                 </small>  
             </div>
-
             <div className="right">
                 <small>
                 	<a  href={github} 
@@ -39,7 +38,7 @@ const Footer = () => {
                         alt="twitter" 
                         target="_blank" 
                         aria-label="go to the twitter account"
-                        rel="noopener noreferrer">Twitter</a>
+                        rel="noopener noreferrer nofollow">Twitter</a>
                 </small>
                  <small>
                     <a  href={codepen} 
@@ -47,7 +46,7 @@ const Footer = () => {
                         target="_blank" 
                         aria-label="go to the codepen account"
                         rel="noopener noreferrer" >Codepen</a>
-                </small>  
+                </small>
             </div>
         </footer>
 
