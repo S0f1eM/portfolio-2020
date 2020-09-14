@@ -7,34 +7,72 @@ const Navigation = () => {
 
 	return (     	
       <nav className="navigation">
-        <ul className="menu">
-        	<li>
-            <a className="logo" href="/" aria-label="go to home page">
-                <h1>Sophie M.</h1>
-            </a>
-          </li>
-        	<li>
-            <Link to="/Portfolio"  
-                aria-label="go to portfolio" 
+        
+        <ul className="menu top-nav">
+          
+          <div className="left-nav">
+            <li>
+               <Link to="/"  
+                    aria-label="go to home page"
+                    data-menuanchor="home page"
+                    className="logo">
+                  <h1>Sophie M.</h1>
+              </Link>
+            </li>
+          </div>
+
+          <li>
+            <Link to="/Portfolio" 
+                  aria-label="go to portfolio" 
+                  data-menuanchor="portfolio"
+                  className="nav"
                 rel="noopener noreferrer">PORTFOLIO
             </Link>
           </li>
-        	<li>
+        	 <li>
             <Link to="/About"  
                   aria-label="go to about page"
+                  data-menuanchor="about page"
+                  className="nav"
                   rel="noopener noreferrer">ABOUT
            </Link>
           </li>
-        	<li>
-             <Link to="/Getintouch"
-                aria-label="go to the contact page" 
-                rel="noopener noreferrer">CONTACT</Link>
-          </li>
-          <li>
-          <DarkModeToggle />
+          <li aria-hidden="true" className="toggle-mode">
+            <DarkModeToggle />
           </li>
         </ul>
-      </nav>      
+
+          <ul className="menu right-nav">
+            <li>
+              <Link to="/"  
+                  aria-label="go to home page"
+                  data-menuanchor="home page">HOME
+              </Link>
+            </li>
+              <li>
+              <Link to="/Getintouch" 
+                  aria-label="go to the contact page" 
+                  data-menuanchor="contact"
+                  rel="noopener noreferrer">CONTACT</Link>
+            </li>
+            <li>
+            <Link to="/Portfolio" 
+                  aria-label="go to portfolio" 
+                  data-menuanchor="portfolio"
+                  className="desktop"
+                rel="noopener noreferrer">PORTFOLIO
+            </Link>
+          </li>
+          <li>
+            <Link to="/About"  
+                  aria-label="go to about page"
+                  data-menuanchor="about page"
+                  className="desktop"
+                  rel="noopener noreferrer">ABOUT
+            </Link>
+          </li>
+        </ul>
+      </nav>    
 	)
 }
 

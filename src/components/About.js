@@ -1,9 +1,8 @@
 import React from 'react';
 import ResumeCard from './elements/ResumeCard';
 import Button from './elements/Button';
-import Contact from './Contact';
 import SectionHeader from './elements/SectionHeader';
-
+import Quote from './elements/Quote';
 
 const About = props => {
 
@@ -11,17 +10,19 @@ const About = props => {
 	const javascript="https://www.freecodecamp.org/certification/s0f1e/javascript-algorithms-and-data-structures";
 	const frontend="https://www.freecodecamp.org/certification/s0f1e/front-end-libraries";
 
-	const content= "I'm one of those available and enthusiastic coworker. I can bring a good mood and humour to the place (most of the time, I stay a human being ) and also be serious and conscientious in my work.";
-	const more="I believe that it's important to support people and give them the means to develop as individuals while growing among other people. I'm in search of a company where flow the same mindset of human values with respect, empathy & inclusion.";
+	const content= "I have professional experiences in full stack development, with CMS like WordPress and I love doing stuff with React in my free time.";
+	const more="As an individual, I believe that it's important to support people and give them the means to develop as individuals while growing among other people. I'm in search of a company where 'flow' a good mindset and 'human-first' values with respect & empathy.";
 
+	const quote=`"Hope and fear cannot occupy the same space. Invite one to stay." Maya Angelou`;
 
 	return (		
     <>
 		<section className="main-xp">
-			<h2 className="xp-and-skills" id="about">Developer Resume</h2>
-			
+
 			<SectionHeader content={content} more={more} />
-						    
+					
+			<h2 className="xp-and-skills" id="about">Developer Resume</h2>
+	    
 			<ResumeCard 
 			        title="Analyst Developer" 
 			        date="oct. 2019 - today"
@@ -51,14 +52,19 @@ const About = props => {
 	               		content="Learning basics : HTML5, CSS (Bootstrap), JavaScript (ES5), versioning."
 	               		more="Introduction to mySQL, PHP, React, Vim..."
 	            />
+	            <ResumeCard 	
+				    	title="2005 - History of Societies & Archeologia Bachelor's degree"	
+					    date=" 2005 - Faculty of Arts, Humanities and Social Sciences - UBS"
+	               		content="2 years degree in History of Art and Archeology and one year degree in History of Societies and Archeology"
+	            />
 			</section> 
 
 			<section className="skills-interests">
 				<h2 className="xp-and-skills">Skills & Interests</h2>
 					<div className="selfstudy">
 				    	<h3>Self study </h3>
-		                	<p><span className="lightgrey">programming : </span> Javascript ES6/ES7, API, OOP, functionnal programming, CSS Grid, Flexbox, A11y...</p>
-		                	<p><span className="lightgrey">Frameworks and tools :</span> React, Redux, Node, React Native (currently learning)...</p>
+		                	<p><span className="lightgrey">Programming : </span> Javascript ES6/ES7, API, OOP, functionnal programming, CSS Grid, Flexbox, A11y...</p>
+		                	<p><span className="lightgrey">Libraries, frameworks & tools :</span> React, Redux, Node, React Native (currently learning)...</p>
 		                	<p><span className="lightgrey">Online Certifications :</span> <a rel="noopener noreferrer" href={responsive}>FreeCodeCamp Responsive web design certification</a>,  
 		                	<a rel="noopener noreferrer" href={javascript}> JavaScript Algorithms certification</a> & <a rel="noopener noreferrer" href={frontend}>Front-End Libraries Certification</a>, <a href="https://www.udemy.com/certificate/UC-7PDYNLAQ/">React with Redux</a></p>
 			    	</div>
@@ -80,7 +86,9 @@ const About = props => {
                  text="VIEW MY PORTFOLIO"
                  className="see-more" 
         />
-        <Contact />
+
+        <Quote quote={quote} />
+
 	</>
 	)
 }
