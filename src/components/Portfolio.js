@@ -1,21 +1,21 @@
 import React from 'react';
 import ProjectCard from './elements/ProjectCard';
 import Button from './elements/Button';
-import Contact from './Contact';
 import SectionHeader from './elements/SectionHeader';
+import Quote from './elements/Quote';
 
 
 const Portfolio = () => {
 
-	const content = "On this page you can see some projects I build or still working on. Some are professional projects (like IUEM websites and the directory plugin). There are also personal projects I made on my free time like portfolios or FreeCodeCamp projects to keep on training.";
-	const more = "I mostly use JavaScript for those project from vanilla JS to React. I also love playing with shapes and colors thanks to CSS possibilities and I'm training to improve my design knowledge.";				
+	const content = "Here are some projects I build or still working on. Some are professional projects (like IUEM websites and the directory plugin). There are also personal projects I made on my free time like portfolios or FreeCodeCamp projects to keep on training.";
+	const more = "I use JavaScript for most of those project from vanilla JS to React. I also love playing with shapes and colors thanks to CSS possibilities and I'm training to improve my design knowledge.";				
+
+    const quote = `"Be stubborn about your goals and flexible about your methods."`;
 
 	return (
 		<>
 			<section className="portfolio" id="portfolio">
 				
-				<h2>Portfolio</h2>
-
 				<SectionHeader content={content} more={more} />
 				
 				<div className="portfolio-list">
@@ -94,7 +94,8 @@ const Portfolio = () => {
               			 className="see-more" 
                 />
 			</section>
-			<Contact />
+
+			<Quote quote={quote} />
 		</>
 	)
 }
