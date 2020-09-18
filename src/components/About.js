@@ -53,7 +53,7 @@ const About = props => {
 	               		more="Introduction to mySQL, PHP, React, Vim..."
 	            />
 	            <ResumeCard 	
-				    	title="2005 - History of Societies & Archeologia Bachelor's degree"	
+				    	title="2005 - History of Societies & Archeology Bachelor's degree"	
 					    date=" 2005 - Faculty of Arts, Humanities and Social Sciences - UBS"
 	               		content="2 years degree in History of Art and Archeology and one year degree in History of Societies and Archeology"
 	            />
@@ -64,7 +64,7 @@ const About = props => {
 					<div className="selfstudy">
 				    	<h3>Self study </h3>
 		                	<p><span className="lightgrey">Programming : </span> Javascript ES6/ES7, API, OOP, functionnal programming, CSS Grid, Flexbox, A11y...</p>
-		                	<p><span className="lightgrey">Libraries, frameworks & tools :</span> React, Redux, Node, React Native (currently learning)...</p>
+		                	<p><span className="lightgrey">Libraries, frameworks & tools :</span> React, Redux, React Native (currently learning)...</p>
 		                	<p><span className="lightgrey">Online Certifications :</span> <a rel="noopener noreferrer" href={responsive}>FreeCodeCamp Responsive web design certification</a>,  
 		                	<a rel="noopener noreferrer" href={javascript}> JavaScript Algorithms certification</a> & <a rel="noopener noreferrer" href={frontend}>Front-End Libraries Certification</a>, <a href="https://www.udemy.com/certificate/UC-7PDYNLAQ/">React with Redux</a></p>
 			    	</div>
@@ -76,7 +76,7 @@ const About = props => {
 
 			    	<div className="Interests">
 				    	<h3>Interests </h3>
-				    	<p>Fitness, Pixar fan, love sciences-fiction movies, I read all genre of books (depending on my current interest), onboard games and video games, walks on the beach, sunsets...</p>
+				    	<p>Pixar fan, sciences-fiction movies, I read all genre of books (depending on my current interest), onboard games and video games, sunsets...</p>
 			   		</div>		   		
 		  	</section>
 		</aside>
