@@ -41,9 +41,8 @@ const About = props => {
 			       	tasks="2017: Users support on Plone CMS (CSS, JS, Python). Fixing CMS bugs on several websites (about 40 websites for the institutes and the partners), CSS and content adjustments on new Plone intranet."
 			   		skills="Stack : WordPress, MySQL, PHP, JavaScript, jQuery, Less, Python..."
 			/>
-		</section>
-
-		<aside>
+		
+				<aside>
 			<section className="education">
 				<h2 className="xp-and-skills">Education</h2>
 				<ResumeCard 	
@@ -86,6 +85,10 @@ const About = props => {
                  text="VIEW MY PORTFOLIO"
                  className="see-more" 
         />
+
+		</section>
+
+	
 
         <Quote quote={quote} />
 
