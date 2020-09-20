@@ -13,19 +13,20 @@ const ProjectCard = props => {
         <img src={props.img} alt={props.title} loading="lazy" className="smcard-img"/>
         
         <div className="content">
+          
           <h3>{props.title}</h3>
-            <p>{props.content}</p>
-            <p className="lightgrey">Technologies <br/><span className="techno"> {props.skills}</span></p>
+          <p>{props.content}</p>
+          <p className="lightgrey">Technologies <br/><span className="techno"> {props.skills}</span></p>
+          
+          <div className="footer-card">
             <p className="links">
               <a href={props.url} target="_blank" rel="noopener noreferrer" 
-                 aria-label={props.content} className="card_website beBold">
-                 {`${website}`}
-              </a>
+                 aria-label={props.content} className="card_website beBold">{`${website}`}</a>
               <a href={props.github} target="_blank" rel="noopener noreferrer" 
-                  aria-label={props.content} className="card_github beBold"> 
-                {`${repo}`}
-              </a>
+                 aria-label={props.content} className="card_github beBold">{`${repo}`}</a>
             </p>
+          </div>
+
         </div>
 
     </div>

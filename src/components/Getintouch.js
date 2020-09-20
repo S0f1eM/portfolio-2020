@@ -7,7 +7,7 @@ const Getintouch = () => {
   const email = 'mailto:s.marchand56@gmail.com';
   const linkedin = "https://www.linkedin.com/in/sophie-marchand-web-developer/";
   const twitter = "https://twitter.com/S0f1eM?lang=fr";
-  const content = "Searching for a developer to work with or wanna talk about a project? I'm currently working but still searching for a full time remote job and/or a thrilling project that makes sense. So feel free to contact me and let's see how we can collaborate.";
+  const content = "Searching for a developer to work with or wanna talk about a project? I'm currently working but I remain open to any profesional proposition especially for a remote job and/or a thrilling project. So feel free to contact me, I would love to hear from you and see how we can collaborate.";
 	
   const quote =`"What sunshine is to flowers, smiles are to humanity." Joseph Addison`;
 

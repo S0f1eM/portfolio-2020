@@ -10,8 +10,8 @@ const About = props => {
 	const javascript="https://www.freecodecamp.org/certification/s0f1e/javascript-algorithms-and-data-structures";
 	const frontend="https://www.freecodecamp.org/certification/s0f1e/front-end-libraries";
 
-	const content= "I have professional experiences in full stack development, with CMS like WordPress and I love doing stuff with React in my free time.";
-	const more="As an individual, I believe that it's important to support people and give them the means to develop as individuals while growing among other people. I'm in search of a company where 'flow' a good mindset and 'human-first' values with respect & empathy.";
+	const content= "I have professional experience in full stack development, working with CMS like WordPress and I also like to use and experiment React.";
+	const more="As an individual, I believe that it's important to support people and give them the means to develop as individuals while growing among other people. I'm in search of a company where 'flow' a real open mindset with human values like respect & empathy.";
 
 	const quote=`"Hope and fear cannot occupy the same space. Invite one to stay." Maya Angelou`;
 

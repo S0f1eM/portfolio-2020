@@ -8,9 +8,8 @@ const HomeHeader = () => {
     <header className="main-header">
       <div className="pattern large" aria-hidden="true"></div>
          <div className="About-me">
-          <p>Hello, I'm Sophie. I'm a creative developer who love <span>Frontend development</span>. 
-          I have professional experiences in <span>full stack development</span>, with <span>CMS</span> like <span>WordPress</span> and also in <span>project management</span>.<span className="mobile"> I can be part in every step of the creative process for a website redesign, 
-          from the writing of the specifications through a plugin development to the delivery in production.</span></p>
+          <p>Hello, I'm Sophie. I'm a developer who like <span>Frontend development</span>. 
+          I have professional experiences in <span>full stack development</span>, working with <span>CMS</span> like <span>WordPress</span> and in <span>project management</span>. I also like to use and experiment <span>React</span>.</p>
         </div>
       <Button  link="/About" 
               label="go to about page" 

@@ -31,14 +31,14 @@ const Home = () => {
                 github="https://github.com/S0f1eM/neon-template"
         />
         <ProjectCard  
-          title="Minimalist full CSS Portfolio"
+          title="Full CSS Portfolio"
           img="flexbox-portfolio.png" 
           skills=" CSS3 - Flexbox - HTLM5 "
           url="https://flexbox-portfolio.surge.sh"
           github="https://github.com/S0f1eM/portfolio-full-css"
         />
         <ProjectCard 
-                title="Directory Manager WP Plugin" 
+                title="Directory WP Plugin" 
                 img="plugin-directory.png"
                 skills=" PHP - MySQL - JavaScript"
                 url="https://www-iuem.univ-brest.fr/annuaire/"
