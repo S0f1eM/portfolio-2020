@@ -241,7 +241,7 @@ body.dark-mode h3  {
   flex-wrap: wrap;
   padding: 1em;
   font-weight: 700;
-  margin: 1em 0 3em;
+  margin: 3em 0;
 }
 
 .light-mode .more-block {
@@ -489,6 +489,10 @@ Media queries ----------------------*/
   .desktop {
     display: flex;
   }
+  .About-me {
+    font-size: 1.1em;
+    padding: 0;
+  }
   .portfolio .card,
   .main-works .card {
     width: calc(48% - 1em);
@@ -496,14 +500,17 @@ Media queries ----------------------*/
   .pattern.large {
     height: 150px;
   }
-  .About-me {
-    padding: 0;
-  }
   h2 {
     margin: 0 0 1em;
   }
   .mobile {
     display: none;
+  }
+  .education h2.xp-and-skills, .skills-interests h2.xp-and-skills {
+    margin: 2em 0 0;
+  }
+  .main-xp .card.resume {
+    margin: 3em 0;
   }
   .contact-me {
     margin-bottom: 5em;
@@ -511,9 +518,13 @@ Media queries ----------------------*/
   .see-more {
     font-size:1em;
   }
+  .main-header {
+    margin-bottom: 2em;
+  }
   .more-block {
     width: calc(100% - 2em);
     font-size: 1em;
+    margin: 1em 0;
   }
 }
 
@@ -538,6 +549,11 @@ Media queries ----------------------*/
   }
   .right-nav {
     right:0.7em;
+  }
+  .main-works, 
+  .portfolio,
+  .main-xp  {
+    margin: 3.5em 0;
   }
   .main-works .card,
   .profil .social,
