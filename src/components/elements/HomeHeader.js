@@ -14,7 +14,6 @@ const HomeHeader = () => {
       <Button  link="/About" 
               label="go to about page" 
               text="READ MORE ABOUT ME"
-              className="see-more" 
       />
     </header>
 	)

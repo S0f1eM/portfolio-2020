@@ -15,7 +15,7 @@ const Navigation = () => {
                <Link to="/"  
                     aria-label="go to home page"
                     data-menuanchor="home page"
-                    className="logo">
+                    className="logo no-hover">
                   <h1>Sophie M.</h1>
               </Link>
             </li>

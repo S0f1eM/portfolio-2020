@@ -17,30 +17,30 @@ const Getintouch = () => {
         <SectionHeader content={content} />
 
         <div className="contact-link">
-          <p className="more-block">
-            <a  href={email} 
+          
+          <p><a  className="extern-link no-hover"
+                href={email} 
                 alt='send an email' 
                 target="_blank" 
                 aria-label="send an email"
                 rel="noopener noreferrer">Send me an email
-            </a>
-          </p>
-          <p className="more-block">
-            <a  href={twitter} 
+            </a></p>
+
+          <p><a  className="extern-link no-hover"
+                href={twitter} 
                 alt="twitter" 
                 target="_blank" 
                 aria-label="Contact me on twitter"
                 rel="noopener noreferrer">Let me a message on twitter
-            </a>
-          </p>
-           <p className="more-block">
-            <a  href={linkedin} 
+            </a></p>
+
+           <p><a  className="extern-link no-hover" 
+                href={linkedin} 
                 alt="linkedin" 
                 target="_blank" 
                 aria-label="Contact me on linkedin"
                 rel="noopener noreferrer">Let me a message on Linkedin
-            </a>
-          </p>
+            </a></p>
         </div>
 
         <Quote quote={quote} />

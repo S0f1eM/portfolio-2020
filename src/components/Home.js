@@ -14,6 +14,7 @@ const Home = () => {
 	return (
 	<>
     <HomeHeader />
+
     <section className="main-works">
       <h2 id="projects">Some works</h2> 
 
@@ -36,11 +37,12 @@ const Home = () => {
                 content="A drum machine build with React & React-dom on Codepen."
                 url="https://codepen.io/s0ph1/full/abNZapq"
         />
-        <Button  link="/Portfolio" 
-              label="go to portfolio" 
-              text="SEE MORE WORKS"
-              className="see-more" 
-        />
+        <aside>
+          <Button link="/Portfolio" 
+                  label="go to portfolio" 
+                  text="SEE MORE WORKS"
+          />
+        </aside>
       </section>
       <Quote quote={quote} more={author}/>
     </>

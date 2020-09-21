@@ -7,12 +7,17 @@ body {
   line-height: 1.2;
 }
 
-a {
+a:not(.extern-link) {
   text-decoration: none;
   background-size: 0 5%;
   background-repeat: no-repeat;
-  transition: background .9s;
   background-position: bottom;
+}
+
+a.extern-link {
+  transition: background .9s;
+  text-decoration: none;
+  background-repeat: no-repeat;
 }
 
 a.card_github {
@@ -31,9 +36,9 @@ body.light-mode {
 }
 
 body.dark-mode {
-  color: #c0eedd;
+  color: #d1d1d1;
   transition: background-color 1s ease-out;
-  background: #033b42;
+  background-image: linear-gradient(to top right, #181830 10%, #463C64 70%);
 }
 
 p {
@@ -93,31 +98,19 @@ ul.menu.right-nav li {
   writing-mode: vertical-rl;
 }
 
-.right-nav li a:hover {
-  background-size: 50% 100%;
-  background-position: 0 -.1em;;
-}
-
 .menu.top-nav li {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-a:hover:not(.logo) {
-  transition: .9s;
-  background-size: 150% 50%;
-  background-position: -.5em 0;
-}
-
 .light-mode a {
   background-image: linear-gradient(to bottom, #9FB3D9 20%, #9FB3D9 70%);
   color: #444;
 }
 
-.dark-mode a{
-  color:  #34e0a1;
-  background-image: linear-gradient(to bottom, #087f8c 20%, #087f8c 70%);
+.dark-mode a {
+  color: #d1d1d1;
+  background-image: linear-gradient(to bottom, #e53d8b 20%, #e53d8b 70%);
 }
 
 .dark-mode-toggle {
@@ -200,7 +193,7 @@ body.light-mode h1 {
 }
 
 body.dark-mode h1 {
-  color: #34e0a1;
+  color: #249ade;
 }
 
 h2 {
@@ -214,7 +207,7 @@ body.light-mode h2 {
 }
 
 body.dark-mode h2 {
-  color: #f7b010;
+  color: # ;
 }
 
 h3 {
@@ -228,14 +221,21 @@ body.light-mode h3  {
 }
 
 body.dark-mode h3  {
-  color: #61d8a3;
+  color: #e53d8b;
 }
 
-.more-about {
+header .more-block,
+.portfolio .more-block {
   width: calc(30% - 2em);
 }
 
-.more-block {
+.main-works aside,
+.main-xp .more-block {
+  width: calc(33% - 2em);
+}
+
+.more-block,
+.extern-link {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -244,15 +244,28 @@ body.dark-mode h3  {
   margin: 3em 0;
 }
 
+.extern-link {
+  margin: 0.5em 0;
+}
+
+
 .light-mode .more-block {
-  background-color: #DCE3F1;
+  background-image: linear-gradient(to left, #f6f6f6 30%, #dce3f1 70%);
+}
+
+.light-mode .extern-link {
+  background-image: linear-gradient(to bottom,  #f6f6f6 30%, #dce3f1 70%);
 }
 
 .dark-mode .more-block {
-  background-color: #055c66;
+  background-image: linear-gradient(to left, #e53d8b 10%, #2391de 80%);
 }
 
-.see-more {
+.dark-mode .extern-link {
+  background-image: linear-gradient(to bottom, #e53d8b 10%, #2391de 80%);
+}
+
+.more-block {
   font-size: 1.3em; 
 }
 
@@ -324,10 +337,6 @@ body.light-mode .About-me span:not(.mobile) {
     color: #50507F;
 }
 
-body.dark-mode .About-me span {
-  color: #34e0a1;
-}
-
 .main-works {
   display: flex;
   justify-content: space-between;
@@ -348,30 +357,29 @@ body.dark-mode .About-me span {
   margin-top: 3em;
 }
 
-.main-works h3 {
-  margin-top: 1em;
-  padding: 0.5em 1em;
-}
-
 .card.portfolio {
   margin: 2em 0;
 }
 
-.light-mode .card.portfolio {
+.light-mode .card.portfolio,
+.light-mode .card.resume {
   -webkit-box-shadow: 11px -11px 30px 0px rgba(222,222,222,1);
   -moz-box-shadow: 11px -11px 30px 0px rgba(222,222,222,1);
   box-shadow: 11px -11px 30px 0px rgba(222,222,222,1);
 }
 
-.light-mode .card .content p:not(.links),
-.light-mode .card .content h3 {
+.card .content p:not(.links),
+.card .content h3 {
   padding: 0 1em;
 }
 
 .light-mode .card .content p.links {
-  margin: 0.3em;
+  margin: 0;
 }
 
+.dark-mode .card .content p.links {
+  padding: 0 1em;
+}
 
 .main-works .card,
 .portfolio .card {
@@ -379,8 +387,7 @@ body.dark-mode .About-me span {
 }
 
 .light-mode .footer-card {
-/*  background: #DCE3F1;
-*/  padding: 0.5em 1em;
+  padding: 0.5em 1em;
 }
 
 .light-mode .card .content p,
@@ -389,10 +396,19 @@ body.dark-mode .About-me span {
   color: #50507F;
 }
 
-.dark-mode .card .content p,
-.dark-mode p.company,
-.dark-mode .card .content span {
-  color: #74b6bf;
+.dark-mode .card .content p {
+  color: #d1d1d1;
+}
+
+.dark-mode .card .content span.techno,
+.dark-mode p.company {
+  color: #a4a4a4;
+}
+
+.dark-mode .card {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom right, #E53D8B, #2391DE);
 }
 
 .card .content span {
@@ -408,16 +424,13 @@ body.dark-mode .About-me span {
 }
 
 .main-xp .card.resume {
-  margin: 4em 0 3em;
+  margin: 3em 0;
+  padding: 1em;
 }
 
 .education h2.xp-and-skills,
 .skills-interests h2.xp-and-skills {
-  margin: 3em 0 1em;
-}
-
-.skills-interests h3 {
-  margin: 2em 0 0;
+  margin: 2em 0 1em;
 }
 
 .skills-interests {
@@ -446,11 +459,15 @@ body.dark-mode .About-me span {
 
 footer {
   margin: 5em 0 3em;
+  font-size: 1em;
 }
 
-footer small {
+.left-footer small {
   margin-right: 2em;
-  font-size: 1em;
+}
+
+.right-footer small {
+  margin-left: 2em;
 }
 
 section.footer-links {
@@ -462,7 +479,15 @@ section.footer-links {
 .copyright {
   margin: 1em 0;
   padding: 0.5em 0;
+}
+
+.light-mode .copyright {
   border-top: 1px solid #b6b6b6;
+}
+
+.dark-mode .copyright {
+  border-top: 1px solid #a4a4a4;
+  color: #a4a4a4;
 }
 
 .light-mode .card .content p.lightgrey,
@@ -474,8 +499,41 @@ section.footer-links {
 .dark-mode a.lightgrey,.dark-mode p.lightgrey,
 .dark-mode .card .content p.lightgrey,
 .dark-mode i.date, .dark-mode span.lightgrey {
-  color: #1890a0;
+  color: #a4a4a4;
 }
+
+@media(hover: hover) and (pointer: fine) {
+
+  .right-nav li a:hover {
+    background-size: 50% 100%;
+    background-position: 0 -.1em;;
+  }
+
+  a:hover:not(.no-hover) {
+    transition: .9s;
+    background-size: 150% 50%;
+    background-position: -.5em 0;
+  }
+
+  .light-mode .more-block:hover {
+    background-image: linear-gradient(to right, #9fb3d9 10%, #f6f6f6 80%);
+  }
+
+  .light-mode .extern-link:hover {
+    background-image: linear-gradient(to top,  #9fb3d9 10%, #f6f6f6 80%);
+  }
+
+  .dark-mode .more-block:hover {
+    background-image: linear-gradient(to right, #e53d8b 5%, #2391de 80%);
+  }
+
+
+  .dark-mode .extern-link:hover {
+    background-image: linear-gradient(to top, #e53d8b 5%, #2391de 80%);
+  }
+ 
+}
+
 /*----------------------------------
 Media queries ----------------------*/
 
@@ -515,16 +573,29 @@ Media queries ----------------------*/
   .contact-me {
     margin-bottom: 5em;
   }
-  .see-more {
-    font-size:1em;
-  }
   .main-header {
     margin-bottom: 2em;
   }
   .more-block {
+    font-size:1em;
     width: calc(100% - 2em);
     font-size: 1em;
     margin: 1em 0;
+  }
+  header .more-block, 
+  .portfolio .more-block,
+  .main-works aside, 
+  .main-xp .more-block {
+    width: calc(100% - 2em);
+  }
+  .contact-link p {
+    font-size:1em;
+    margin: 0.5em 0;
+  }
+  .contact-link {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -548,7 +619,7 @@ Media queries ----------------------*/
     padding-right: 1em;
   }
   .right-nav {
-    right:0.7em;
+    right:0.5em;
   }
   .main-works, 
   .portfolio,
@@ -561,11 +632,4 @@ Media queries ----------------------*/
   .more-works {
     width: 100%;
   }
-  .contact-link {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
-
-
-
