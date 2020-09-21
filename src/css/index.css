@@ -578,7 +578,7 @@ Media queries ----------------------*/
   }
   .more-block {
     font-size:1em;
-    width: calc(100% - 2em);
+    width: calc(100%);
     font-size: 1em;
     margin: 1em 0;
   }
@@ -605,9 +605,6 @@ Media queries ----------------------*/
   }
   .main-xp, .portfolio {
     margin: 3em 0 0;
-  }
-  .pattern {
-    width:95%;
   }
   ul.menu.top-nav {
     justify-content: flex-start;
