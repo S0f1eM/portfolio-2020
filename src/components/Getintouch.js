@@ -12,7 +12,7 @@ const Getintouch = () => {
   const quote =`"What sunshine is to flowers, smiles are to humanity." Joseph Addison`;
 
   return (
-      <section className="contact-me" id="getintouch">
+      <section className="contact-me" id="getintouch" role="main">
 
         <SectionHeader content={content} />
 

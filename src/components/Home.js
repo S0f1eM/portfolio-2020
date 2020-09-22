@@ -15,8 +15,8 @@ const Home = () => {
 	<>
     <HomeHeader />
 
-    <section className="main-works">
-      <h2 id="projects">Some works</h2> 
+    <main className="main-works">
+      <h2 id="projects" tabindex="0" >Some works</h2> 
 
         <ProjectCard 
           title="IUEM Websites" 
@@ -43,7 +43,7 @@ const Home = () => {
                   text="SEE MORE WORKS"
           />
         </aside>
-      </section>
+      </main>
       <Quote quote={quote} more={author}/>
     </>
 	)

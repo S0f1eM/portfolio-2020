@@ -14,7 +14,7 @@ const Portfolio = () => {
 
 	return (
 		<>
-			<section className="portfolio" id="portfolio">
+			<section className="portfolio" id="portfolio" role="main">
 				
 				<SectionHeader content={content} more={more} />
 				

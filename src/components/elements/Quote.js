@@ -6,8 +6,8 @@ const Quote = props => {
   <>
     <section className="bottom-page">   
         <div className="pattern large" aria-hidden="true"></div>
-        <p className="quote-content">{props.quote}</p>
-        <p className="quote-content">{props.more}</p>
+        <blockquote className="quote-content">{props.quote}</blockquote>
+        <blockquote className="quote-content">{props.more}</blockquote>
     </section>
   </>
 	)

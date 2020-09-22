@@ -16,22 +16,22 @@ const Footer = () => {
                      <small>
                         <Link to="/" 
                               aria-label="go to Home page" 
-                              rel="noopener noreferrer">Home</Link>
+                              rel="noopener noreferrer" role="navigation">Home</Link>
                     </small>
                     <small>
                          <Link to="/Portfolio" 
                                aria-label="go to portfolio" 
-                               rel="noopener noreferrer">Portfolio</Link>
+                               rel="noopener noreferrer" role="navigation">Portfolio</Link>
                     </small>
                     <small>
                         <Link to="/About" 
                               aria-label="go to about page" 
-                              rel="noopener noreferrer">About</Link>
+                              rel="noopener noreferrer" role="navigation">About</Link>
                     </small>
                     <small>
                         <Link to="/Getintouch" 
                               aria-label="go to contact page" 
-                              rel="noopener noreferrer">Contact</Link>
+                              rel="noopener noreferrer" role="navigation">Contact</Link>
                     </small>
                 </div>
                 
