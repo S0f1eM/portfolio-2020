@@ -540,7 +540,7 @@ section.footer-links {
   color: #a4a4a4;
 }
 
-@media(hover: hover) and (pointer: fine) {
+@media(hover: hover) and (pointer:coarse) {
 
   .right-nav li a:hover {
     background-size: 50% 100%;
@@ -651,6 +651,14 @@ Media queries ----------------------*/
   body {
     margin: 2em 3em 2em 2em;
   }
+  input[type='checkbox'].smcheck:checked + label {
+    left: 28px;
+  }
+  input[type='checkbox'].smcheck + label,
+  input[type='checkbox'].smcheck  {
+    width: 25px;
+    height: 25px;
+  } 
   .main-xp, .portfolio {
     margin: 3em 0 0;
   }
@@ -663,8 +671,11 @@ Media queries ----------------------*/
   ul.menu.top-nav li:not(.toggle-mode) {
     padding-right: 1em;
   }
+  .menu {
+    font-size:1.3em;
+  }
   .right-nav {
-    right:0.5em;
+    right:0;
   }
   .main-works, 
   .portfolio,
