@@ -17,11 +17,11 @@ const About = props => {
 
 	return (		
     <>
-		<section className="main-xp">
+		<section className="main-xp" role="main">
 
 			<SectionHeader content={content} more={more} />
 					
-			<h2 className="xp-and-skills" id="about">Developer Resume</h2>
+			<h2 className="xp-and-skills" id="about" tabindex="0">Developer Resume</h2>
 	    
 			<ResumeCard 
 			        title="Analyst Developer" 
@@ -44,38 +44,38 @@ const About = props => {
 		
 				<aside>
 			<section className="education">
-				<h2 className="xp-and-skills">Education</h2>
+				<h2 className="xp-and-skills" tabindex="0">Education</h2>
 				<ResumeCard 	
 				    	title="2016 - Web Developer Certification"	
 					    date="Bootcamp with Simplon.co (apr. 2016 - nov. 2016)"
-	               		content="Learning basics : HTML5, CSS (Bootstrap), JavaScript (ES5), versioning."
+	               		intro="Learning basics : HTML5, CSS (Bootstrap), JavaScript (ES5), versioning."
 	               		more="Introduction to mySQL, PHP, React, Vim..."
 	            />
 	            <ResumeCard 	
 				    	title="2005 - History of Societies & Archeology Bachelor's degree"	
 					    date=" 2005 - Faculty of Arts, Humanities and Social Sciences - UBS"
-	               		content="2 years degree in History of Art and Archeology and one year degree in History of Societies and Archeology"
+	               		intro="2 years degree in History of Art and Archeology and one year degree in History of Societies and Archeology"
 	            />
 			</section> 
 
 			<section className="skills-interests">
-				<h2 className="xp-and-skills">Skills & Interests</h2>
+				<h2 className="xp-and-skills" tabindex="0">Skills & Interests</h2>
 					<div className="selfstudy">
-				    	<h3>Self study </h3>
-		                	<p><span className="lightgrey">Programming : </span> Javascript ES6/ES7, API, OOP, functionnal programming, CSS Grid, Flexbox, A11y...</p>
-		                	<p><span className="lightgrey">Libraries, frameworks & tools :</span> React, Redux, React Native (currently learning)...</p>
-		                	<p><span className="lightgrey">Online Certifications :</span> <a rel="noopener noreferrer" href={responsive}>FreeCodeCamp Responsive web design certification</a>,  
+				    	<h3 tabindex="0">Self study </h3>
+		                	<p tabindex="0"><span className="lightgrey">Programming : </span> Javascript ES6/ES7, API, OOP, functionnal programming, CSS Grid, Flexbox, A11y...</p>
+		                	<p tabindex="0"><span className="lightgrey">Libraries, frameworks & tools :</span> React, Redux, React Native (currently learning)...</p>
+		                	<p tabindex="0"><span className="lightgrey">Online Certifications :</span> <a rel="noopener noreferrer" href={responsive}>FreeCodeCamp Responsive web design certification</a>,  
 		                	<a rel="noopener noreferrer" href={javascript}> JavaScript Algorithms certification</a> & <a rel="noopener noreferrer" href={frontend}>Front-End Libraries Certification</a>, <a href="https://www.udemy.com/certificate/UC-7PDYNLAQ/">React with Redux</a></p>
 			    	</div>
 
 			    	<div className="language">
-				    	<h3>Languages </h3>
-				    	<p>English <span className="lightgrey">(Proficient)</span> - French <span className="lightgrey">(Native)</span></p>
+				    	<h3 tabindex="0">Languages </h3>
+				    	<p tabindex="0">English <span className="lightgrey">(Proficient)</span> - French <span className="lightgrey">(Native)</span></p>
 			    	</div>
 
 			    	<div className="Interests">
-				    	<h3>Interests </h3>
-				    	<p>Pixar fan, sciences-fiction movies, I read all genre of books (depending on my current interest), onboard games and video games, sunsets...</p>
+				    	<h3 tabindex="0">Interests </h3>
+				    	<p tabindex="0">Pixar fan, sciences-fiction movies, I read all genre of books (depending on my current interest), onboard games and video games, sunsets...</p>
 			   		</div>		   		
 		  	</section>
 		</aside>

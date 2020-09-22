@@ -4,7 +4,25 @@ body {
   font-family: 'Oswald';
   margin: 0 5em;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.5;
+}
+
+body.light-mode :focus {
+  outline: 2px solid #6788c6;
+}
+
+body.dark-mode :focus {
+  outline: 2px solid #E53D8B;
+}
+
+.light-mode a {
+  background-image: linear-gradient(to bottom, #9FB3D9 20%, #9FB3D9 70%);
+  color: #444;
+}
+
+.dark-mode a {
+  color: #d1d1d1;
+  background-image: linear-gradient(to bottom, #e53d8b 20%, #e53d8b 70%);
 }
 
 a:not(.extern-link) {
@@ -12,6 +30,26 @@ a:not(.extern-link) {
   background-size: 0 5%;
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+.light-mode a:not(.no-hover),
+.light-mode a span {
+  border-bottom: 3px solid #444;
+}
+
+.light-mode .selfstudy p a,
+.light-mode .footer-links small a {
+  border-bottom: 1px solid #444;
+}
+
+.dark-mode a:not(.no-hover),
+.dark-mode a span {
+    border-bottom: 3px solid #d1d1d1;
+}
+
+.dark-mode .selfstudy p a,
+.dark-mode .footer-links small a {
+  border-bottom: 1px solid #d1d1d1;
 }
 
 a.extern-link {
@@ -61,18 +99,24 @@ p {
   font-weight: 700;
 }
 
-ul.menu.top-nav {
+.menu.top-nav {
   margin: 1em 0;
   justify-content: flex-end;
   display: flex;
   flex-wrap: wrap;
 }
 
-ul.menu.top-nav li:not(.toggle-mode) {
+.menu.top-nav li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu.top-nav li:not(.toggle-mode) {
   padding-right: 2em;
 }
 
-ul.menu.top-nav li.toggle-mode {
+.menu.top-nav li.toggle-mode {
   margin-right: 1em;
 }
 
@@ -89,28 +133,23 @@ ul.menu.top-nav li.toggle-mode {
   top: 2.5em;
 }
 
-ul.menu.right-nav li {
+.menu.right-nav li {
   padding-bottom: 2em;
 }
 
 .right-nav li a {
   webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
+
+}
+.light-mode .right-nav li a{
+  border-left: 3px solid #444;
+  border-bottom: none;
 }
 
-.menu.top-nav li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.light-mode a {
-  background-image: linear-gradient(to bottom, #9FB3D9 20%, #9FB3D9 70%);
-  color: #444;
-}
-
-.dark-mode a {
-  color: #d1d1d1;
-  background-image: linear-gradient(to bottom, #e53d8b 20%, #e53d8b 70%);
+.dark-mode .right-nav li a{
+  border-left: 3px solid #d1d1d1;
+  border-bottom: none;
 }
 
 .dark-mode-toggle {
@@ -374,7 +413,7 @@ body.light-mode .About-me span:not(.mobile) {
 }
 
 .light-mode .card .content p.links {
-  margin: 0;
+  margin-top: 0;
 }
 
 .dark-mode .card .content p.links {
@@ -477,8 +516,7 @@ section.footer-links {
 }
 
 .copyright {
-  margin: 1em 0;
-  padding: 0.5em 0;
+  margin: 0.5em 0;
 }
 
 .light-mode .copyright {
@@ -506,13 +544,24 @@ section.footer-links {
 
   .right-nav li a:hover {
     background-size: 50% 100%;
-    background-position: 0 -.1em;;
+    background-position: 0 -.1em;
   }
 
   a:hover:not(.no-hover) {
     transition: .9s;
     background-size: 150% 50%;
     background-position: -.5em 0;
+  }
+
+   .right-nav li a:hover,
+   a:hover:not(.no-hover),
+   .more-block:hover span {
+    border-bottom: 3px solid transparent;
+   }
+
+  .selfstudy p a:hover,
+  .footer-links small a:hover {
+    border-bottom: 1px solid transparent;
   }
 
   .light-mode .more-block:hover {
@@ -526,7 +575,6 @@ section.footer-links {
   .dark-mode .more-block:hover {
     background-image: linear-gradient(to right, #e53d8b 5%, #2391de 80%);
   }
-
 
   .dark-mode .extern-link:hover {
     background-image: linear-gradient(to top, #e53d8b 5%, #2391de 80%);

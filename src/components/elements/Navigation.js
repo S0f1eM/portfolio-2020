@@ -15,7 +15,8 @@ const Navigation = () => {
                <Link to="/"  
                     aria-label="go to home page"
                     data-menuanchor="home page"
-                    className="logo no-hover">
+                    className="logo no-hover"
+                    role="navigation">
                   <h1>Sophie M.</h1>
               </Link>
             </li>
@@ -26,7 +27,8 @@ const Navigation = () => {
                   aria-label="go to portfolio" 
                   data-menuanchor="portfolio"
                   className="nav"
-                rel="noopener noreferrer">PORTFOLIO
+                rel="noopener noreferrer"
+                role="navigation">PORTFOLIO
             </Link>
           </li>
         	 <li>
@@ -34,7 +36,8 @@ const Navigation = () => {
                   aria-label="go to about page"
                   data-menuanchor="about page"
                   className="nav"
-                  rel="noopener noreferrer">ABOUT
+                  rel="noopener noreferrer"
+                  role="navigation">ABOUT
            </Link>
           </li>
           <li aria-hidden="true" className="toggle-mode">
@@ -46,21 +49,24 @@ const Navigation = () => {
             <li>
               <Link to="/"  
                   aria-label="go to home page"
-                  data-menuanchor="home page">HOME
+                  data-menuanchor="home page"
+                  role="navigation">HOME
               </Link>
             </li>
               <li>
               <Link to="/Getintouch" 
                   aria-label="go to the contact page" 
                   data-menuanchor="contact"
-                  rel="noopener noreferrer">CONTACT</Link>
+                  rel="noopener noreferrer"
+                  role="navigation">CONTACT</Link>
             </li>
             <li>
             <Link to="/Portfolio" 
                   aria-label="go to portfolio" 
                   data-menuanchor="portfolio"
                   className="desktop"
-                rel="noopener noreferrer">PORTFOLIO
+                rel="noopener noreferrer"
+                role="navigation">PORTFOLIO
             </Link>
           </li>
           <li>
@@ -68,7 +74,8 @@ const Navigation = () => {
                   aria-label="go to about page"
                   data-menuanchor="about page"
                   className="desktop"
-                  rel="noopener noreferrer">ABOUT
+                  rel="noopener noreferrer"
+                  role="navigation">ABOUT
             </Link>
           </li>
         </ul>

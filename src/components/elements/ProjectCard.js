@@ -15,9 +15,9 @@ const ProjectCard = props => {
       {displayImg}
         <div className="content">
           
-          <h3>{props.title}</h3>
-          <p><span className="techno"> {props.skills}</span></p>
-          <p>{props.content}</p>    
+          <h3 tabindex="0">{props.title}</h3>
+          <p tabindex="0"><span className="techno"> {props.skills}</span></p>
+          <p tabindex="0">{props.content}</p>    
           <div className="footer-card">
             <p className="links">
               <a href={props.url} 
