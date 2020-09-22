@@ -3,13 +3,13 @@ import React from 'react';
 const Toggle = ({ checked, onChange }) => (
   <span className="toggle-control">
     <input
-      className="smcheck"
+      className="toggle-theme"
       type="checkbox"
       checked={checked}
       onChange={onChange}
-      id="smcheck"
+      id="toggle-theme"
     />
-    <label htmlFor="smcheck" value="check" aria-hidden="true"/>
+    <label for="toggle-theme" value="check" aria-hidden="true"/>
   </span>
 );
 

@@ -9,9 +9,8 @@ const Navigation = () => {
       <nav className="navigation">
         
         <ul className="menu top-nav">
-          
-          <div className="left-nav">
-            <li>
+
+            <li className="left-nav">
                <Link to="/"  
                     aria-label="go to home page"
                     data-menuanchor="home page"
@@ -20,7 +19,6 @@ const Navigation = () => {
                   <h1>Sophie M.</h1>
               </Link>
             </li>
-          </div>
 
           <li>
             <Link to="/Portfolio" 
@@ -40,7 +38,7 @@ const Navigation = () => {
                   role="navigation">ABOUT
            </Link>
           </li>
-          <li aria-hidden="true" className="toggle-mode">
+          <li className="toggle-mode">
             <DarkModeToggle />
           </li>
         </ul>
