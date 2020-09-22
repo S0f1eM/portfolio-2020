@@ -106,10 +106,14 @@ p {
   flex-wrap: wrap;
 }
 
-.menu.top-nav li {
+.menu.top-nav li:not(.left-nav) {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.menu.top-nav li.left-nav {
+  justify-content: left;
 }
 
 .menu.top-nav li:not(.toggle-mode) {
@@ -184,7 +188,7 @@ p {
    /*align-items: center;*/
 }
 
- input[type='checkbox'].smcheck {
+ input[type='checkbox'].toggle-theme {
    width: 30px;
    height: 30px;
    background: #E9B32D;
@@ -198,18 +202,18 @@ p {
    outline: none;
 }
 
- input[type='checkbox'].smcheck:checked + label {
+ input[type='checkbox'].toggle-theme:checked + label {
    left: 33px;
    top: -5px;
    right: 0;
    background-color: #055c66;
 }
 
- input[type='checkbox'].smcheck:focus-visible {
+ input[type='checkbox'].toggle-theme:focus-visible {
    outline: solid 2px white;
 }
 
- input[type='checkbox'].smcheck + label {
+ input[type='checkbox'].toggle-theme + label {
    display: inline-block;
    width: 30px;
    height: 30px;
@@ -242,11 +246,11 @@ h2 {
 }
 
 body.light-mode h2 {
-  color: #6788c6;
+  color: #5c3b81;
 }
 
 body.dark-mode h2 {
-  color: # ;
+  color: #2391DE;
 }
 
 h3 {
@@ -256,7 +260,7 @@ h3 {
 }
 
 body.light-mode h3  {
-  color: #9393CD;
+  color: #6f39a8;
 }
 
 body.dark-mode h3  {
@@ -531,7 +535,7 @@ section.footer-links {
 .light-mode .card .content p.lightgrey,
 .light-mode i.date, 
 .light-mode .lightgrey {
-  color: #9FB3D9;
+  color: #674dab;
 }
 
 .dark-mode a.lightgrey,.dark-mode p.lightgrey,
@@ -589,7 +593,7 @@ Media queries ----------------------*/
   .nav {
     display: none;
   }
-  ul.menu.top-nav {
+  .menu.top-nav {
     justify-content: space-between;
   }
   .desktop {
@@ -651,24 +655,24 @@ Media queries ----------------------*/
   body {
     margin: 2em 3em 2em 2em;
   }
-  input[type='checkbox'].smcheck:checked + label {
+  input[type='checkbox'].toggle-theme:checked + label {
     left: 28px;
   }
-  input[type='checkbox'].smcheck + label,
-  input[type='checkbox'].smcheck  {
+  input[type='checkbox'].toggle-theme + label,
+  input[type='checkbox'].toggle-theme  {
     width: 25px;
     height: 25px;
   } 
   .main-xp, .portfolio {
     margin: 3em 0 0;
   }
-  ul.menu.top-nav {
+  .menu.top-nav {
     justify-content: flex-start;
   }
-  ul.menu.top-nav li {
+  .menu.top-nav li {
     font-size: 0.85em;
   }
-  ul.menu.top-nav li:not(.toggle-mode) {
+  .menu.top-nav li:not(.toggle-mode) {
     padding-right: 1em;
   }
   .menu {
