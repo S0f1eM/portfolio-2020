@@ -544,7 +544,7 @@ section.footer-links {
   color: #a4a4a4;
 }
 
-@media(hover: hover) and (pointer:coarse) {
+@media(hover: hover) and (pointer:fine) {
 
   .right-nav li a:hover {
     background-size: 50% 100%;
