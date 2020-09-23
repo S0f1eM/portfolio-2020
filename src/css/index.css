@@ -387,11 +387,6 @@ body.light-mode .About-me span:not(.mobile) {
   grid-gap: 3%;
 }
 
-.main-works, 
-.portfolio {
-  margin: 5em 0;
-}
-
 .portfolio-list {
   display: flex;
   justify-content: space-between;
