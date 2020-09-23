@@ -7,8 +7,8 @@ import Quote from './elements/Quote';
 
 const Portfolio = () => {
 
-	const content = "Some professional projects (like IUEM websites and the directory plugin). There are also personal projects I made on my spare time to keep on learning.";
-	const more = "I use JavaScript for most of those project from vanilla JS to React. I also love playing with shapes and colors thanks to CSS possibilities. I keep on learning and currently improving my accessibility knowledge to make the web a place accessible to all.";				
+	const content = "Some professional projects (like IUEM websites and the directory plugin). There are also personal projects I made on my spare time to keep on learning. Except the WordPress websites, I use JavaScript for most of those projects from vanilla JS to React.";
+	const more = "I also love playing with shapes and colors thanks to CSS possibilities. I keep on learning and currently improving my accessibility knowledge to make the web a place accessible to all.";				
 
     const quote = `"Be stubborn about your goals and flexible about your methods."`;
 
