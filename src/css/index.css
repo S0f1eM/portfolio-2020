@@ -349,10 +349,6 @@ header .more-block,
     align-items: flex-end;
 }
 
-.pattern.medium {
-    height: 100px;
-}
-
 .pattern.small {
     height: 30px;
 }
@@ -603,7 +599,7 @@ Media queries ----------------------*/
     width: calc(48% - 1em);
   }
   .pattern.large {
-    height: 150px;
+    height: 30px;
   }
   h2 {
     margin: 0 0 1em;
@@ -678,7 +674,9 @@ Media queries ----------------------*/
   }
   .main-works, 
   .portfolio,
-  .main-xp  {
+  .main-xp,
+  .contact-me,
+  .main-header  {
     margin: 3.5em 0;
   }
   .main-works .card,
