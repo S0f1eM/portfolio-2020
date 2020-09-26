@@ -7,14 +7,15 @@ const Getintouch = () => {
   const email = 'mailto:s.marchand56@gmail.com';
   const linkedin = "https://www.linkedin.com/in/sophie-marchand-web-developer/";
   const twitter = "https://twitter.com/S0f1eM?lang=fr";
-  const content = "Searching for a developer to work with or wanna talk about a project? I'm currently working but I remain open to any profesional proposition especially for a remote job and/or a thrilling project. So feel free to contact me, I would love to hear from you and see how we can collaborate.";
+  const content = "Searching for a developer ? I'm currently working but I remain open to any remote job developer position.";
+  const more = " Feel free to contact me, I would love to hear from you. ";
 	
   const quote =`"What sunshine is to flowers, smiles are to humanity." Joseph Addison`;
 
   return (
       <section className="contact-me" id="getintouch" role="main">
 
-        <SectionHeader content={content} />
+        <SectionHeader content={content} more={more} />
 
         <div className="contact-link">
           
