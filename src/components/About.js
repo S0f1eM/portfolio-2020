@@ -10,15 +10,14 @@ const About = props => {
 	const javascript="https://www.freecodecamp.org/certification/s0f1e/javascript-algorithms-and-data-structures";
 	const frontend="https://www.freecodecamp.org/certification/s0f1e/front-end-libraries";
 
-	const content="I believe that it's important to support people and give them the means to develop as individuals while growing among other people, including on virtual place like the web.  I'm in search of a company where 'flow' a real open mindset with human values like respect and empathy and which act trully on that way.";
-	const more ="I care about maintening an healthy work environnement with warm collaborations on a daily basis. Confortable with remote work, to collaborate with an international team would undoubtedly be a rewarding and thrilling experience."
+	const content="I believe it's important to support people and give them the means to develop as individuals while growing among other people, including on virtual place like the web.  I'm in search of a team where 'flow' human values like respect and empathy and 'act' trully on that way.";
 	const quote=`"Hope and fear cannot occupy the same space. Invite one to stay." Maya Angelou`;
 
 	return (		
     <>
 		<section className="main-xp" role="main">
 
-			<SectionHeader content={content} more={more} />
+			<SectionHeader content={content} />
 					
 			<h2 className="xp-and-skills" id="about" tabindex="0">Developer Resume</h2>
 	    
