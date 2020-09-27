@@ -35,8 +35,7 @@ const About = props => {
 			        company="European Institute for Marine Studies (IUEM)  - public official contract"
 			      	intro=" 2018: Project management and developement on the main website and the 3 main laboratories websites rebuild."
 			      	content="Development of a WordPress plugin to manage the directory database (postgre to MySQL, PHP, JavaScript)."
-			       	works="Migration from Plone websites to Wordpress environment. Integration of the design with a page builder selected by the graphist. Build and implementations of custom contents (CPT) for the specifics needs of each partner."
-			       	tasks="2017: Users support on Plone CMS (CSS, JS, Python). Fixing CMS bugs on several websites (about 40 websites for the institutes and the partners), CSS and content adjustments on new Plone intranet."
+			       	tasks="2017: Users support on about 40 websites build with Plone CMS (CSS, JS, Python)."
 			   		skills="Stack : WordPress, MySQL, PHP, JavaScript, jQuery, Less, Python..."
 			/>
 		
@@ -46,13 +45,11 @@ const About = props => {
 				<ResumeCard 	
 				    	title="2016 - Web Developer Certification"	
 					    date="Bootcamp with Simplon.co (apr. 2016 - nov. 2016)"
-	               		intro="Learning basics : HTML5, CSS (Bootstrap), JavaScript (ES5), versioning."
-	               		more="Introduction to mySQL, PHP, React, Vim..."
+	               		intro="Learning basics : HTML5, CSS (Bootstrap), JavaScript (ES5), database, frameworks, versioning..."
 	            />
 	            <ResumeCard 	
 				    	title="2005 - History of Societies & Archeology Bachelor's degree"	
 					    date=" 2005 - Faculty of Arts, Humanities and Social Sciences - UBS"
-	               		intro="2 years degree in History of Art and Archeology and one year degree in History of Societies and Archeology"
 	            />
 			</section> 
 
@@ -73,7 +70,7 @@ const About = props => {
 
 			    	<div className="Interests">
 				    	<h3 tabindex="0">Interests </h3>
-				    	<p tabindex="0">Pixar fan, sciences-fiction movies, I read all genre of books (depending on my current interest), onboard games and video games, sunsets...</p>
+				    	<p tabindex="0">Pixar fan, sciences-fiction, I read various genre of books, onboard & video games, walks in the nature to recharge batteries, staring at the stars and sunsets...</p>
 			   		</div>		   		
 		  	</section>
 		</aside>

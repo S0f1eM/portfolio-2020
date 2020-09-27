@@ -12,10 +12,9 @@ const ProjectCard = props => {
 
 	return (
     <div className="card portfolio">
-      {displayImg}
         <div className="content">
-          
           <h3 tabindex="0">{props.title}</h3>
+                {displayImg}
           <p tabindex="0"><span className="techno"> {props.skills}</span></p>
           <p tabindex="0">{props.content}</p>    
           <div className="footer-card">

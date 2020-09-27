@@ -316,10 +316,6 @@ header .more-block,
   width: 100%;
 }
 
-.card:nth-child(4) > p:nth-child(5) > a:nth-child(2) {
-  margin-left: 0;
-}
-
 .profil {
   display: flex;
   justify-content: left;
@@ -402,7 +398,7 @@ body.light-mode .About-me span:not(.mobile) {
   box-shadow: 11px -11px 30px 0px rgba(222,222,222,1);
 }
 
-.card .content p:not(.links),
+/*.card .content p:not(.links),
 .card .content h3 {
   padding: 0 1em;
 }
@@ -413,15 +409,20 @@ body.light-mode .About-me span:not(.mobile) {
 
 .dark-mode .card .content p.links {
   padding: 0 1em;
+}*/
+
+.card {
+  padding: 0 1em;
 }
 
 .main-works .card,
 .portfolio .card {
-  width: calc(30% - 0em);
+  width: calc(28% - 0em);
 }
 
-.light-mode .footer-card {
-  padding: 0.5em 1em;
+
+div.card:nth-child(6) > div:nth-child(1) > div:nth-child(5) > p:nth-child(1) > a:nth-child(2) {
+  margin-left: 0;
 }
 
 .light-mode .card .content p,
@@ -473,7 +474,6 @@ body.light-mode .About-me span:not(.mobile) {
 
 .smcard-img {
   width: 100%;
-  height: auto;
 }
 
 .bottom-page {
@@ -597,6 +597,7 @@ Media queries ----------------------*/
   .portfolio .card,
   .main-works .card {
     width: calc(48% - 1em);
+    padding: 0 1em;
   }
   .pattern.large {
     height: 30px;
@@ -644,7 +645,7 @@ Media queries ----------------------*/
 
 @media screen and (max-width: 450px ) {
   body {
-    margin: 2em 3em 2em 2em;
+    margin: 2em 2.5em;
   }
   input[type='checkbox'].toggle-theme:checked + label {
     left: 28px;
@@ -666,8 +667,16 @@ Media queries ----------------------*/
   .menu.top-nav li:not(.toggle-mode) {
     padding-right: 1em;
   }
+  .light-mode .right-nav li a {
+    border-left: 2px solid #444;
+    border-bottom: transparent;
+  }
+  .light-mode a:not(.no-hover), 
+  .light-mode a span {
+    border-bottom: 2px solid #444;
+  }
   .menu {
-    font-size:1.3em;
+    font-size:1.2em;
   }
   .right-nav {
     right:0;
@@ -683,6 +692,9 @@ Media queries ----------------------*/
   .profil .social,
   .portfolio .card,
   .more-works {
-    width: 100%;
+    width: 98%;
+  }
+  .portfolio-list {
+    width: 95%;
   }
 }
