@@ -148,12 +148,12 @@ p {
 }
 .light-mode .right-nav li a{
   border-left: 3px solid #444;
-  border-bottom: none;
+  border-bottom: transparent;
 }
 
 .dark-mode .right-nav li a{
   border-left: 3px solid #d1d1d1;
-  border-bottom: none;
+  border-bottom: transparent;
 }
 
 .dark-mode-toggle {
@@ -633,19 +633,23 @@ Media queries ----------------------*/
     width: calc(100% - 2em);
   }
   .contact-link p {
-    font-size:1em;
+    font-size: 1em;
     margin: 0.5em 0;
   }
   .contact-link {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin: 0.5em 0 0;
   }
 }
 
 @media screen and (max-width: 450px ) {
   body {
     margin: 2em 2.5em;
+  }
+  #root {
+    padding: 0.5em;
   }
   input[type='checkbox'].toggle-theme:checked + label {
     left: 28px;
@@ -661,32 +665,30 @@ Media queries ----------------------*/
   .menu.top-nav {
     justify-content: flex-start;
   }
-  .menu.top-nav li {
-    font-size: 0.85em;
-  }
   .menu.top-nav li:not(.toggle-mode) {
-    padding-right: 1em;
+    padding-right: 0.5em;
+    font-size: 0.80em;
+  }
+  .right-nav {
+    font-size:1.2em;
+    right:0.2em;
   }
   .light-mode .right-nav li a {
     border-left: 2px solid #444;
-    border-bottom: transparent;
+  }
+  .dark-mode .right-nav li a {
+    border-left: 2px solid #d1d1d1;
   }
   .light-mode a:not(.no-hover), 
   .light-mode a span {
     border-bottom: 2px solid #444;
-  }
-  .menu {
-    font-size:1.2em;
-  }
-  .right-nav {
-    right:0;
   }
   .main-works, 
   .portfolio,
   .main-xp,
   .contact-me,
   .main-header  {
-    margin: 3.5em 0;
+    margin: 2em 0;
   }
   .main-works .card,
   .profil .social,
@@ -695,6 +697,6 @@ Media queries ----------------------*/
     width: 98%;
   }
   .portfolio-list {
-    width: 95%;
+    margin-top: 1em;
   }
 }

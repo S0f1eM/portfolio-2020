@@ -13,7 +13,7 @@ const HomeHeader = () => {
         </div>
       <Button  link="/About" 
               label="go to about page" 
-              text="READ MORE ABOUT ME"
+              text="MORE ABOUT SOPHIE"
       />
     </header>
 	)
