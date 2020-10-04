@@ -51,6 +51,15 @@ const Navigation = () => {
                   role="navigation">HOME
               </Link>
             </li>
+            <li>
+              <Link to="/Resources"  
+                    aria-label="go to resources page"
+                    data-menuanchor="resources page"
+                    className="nav"
+                    rel="noopener noreferrer"
+                    role="navigation">RESOURCES
+              </Link>
+            </li>
               <li>
               <Link to="/Getintouch" 
                   aria-label="go to the contact page" 
@@ -74,6 +83,15 @@ const Navigation = () => {
                   className="desktop"
                   rel="noopener noreferrer"
                   role="navigation">ABOUT
+            </Link>
+          </li>
+          <li>
+            <Link to="/Resources"  
+                  aria-label="go to resources page"
+                  data-menuanchor="resources page"
+                  className="desktop"
+                  rel="noopener noreferrer"
+                  role="navigation">RESOUCRCES
             </Link>
           </li>
         </ul>

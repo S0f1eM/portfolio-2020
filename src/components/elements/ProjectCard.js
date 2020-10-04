@@ -23,12 +23,12 @@ const ProjectCard = props => {
                  target="_blank" 
                  rel="noopener noreferrer" 
                  aria-label={props.content} 
-                 className="card_website beBold">{`${website}`}</a>
+                 className="card_website">{`${website}`}</a>
               <a href={props.github} 
                  target="_blank" 
                  rel="noopener noreferrer" 
                  aria-label={props.content} 
-                 className="card_github beBold">{`${repo}`}</a>
+                 className="card_github">{`${repo}`}</a>
             </p>
           </div>
         </div>
