@@ -11,7 +11,7 @@ const About = props => {
 	const frontend="https://www.freecodecamp.org/certification/s0f1e/front-end-libraries";
 
 	const content="I believe it's important to support people and give them the means to develop as individuals while growing among other people, including on virtual place like the web.  I'm in search of a team where 'flow' human values like respect and empathy and 'act' trully on that way.";
-	const quote=`"Hope and fear cannot occupy the same space. Invite one to stay." Maya Angelou`;
+	const quote=`"No need to hurry. No need to sparkle. No need to be anybody but Oneself." Virginia Woolf`;
 
 	return (		
     <>

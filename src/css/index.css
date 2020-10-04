@@ -20,6 +20,10 @@ body.dark-mode :focus {
   color: #444;
 }
 
+a.source-title {
+  font-size:1.3em;
+}
+
 .dark-mode a {
   color: #d1d1d1;
   background-image: linear-gradient(to bottom, #e53d8b 20%, #e53d8b 70%);
@@ -259,16 +263,17 @@ h3 {
   font-family: "Raleway";
 }
 
-body.light-mode h3  {
+.light-mode h3  {
   color: #6f39a8;
 }
 
-body.dark-mode h3  {
+.dark-mode h3  {
   color: #e53d8b;
 }
 
 header .more-block,
-.portfolio .more-block {
+.portfolio .more-block,
+.resources .more-block {
   width: calc(30% - 2em);
 }
 
@@ -387,7 +392,8 @@ body.light-mode .About-me span:not(.mobile) {
   margin-top: 3em;
 }
 
-.card.portfolio {
+.card.portfolio,
+.resources.card {
   margin: 2em 0;
 }
 
@@ -542,7 +548,8 @@ section.footer-links {
     background-position: 0 -.1em;
   }
 
-  a:hover:not(.no-hover) {
+  a:hover:not(.no-hover),
+  a h3.source-title {
     transition: .9s;
     background-size: 150% 50%;
     background-position: -.5em 0;
@@ -629,7 +636,8 @@ Media queries ----------------------*/
   header .more-block, 
   .portfolio .more-block,
   .main-works aside, 
-  .main-xp .more-block {
+  .main-xp .more-block,
+  .resources .more-block  {
     width: calc(100% - 2em);
   }
   .contact-link p {
