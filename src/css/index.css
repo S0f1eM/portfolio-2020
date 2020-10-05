@@ -541,6 +541,13 @@ section.footer-links {
   color: #a4a4a4;
 }
 
+a.resources-mobile {
+  font-size: 1.3em;
+}
+.resources p {
+  font-size: 1.1em;
+}
+
 @media(hover: hover) and (pointer:fine) {
 
   .right-nav li a:hover {
@@ -554,6 +561,10 @@ section.footer-links {
     background-size: 150% 50%;
     background-position: -.5em 0;
   }
+
+   .right-nav li a:hover {
+    border-left: 3px solid transparent;
+   }
 
    .right-nav li a:hover,
    a:hover:not(.no-hover),
@@ -650,6 +661,12 @@ Media queries ----------------------*/
     flex-direction: column;
     margin: 0.5em 0 0;
   }
+  a.resources-mobile {
+    font-size: 1.2em;
+  }
+  .resources p {
+    font-size: 1em;
+  }
 }
 
 @media screen and (max-width: 450px ) {
@@ -706,5 +723,11 @@ Media queries ----------------------*/
   }
   .portfolio-list {
     margin-top: 1em;
+  }
+  footer {
+    margin: 3em 0 1em;
+  }
+  .footer-links {
+    flex-direction: column;
   }
 }
