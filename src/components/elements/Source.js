@@ -8,7 +8,8 @@ const Source = props => {
                  target="_blank" 
                  rel="noopener noreferrer" 
                  aria-label={props.title} 
-                 tabindex="0" className="source-title">
+                 tabindex="0" className="source-title"
+        >
                 {props.title}
         </a>
         <p tabindex="0">{props.intro}</p>

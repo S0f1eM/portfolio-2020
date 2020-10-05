@@ -29,12 +29,16 @@ const Footer = () => {
                               rel="noopener noreferrer" role="navigation">About</Link>
                     </small>
                     <small>
+                        <Link to="/Resources" 
+                              aria-label="go to resources page" 
+                              rel="noopener noreferrer" role="navigation">Resources</Link>
+                    </small>
+                    <small>
                         <Link to="/Getintouch" 
                               aria-label="go to contact page" 
                               rel="noopener noreferrer" role="navigation">Contact</Link>
                     </small>
                 </div>
-                
                 <div className="right-footer">
                     <small>
                     	<a  href={github} 
@@ -68,7 +72,7 @@ const Footer = () => {
             </section>
              <div className="copyright">
                 <small className="lightgrey">2020 - Sophie Marchand. 
-                <span className="mobile"> Time is not refundable. Use it with intention. Thank you for yours.</span>
+                <span> Time is not refundable. Use it with intention. Thank you for yours.</span>
                 </small>  
             </div>
         </footer>
