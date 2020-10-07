@@ -671,7 +671,8 @@ Media queries ----------------------*/
 
 @media screen and (max-width: 450px ) {
   body {
-    margin: 2em 2.5em;
+    margin: 2em;
+    margin-right: 2.5em
   }
   #root {
     padding: 0.5em;

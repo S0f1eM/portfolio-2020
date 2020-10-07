@@ -29,11 +29,11 @@ const Portfolio = () => {
 			          title="IUEM Websites" 
 			          img="screenshot-iuem.png"
 			          content="A university institute and 3 laboratories partners websites."
-			          skills=" HTML - LESS - PHP - MySQL"
+			          skills=" WORDPRESS - PHP - MySQL"
 			          url="https://www-iuem.univ-brest.fr"
 			        />
 			        <ProjectCard 
-			          title="Directory WP Plugin" 
+			          title="Directory Plugin" 
 			          img="screenshot-plugin.png"
 			          content="A WordPress directory plugin to manage and show the directory on the website."
 			          skills=" PHP - MySQL - JavaScript"
