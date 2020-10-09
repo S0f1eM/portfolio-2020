@@ -6,7 +6,7 @@ import Quote from './elements/Quote';
 
 
 const Resources = () => {
-	const content = "Some links to useful content and websites to feed my curiosity, open 'perspectives' and keep on learning. You will find resources about accessibilty, UI/UX design and a section on subjects I find interesting and teaching.";				
+	const content = "Some links to useful content and websites to feed curiosity, open 'perspectives' and keep on learning. You will find resources about accessibilty, UI/UX design and a section on subjects I find interesting and teaching.";				
     const quote = `"Without leaps of imagination, or dreaming, we lose the excitment of possibilities. Dreaming, after all, is a form of planning." Gloria Steinem`;
 
 	return (
@@ -18,7 +18,7 @@ const Resources = () => {
 				<div className="portfolio-list accessibility">
 					
 					<div className="accessibility">
-						<h2 tabindex="0">A11y</h2>
+						<h2 tabindex="0">A11y resources</h2>
 						<Source title="W3C WAI (Web Accessibility Initiative)" 
 						      url="https://www.w3.org/WAI/fundamentals/accessibility-intro/" 
 						      intro="Strategies, standards, resources to make the Web accessible to people with disabilities." />
@@ -36,7 +36,7 @@ const Resources = () => {
 					</div>
 
 					<div className="design">
-					    <h2 className="resources-title" tabindex="0">Design</h2>
+					    <h2 className="resources-title" tabindex="0">Design resources</h2>
 						<Source title="10 Newest and promising UI design trends" 
 							  url="https://uxdesign.cc/10-newest-and-promising-ui-design-trends-929562b25ad6" 
 							  intro="New neumorphism, pastels, geometry and helpful tips." 
@@ -77,7 +77,7 @@ const Resources = () => {
 					</div>
 
 					<div className="curiouser">
-						<h2 className="resources-title" tabindex="0">Learn to be</h2>
+						<h2 className="resources-title" tabindex="0">Keep on growing</h2>
 							<Source title="Center for Humane Technology" 
 							      url="https://www.humanetech.com/take-control" 
 							      intro="A platform who focus on means to enable an ethical transition to more humane social media platforms by changing the ways that these technologies are designed, used, and regulated." 

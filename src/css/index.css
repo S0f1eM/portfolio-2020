@@ -336,9 +336,10 @@ header .more-block,
 
 .About-me {
   margin: 0.5em 1em 3em 0;
+}
+.About-me p {
   font-size: 1.3em;
 }
-
 .pattern {
   max-width: 100%;
 }
@@ -609,7 +610,6 @@ Media queries ----------------------*/
     display: flex;
   }
   .About-me {
-    font-size: 1.1em;
     padding: 0;
   }
   .portfolio .card,
@@ -618,7 +618,7 @@ Media queries ----------------------*/
     padding: 0 1em;
   }
   .pattern.large {
-    height: 30px;
+    display: none;
   }
   h2 {
     margin: 0 0 1em;
@@ -626,8 +626,11 @@ Media queries ----------------------*/
   .mobile {
     display: none;
   }
-  .education h2.xp-and-skills, .skills-interests h2.xp-and-skills {
-    margin: 2em 0 0;
+  .education h2.xp-and-skills, 
+  .skills-interests h2.xp-and-skills,
+  .main-xp h2.xp-and-skills {
+    margin: 1em 0 0;
+    font-size: 1.5em;
   }
   .main-xp .card.resume {
     margin: 3em 0;
@@ -639,20 +642,20 @@ Media queries ----------------------*/
     margin-bottom: 2em;
   }
   .more-block {
-    font-size:1em;
     width: calc(100%);
     font-size: 1em;
     margin: 1em 0;
   }
-  header .more-block, 
   .portfolio .more-block,
   .main-works aside, 
   .main-xp .more-block,
   .resources .more-block  {
     width: calc(100% - 2em);
   }
+  header .more-block {
+    display: none;
+  }
   .contact-link p {
-    font-size: 1em;
     margin: 0.5em 0;
   }
   .contact-link {
@@ -664,8 +667,12 @@ Media queries ----------------------*/
   a.resources-mobile {
     font-size: 1.2em;
   }
-  .resources p {
-    font-size: 1em;
+  .resources p, 
+  .more-block,
+  .About-me p,
+  .contact-link p,
+  p, p.section-intro {
+    font-size: 1.1em;
   }
 }
 
