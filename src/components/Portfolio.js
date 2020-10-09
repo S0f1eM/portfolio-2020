@@ -7,7 +7,7 @@ import Quote from './elements/Quote';
 
 const Portfolio = () => {
 
-	const content = "I'm using vanilla JavaScript from my beginnings. I love using WordPress and keep learning about React. I currently improving my accessibility knowledge to make the web a place accessible to all.";				
+	const content = "I'm using vanilla JavaScript from my beginnings. I'm at ease with WordPress project and keep learning about React and playing with APIs. I currently improving my accessibility knowledge to make the web a place accessible to all.";				
 
     const quote = `"Be stubborn about your goals and flexible about your methods."`;
 

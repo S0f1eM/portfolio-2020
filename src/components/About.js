@@ -10,7 +10,7 @@ const About = props => {
 	const javascript="https://www.freecodecamp.org/certification/s0f1e/javascript-algorithms-and-data-structures";
 	const frontend="https://www.freecodecamp.org/certification/s0f1e/front-end-libraries";
 
-	const content="I believe it's important to support people and give them the means to develop as individuals while growing among other people, including on virtual place like the web.  I'm in search of a team where 'flow' human values like respect and empathy and 'act' trully on that way.";
+	const content="I am an enthusiastic person and serious coworker. I believe that it's important to support people who need it, and to learn how to keep a compassionate mindset in our interactions with others, specifically on the web.";
 	const quote=`"No need to hurry. No need to sparkle. No need to be anybody but Oneself." Virginia Woolf`;
 
 	return (		
