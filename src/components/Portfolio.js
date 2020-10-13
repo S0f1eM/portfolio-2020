@@ -1,22 +1,15 @@
 import React from 'react';
 import ProjectCard from './elements/ProjectCard';
 import Button from './elements/Button';
-import SectionHeader from './elements/SectionHeader';
-import Quote from './elements/Quote';
-
 
 const Portfolio = () => {
-
-	const content = "I'm using vanilla JavaScript from my beginnings. I'm at ease with WordPress project and keep learning about React and playing with APIs. I currently improving my accessibility knowledge to make the web a place accessible to all.";				
-
-    const quote = `"Be stubborn about your goals and flexible about your methods."`;
 
 	return (
 		<>
 			<section className="portfolio" id="portfolio" role="main">
-				
-				<SectionHeader content={content} />
-				
+
+			<h2 className="xp-and-skills" id="about" tabindex="0">Projects</h2>
+								
 				<div className="portfolio-list">
 				    <ProjectCard 
 			          title="Drum Machine" 
@@ -70,8 +63,6 @@ const Portfolio = () => {
               			 className="see-more" 
                 />
 			</section>
-
-			<Quote quote={quote} />
 		</>
 	)
 }

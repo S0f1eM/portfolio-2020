@@ -1,20 +1,13 @@
 import React from 'react';
 import Source from './elements/Source';
 import Button from './elements/Button';
-import SectionHeader from './elements/SectionHeader';
-import Quote from './elements/Quote';
-
 
 const Resources = () => {
-	const content = "Some links to useful content and websites to feed curiosity, open 'perspectives' and keep on learning. You will find resources about accessibilty, UI/UX design and a section on subjects I find interesting and teaching.";				
-    const quote = `"Without leaps of imagination, or dreaming, we lose the excitment of possibilities. Dreaming, after all, is a form of planning." Gloria Steinem`;
 
 	return (
 		<>
 			<section className="resources" id="resources" role="main">
-				
-				<SectionHeader content={content} />
-				
+								
 				<div className="portfolio-list accessibility">
 					
 					<div className="accessibility">
@@ -98,6 +91,10 @@ const Resources = () => {
 									url="https://www.ted.com/talks/janell_hobson_the_breathtaking_courage_of_harriet_tubman"
 									intro="Janell Hobson details Harriet Tubman's many fights for freedom." 
 						    />
+						    <Source title="Be Like Water"
+						    		url="https://www.brainpickings.org/2013/05/29/like-water-bruce-lee-artist-of-life/"
+						    		intro="The Philosophy and Origin of Bruce Lee’s Famous Metaphor for Resilience."
+						    />
 					</div>
 
 				</div>
@@ -110,7 +107,6 @@ const Resources = () => {
 
 			</section>
 
-			<Quote quote={quote} />
 		</>
 	)
 }

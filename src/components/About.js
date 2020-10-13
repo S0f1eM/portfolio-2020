@@ -1,8 +1,6 @@
 import React from 'react';
 import ResumeCard from './elements/ResumeCard';
 import Button from './elements/Button';
-import SectionHeader from './elements/SectionHeader';
-import Quote from './elements/Quote';
 
 const About = props => {
 
@@ -10,14 +8,9 @@ const About = props => {
 	const javascript="https://www.freecodecamp.org/certification/s0f1e/javascript-algorithms-and-data-structures";
 	const frontend="https://www.freecodecamp.org/certification/s0f1e/front-end-libraries";
 
-	const content="I am an enthusiastic person and serious coworker. I believe that it's important to support people who need it, and to learn how to keep a compassionate mindset in our interactions with others, specifically on the web.";
-	const quote=`"No need to hurry. No need to sparkle. No need to be anybody but Oneself." Virginia Woolf`;
-
 	return (		
     <>
 		<section className="main-xp" role="main">
-
-			<SectionHeader content={content} />
 					
 			<h2 className="xp-and-skills" id="about" tabindex="0">Developer Resume</h2>
 	    
@@ -82,11 +75,6 @@ const About = props => {
         />
 
 		</section>
-
-	
-
-        <Quote quote={quote} />
-
 	</>
 	)
 }

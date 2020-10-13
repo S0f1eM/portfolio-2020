@@ -3,17 +3,14 @@ import React from 'react';
 import HomeHeader from './elements/HomeHeader';
 import ProjectCard from './elements/ProjectCard';
 import Button from './elements/Button';
-import Quote from './elements/Quote';
 
 const Home = () => {
 
-  const quote = `"Attitude is a choice. Happiness is a choice. Optimism is a choice. Kindness is a choice. Giving is a choice. 
-  Respect is a choice.`;
-  const author ='Whatever choice you make makes you. Choose Wisely." Roy T. Bennet';
+  const content = "Hello, I'm Sophie. I'm a developer who like Frontend development. I have professional experiences in full stack development, working with CMS like WordPress and in project management. I also like to use and experiment React on my spare time."
 
-	return (
+  return (
 	<>
-    <HomeHeader />
+    <HomeHeader content={content}/>
 
     <main className="main-works">
       <h2 id="projects" tabindex="0" >Some works</h2> 
@@ -44,7 +41,6 @@ const Home = () => {
           />
         </aside>
       </main>
-      <Quote quote={quote} more={author}/>
     </>
 	)
 }

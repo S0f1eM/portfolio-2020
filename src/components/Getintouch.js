@@ -1,21 +1,17 @@
 import React from 'react';
-import SectionHeader from './elements/SectionHeader';
-import Quote from './elements/Quote';
+import HomeHeader from './elements/HomeHeader';
 
 const Getintouch = () => {
   
   const email = 'mailto:s.marchand56@gmail.com';
   const linkedin = "https://www.linkedin.com/in/sophie-marchand-web-developer/";
   const twitter = "https://twitter.com/S0f1eM?lang=fr";
-  const content = "Searching for a developer ? I'm currently working but I remain open to any remote job position.";
-  const more = " Feel free to contact me, I would love to hear from you. ";
+  const content = "Searching for a developer to collaborate with ? Need help on a project and want to talk about? Feel free to contact me and share, I would love to hear from you. ";
 	
-  const quote =`"What sunshine is to flowers, smiles are to humanity." Joseph Addison`;
-
   return (
       <section className="contact-me" id="getintouch" role="main">
 
-        <SectionHeader content={content} more={more} />
+        < HomeHeader content={content} />
 
         <div className="contact-link">
           
@@ -43,8 +39,6 @@ const Getintouch = () => {
                 rel="noopener noreferrer">Message on Linkedin
             </a></p>
         </div>
-
-        <Quote quote={quote} />
 
       </section>
 	)
