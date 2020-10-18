@@ -9,7 +9,7 @@ const Resources = () => {
 								
 				<div className="resources-list">
 					
-					<h2 tabindex="0">Resources</h2>
+					<h2 tabindex="0">RESOURCES</h2>
 
 					<div className="resources-section accessibility">
 						<h3 className="resources-page-subtitle" tabindex="0">Accessibility Resources</h3>

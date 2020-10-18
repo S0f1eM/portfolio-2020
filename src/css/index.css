@@ -335,7 +335,7 @@ aside {
 
 .main-works .card {
   width: calc(50% - 2em);
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 h3 {
@@ -364,13 +364,6 @@ p.links {
 .dark-mode .card .content span.techno {
   color: #e53d8b;
 }
-
-/*.dark-mode .card {
-  border: 2px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to bottom right, #E53D8B, #2391DE);
-}
-*/
 
 .smcard-img {
   width: 100%;
@@ -481,6 +474,7 @@ Media queries ----------------------*/
   }
   .main-works .card {
     width: calc(100% - 1em);
+    padding-bottom: 1em;
   }
   .mobile {
     display: none;
@@ -510,6 +504,9 @@ Media queries ----------------------*/
   .contact-link p,
   p, p.section-intro {
     font-size: 1.1em;
+  }
+  p.links {
+    margin:0;
   }
 }
 
