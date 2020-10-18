@@ -3,7 +3,7 @@ import React from 'react';
 const Source = props => {
 
 	return (
-    <div className="resources">
+    <div className="resources-card">
         <a href={props.url} 
                  target="_blank" 
                  rel="noopener noreferrer" 

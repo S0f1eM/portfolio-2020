@@ -1,44 +1,41 @@
 import React from 'react';
-import HomeHeader from './elements/HomeHeader';
 
 const Getintouch = () => {
   
   const email = 'mailto:s.marchand56@gmail.com';
   const linkedin = "https://www.linkedin.com/in/sophie-marchand-web-developer/";
   const twitter = "https://twitter.com/S0f1eM?lang=fr";
-  const content = "Searching for a developer to collaborate with ? Need help on a project and want to talk about? Feel free to contact me and share, I would love to hear from you. ";
 	
   return (
-      <section className="contact-me" id="getintouch" role="main">
+      <section className="contact-me" ole="main">
 
-        < HomeHeader content={content} />
+      <h2 tabindex="0">Contact me</h2>
 
-        <div className="contact-link">
-          
-          <p><a  className="extern-link no-hover"
+        <p tabindex="0">Want to talk about a project or have any questions? To get in touch, feel free to contact me with one of the links below.</p>
+
+          <p><a className="contact-links"
                 href={email} 
                 alt='send an email' 
                 target="_blank" 
                 aria-label="contact Sophie by email"
-                rel="noopener noreferrer">Contact by mail
+                rel="noopener noreferrer"><span>Contact by </span>mail
             </a></p>
 
-          <p><a  className="extern-link no-hover"
+          <p><a className="contact-links"
                 href={twitter} 
                 alt="twitter" 
                 target="_blank" 
                 aria-label="Contact Sophie on twitter"
-                rel="noopener noreferrer">Message on twitter
+                rel="noopener noreferrer"><span>Message on </span>twitter
             </a></p>
 
-           <p><a  className="extern-link no-hover" 
+          <p><a className="contact-links"
                 href={linkedin} 
                 alt="linkedin" 
                 target="_blank" 
                 aria-label="Contact Sophie on linkedin"
-                rel="noopener noreferrer">Message on Linkedin
+                rel="noopener noreferrer"><span>Message on </span>Linkedin
             </a></p>
-        </div>
 
       </section>
 	)

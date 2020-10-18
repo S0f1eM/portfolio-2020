@@ -13,22 +13,25 @@ const ProjectCard = props => {
 	return (
     <div className="card portfolio">
         <div className="content">
+          {displayImg}
           <h3 tabindex="0">{props.title}</h3>
-                {displayImg}
-          <p tabindex="0"><span className="techno"> {props.skills}</span></p>
-          <p tabindex="0">{props.content}</p>    
+          <p tabindex="0"><span className="techno"> 
+            {props.skills}</span><br/>
+            {props.content}</p>    
           <div className="footer-card">
             <p className="links">
+              
               <a href={props.url} 
                  target="_blank" 
                  rel="noopener noreferrer" 
                  aria-label={props.content} 
-                 className="card_website">{`${website}`}</a>
+                 className="projects-links card-link">{`${website}`}</a>
+
               <a href={props.github} 
                  target="_blank" 
                  rel="noopener noreferrer" 
                  aria-label={props.content} 
-                 className="card_github">{`${repo}`}</a>
+                 className="projects-links card-link">{`${repo}`}</a>
             </p>
           </div>
         </div>
