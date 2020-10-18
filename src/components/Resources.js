@@ -1,66 +1,56 @@
 import React from 'react';
 import Source from './elements/Source';
-import Button from './elements/Button';
-import SectionHeader from './elements/SectionHeader';
-import Quote from './elements/Quote';
-
 
 const Resources = () => {
-	const content = "Some links to useful content and websites to feed curiosity, open 'perspectives' and keep on learning. You will find resources about accessibilty, UI/UX design and a section on subjects I find interesting and teaching.";				
-    const quote = `"Without leaps of imagination, or dreaming, we lose the excitment of possibilities. Dreaming, after all, is a form of planning." Gloria Steinem`;
 
 	return (
 		<>
-			<section className="resources" id="resources" role="main">
-				
-				<SectionHeader content={content} />
-				
-				<div className="portfolio-list accessibility">
+			<section className="resources-page" role="main">
+								
+				<div className="resources-list">
 					
-					<div className="accessibility">
-						<h2 tabindex="0">A11y resources</h2>
+					<h2 tabindex="0">Resources</h2>
+
+					<div className="resources-section accessibility">
+						<h3 className="resources-page-subtitle" tabindex="0">Accessibility Resources</h3>
 						<Source title="W3C WAI (Web Accessibility Initiative)" 
 						      url="https://www.w3.org/WAI/fundamentals/accessibility-intro/" 
 						      intro="Strategies, standards, resources to make the Web accessible to people with disabilities." />
-					    <Source title="A11Y Style Guide" 
-					    	  url="https://a11y-style-guide.com/style-guide/" 
-					    	  intro="A guide and reference to build your own accessible components." />
 					    <Source title="Accessibility First: Rethinking the Way We Approach Website Design and Development"
 					    	  url="https://www.24a11y.com/2017/accessibility-first/"
 					    	  intro="An article on inclusive Design and Development Principles."
 					    />
+					    <Source title="A11Y Style Guide" 
+					    	  url="https://a11y-style-guide.com/style-guide/" 
+					    	  intro="A guide and reference to build your own accessible components." />
 					    <Source title="Accessibility & Me"
 					    		url="https://a11y.me/"
 					    		intro="A good collection of resources to start on web accessibility."
 					    />
 					</div>
 
-					<div className="design">
-					    <h2 className="resources-title" tabindex="0">Design resources</h2>
-						<Source title="10 Newest and promising UI design trends" 
+					<div className="resources-section design">
+						<h3 className="resources-page-subtitle" tabindex="0">Design resources</h3>
+						<Source title="4 Ways to Implement Data For A Better User Experience Design"
+					    		url="https://www.freecodecamp.org/news/4-ways-to-implement-data-for-a-better-user-experience-design/"
+					    		intro="Experience around data, to make data easier to work with and how data enriches our work and lives."
+					    />
+					    <Source title="10 Newest and promising UI design trends" 
 							  url="https://uxdesign.cc/10-newest-and-promising-ui-design-trends-929562b25ad6" 
 							  intro="New neumorphism, pastels, geometry and helpful tips." 
 					    />
-					    <Source title="4 Ways to Implement Data For A Better User Experience Design"
-					    		url="https://www.freecodecamp.org/news/4-ways-to-implement-data-for-a-better-user-experience-design/"
-					    		intro="Explore experience around data, to make data easier to work with and how data enriches our work and lives."
-					    />
 					    <Source title="7 Practical Tips for Cheating at Design"
-					    url="https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886"
-					    intro="Improving your designs with tactics instead of talent."
+					    		url="https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886"
+					    		intro="Improving your designs with tactics instead of talent."
 					    />
 					</div>
 
-				    <div className="development">
-				    	<h2 className="resources-title" tabindex="0">Dev & Tools</h2>
+				    <div className="resources-section development">
+				    	<h3 className="resources-page-subtitle" tabindex="0">Dev & Tools</h3>
 				    		<Source title="Next.js 101: What you should know"
 				    				url="https://www.netlify.com/blog/2020/06/18/next.js-101-what-you-should-know/?utm_campaign=Netlify+Newsletter+-+June+2020+-+1&utm_content=Netlify+Newsletter+-+June+2020+A&utm_medium=email_action&utm_source=customer.io"
 				    				intro="What features should I know about Next.js." 
 				    		/>
-							<Source title="How to Build a Bot and Automate your Everyday Work" 
-								  url="https://www-freecodecamp-org.cdn.ampproject.org/c/s/www.freecodecamp.org/news/building-bots/amp/" 
-								  intro="This article explore the basics of workflow automation using Python." 
-							/>
 							<Source title="VIDEO : Free 5-hour WordPress and PHP Course" 
 							      url="https://www.freecodecamp.org/news/build-a-website-from-start-to-finish-using-wordpress-and-php/"
 							      intro="How to Build a Website from Start to Finish: Free 5-hour WordPress and PHP Course." 
@@ -76,8 +66,8 @@ const Resources = () => {
 				
 					</div>
 
-					<div className="curiouser">
-						<h2 className="resources-title" tabindex="0">Keep on growing</h2>
+					<div className="resources-section curiouser">
+						<h3 className="resources-page-subtitle" tabindex="0">Everything else</h3>
 							<Source title="Center for Humane Technology" 
 							      url="https://www.humanetech.com/take-control" 
 							      intro="A platform who focus on means to enable an ethical transition to more humane social media platforms by changing the ways that these technologies are designed, used, and regulated." 
@@ -98,19 +88,16 @@ const Resources = () => {
 									url="https://www.ted.com/talks/janell_hobson_the_breathtaking_courage_of_harriet_tubman"
 									intro="Janell Hobson details Harriet Tubman's many fights for freedom." 
 						    />
+						    <Source title="Be Like Water"
+						    		url="https://www.brainpickings.org/2013/05/29/like-water-bruce-lee-artist-of-life/"
+						    		intro="The Philosophy and Origin of Bruce Lee’s Famous Metaphor for Resilience."
+						    />
 					</div>
 
 				</div>
-				    
-				<Button  link="/" 
-              			 label="go back to home page" 
-              		     text="GO BACK TO HOME PAGE"
-              			 className="see-more" 
-                />
-
+				   
 			</section>
 
-			<Quote quote={quote} />
 		</>
 	)
 }

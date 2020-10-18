@@ -15,26 +15,19 @@ const Footer = () => {
                 <div className="left-footer mobile">
                      <small>
                         <Link to="/" 
+                              className="projects-links"
                               aria-label="go to Home page" 
-                              rel="noopener noreferrer" role="navigation">Home</Link>
-                    </small>
-                    <small>
-                         <Link to="/Portfolio" 
-                               aria-label="go to portfolio" 
-                               rel="noopener noreferrer" role="navigation">Portfolio</Link>
-                    </small>
-                    <small>
-                        <Link to="/About" 
-                              aria-label="go to about page" 
-                              rel="noopener noreferrer" role="navigation">About</Link>
+                              rel="noopener noreferrer" role="navigation">HomePage</Link>
                     </small>
                     <small>
                         <Link to="/Resources" 
+                              className="source-title"
                               aria-label="go to resources page" 
                               rel="noopener noreferrer" role="navigation">Resources</Link>
                     </small>
                     <small>
                         <Link to="/Getintouch" 
+                              className="contact-links"
                               aria-label="go to contact page" 
                               rel="noopener noreferrer" role="navigation">Contact</Link>
                     </small>
@@ -72,7 +65,7 @@ const Footer = () => {
             </section>
              <div className="copyright">
                 <small className="lightgrey">2020 - Sophie Marchand. 
-                <span> Time is not refundable. Use it with intention. Thank you for yours.</span>
+                <span> Time is not refundable. Use it with intention.</span>
                 </small>  
             </div>
         </footer>
