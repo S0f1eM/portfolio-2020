@@ -65,7 +65,7 @@ const Footer = () => {
             </section>
              <div className="copyright">
                 <small className="lightgrey">2020 - Sophie Marchand. 
-                <span> Time is not refundable. Use it with intention.</span>
+                <span className="mobile"> Time is not refundable. Use it with intention.</span>
                 </small>  
             </div>
         </footer>
