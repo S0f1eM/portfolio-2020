@@ -236,7 +236,7 @@ p {
    left: 33px;
    top: -5px;
    right: 0;
-   background-color: #055c66;
+   background-color: #d1d1d1;
 }
 
  input[type='checkbox'].toggle-theme:focus-visible {
@@ -480,7 +480,7 @@ Media queries ----------------------*/
     display: none;
   }
   .contact-me {
-    margin-bottom: 5em;
+    margin-bottom: 10em;
   }
   .contact-link p {
     margin: 0.5em 0;
@@ -514,6 +514,9 @@ Media queries ----------------------*/
   body {
     margin: 2em;
     margin-right: 2.5em;
+  }
+  .toggle-mode {
+    margin-right: 1em;
   }
   input[type='checkbox'].toggle-theme:checked + label {
     left: 28px;
@@ -553,5 +556,8 @@ Media queries ----------------------*/
   }
   .footer-links {
     flex-direction: column;
+  }
+  .right-footer small:first-child {
+    margin-left: 0;
   }
 }
