@@ -14,8 +14,8 @@ const ProjectCard = props => {
     <div className="card portfolio">
         <div className="content">
           {displayImg}
-          <h3 tabindex="0">{props.title}</h3>
-          <p tabindex="0"><span className="techno"> 
+          <h3 tabIndex="0">{props.title}</h3>
+          <p tabIndex="0"><span className="techno"> 
             {props.skills}</span><br/>
             {props.content}</p>    
           <div className="footer-card">

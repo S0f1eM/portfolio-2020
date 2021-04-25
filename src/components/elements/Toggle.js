@@ -9,7 +9,7 @@ const Toggle = ({ checked, onChange }) => (
       onChange={onChange}
       id="toggle-theme"
     />
-    <label for="toggle-theme" value="check" aria-hidden="true"/>
+    <label htmlFor="toggle-theme" value="check" aria-hidden="true"/>
   </span>
 );
 

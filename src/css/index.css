@@ -26,7 +26,7 @@ body.dark-mode :focus {
 }
 
 .light-mode a.projects-links { 
-  background-image: linear-gradient(to bottom, #34e095 20%, #34e095 50%);
+  background-image: linear-gradient(to bottom, #03d05b 20%, #03d05b 50%);
  }
 
 .dark-mode a.projects-links { 
@@ -45,6 +45,10 @@ small a,
 a.contact-links {
   background-image: linear-gradient(to bottom, #fcc31c 20%, #fcc31c 50%);
 }
+
+a.projects-links.to-the-site {  
+  margin-top: -4rem
+;}
 
 .contact-links span {
   color: #fcc31c;
@@ -120,7 +124,6 @@ p {
   padding: 0;
   font-size: 1.4em;
   font-family: 'Raleway'; 
-  font-weight: 700;
 }
 
 .to-the-page,
@@ -269,7 +272,6 @@ h1 {
 
 h2 {
   font-family: 'Raleway'; 
-  font-weight: 700;
 }
 
 .light-mode h2 {
@@ -299,6 +301,7 @@ aside h2 {
 
 .about-me {
   margin: 8em 0;
+  font-family: 'Raleway';
 }
 .about-me p {
   font-size: 1.4em;
@@ -335,15 +338,20 @@ aside {
 
 .main-works .card {
   width: calc(50% - 2em);
-  margin-top: 3em;
+  margin-top: 1em;
+}
+
+.main-works h2 {
+  margin-bottom: 4.5rem;
 }
 
 h3 {
   font-family: 'pacifico';
+  font-size: 1.5rem;
 }
 
 h3.resources-page-subtitle {
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: #327acf;
   margin: 1em 0 0.5em;
 }
@@ -418,7 +426,7 @@ a.resources-mobile {
 }
 .resources-card p {
   font-size: 1.1em;
-  margin: 0.2em 0 0.6em;
+  margin: 0.2em 0 1em;
 }
 
 @media(hover: hover) and (pointer:fine) {

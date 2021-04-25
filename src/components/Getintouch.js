@@ -9,9 +9,9 @@ const Getintouch = () => {
   return (
       <section className="contact-me" ole="main">
 
-      <h2 tabindex="0">Contact me</h2>
+      <h2 tabIndex="0">Contact me</h2>
 
-        <p tabindex="0">Want to talk about a project or have any questions? To get in touch, feel free to contact me with one of the links below.</p>
+        <p tabIndex="0">Searching for a developer? Want to talk about a project ? Feel free to contact me and let's chat about it. </p>
 
           <p><a className="contact-links"
                 href={email} 

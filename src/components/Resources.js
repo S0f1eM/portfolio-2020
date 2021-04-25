@@ -9,10 +9,10 @@ const Resources = () => {
 								
 				<div className="resources-list">
 					
-					<h2 tabindex="0">RESOURCES</h2>
+					<h2 tabIndex="0">RESOURCES</h2>
 
 					<div className="resources-section accessibility">
-						<h3 className="resources-page-subtitle" tabindex="0">Accessibility Resources</h3>
+						<h3 className="resources-page-subtitle" tabIndex="0">Accessibility Resources</h3>
 						<Source title="W3C WAI (Web Accessibility Initiative)" 
 						      url="https://www.w3.org/WAI/fundamentals/accessibility-intro/" 
 						      intro="Strategies, standards, resources to make the Web accessible to people with disabilities." />
@@ -30,7 +30,7 @@ const Resources = () => {
 					</div>
 
 					<div className="resources-section design">
-						<h3 className="resources-page-subtitle" tabindex="0">Design resources</h3>
+						<h3 className="resources-page-subtitle" tabIndex="0">Design resources</h3>
 						<Source title="4 Ways to Implement Data For A Better User Experience Design"
 					    		url="https://www.freecodecamp.org/news/4-ways-to-implement-data-for-a-better-user-experience-design/"
 					    		intro="Experience around data, to make data easier to work with and how data enriches our work and lives."
@@ -46,7 +46,7 @@ const Resources = () => {
 					</div>
 
 				    <div className="resources-section development">
-				    	<h3 className="resources-page-subtitle" tabindex="0">Dev & Tools</h3>
+				    	<h3 className="resources-page-subtitle" tabIndex="0">Dev & Tools</h3>
 				    		<Source title="Next.js 101: What you should know"
 				    				url="https://www.netlify.com/blog/2020/06/18/next.js-101-what-you-should-know/?utm_campaign=Netlify+Newsletter+-+June+2020+-+1&utm_content=Netlify+Newsletter+-+June+2020+A&utm_medium=email_action&utm_source=customer.io"
 				    				intro="What features should I know about Next.js." 
@@ -67,7 +67,7 @@ const Resources = () => {
 					</div>
 
 					<div className="resources-section curiouser">
-						<h3 className="resources-page-subtitle" tabindex="0">Everything else</h3>
+						<h3 className="resources-page-subtitle" tabIndex="0">Everything else</h3>
 							<Source title="Center for Humane Technology" 
 							      url="https://www.humanetech.com/take-control" 
 							      intro="A platform who focus on means to enable an ethical transition to more humane social media platforms by changing the ways that these technologies are designed, used, and regulated." 
