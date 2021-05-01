@@ -1,6 +1,9 @@
 
 # A portfolio with react [![Netlify Status](https://api.netlify.com/api/v1/badges/b946c088-af9a-4823-95c0-3c0a9041ea6a/deploy-status)](https://app.netlify.com/sites/sophie-marchand/deploys)
 
+![image](https://user-images.githubusercontent.com/37998238/116787072-59073300-aaa2-11eb-9b5e-1a9d58063796.png)
+
+
 ## Introduction<a name="intro"></a>
 
 This portfolio is build with Reactjs and netlify.  
