@@ -13,7 +13,7 @@ const Home = () => {
 	<>
     <header className="main-header">
         <div className="about-me">
-          <p tabIndex="0">Hello, I'm Sophie. I'm a french based developer with experiences with JavaScript, React, CMS or project management. I like to use React, experiment new tech things and I share resources I found useful while I 
+          <p tabIndex="0">Hello, I'm Sophie. I'm a french developer with experiences with JavaScript, React, CMS or project management. I like to use React, experiment new tech things and I share resources I found useful while I 
           wander on the web.</p>
         </div>
     </header>
