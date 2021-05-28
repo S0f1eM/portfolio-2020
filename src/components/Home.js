@@ -38,7 +38,7 @@ const Home = () => {
                   title="Semantic Neon Template" 
                   content="A Blog template I made with Reactjs using the react-semantic-ui integration and shorthand Props."
                   skills="{ React - react-semantic-ui }"
-                  url="http://moodcolors.surge.sh/"
+                  url="https://moodcolors.netlify.app"
                   github="https://github.com/S0f1eM/neon-template"
                 />
                 <ProjectCard 
